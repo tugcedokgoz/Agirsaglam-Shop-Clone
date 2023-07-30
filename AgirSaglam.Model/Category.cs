@@ -15,11 +15,11 @@ namespace AgirSaglam.Model
             ChildCategories = new HashSet<Category>();
         }
         public int Id { get; set; }
-        public string Name{ get; set; }
-        public int? ParentCategoryId{ get; set; }
-        public bool? Status{ get; set; }
-        
+        public string Name { get; set; }
+        public int? ParentCategoryId { get; set; }
+        public bool? Status { get; set; }
+
         public virtual Category? ParentCategory { get; set; } //kategorinin bir üst kategorisi olabilir oda null olabilir
-        public virtual ICollection<Category> ChildCategories { get;set; } // bu kategorinin birden fazla alt kategorisi olabilir
+        public virtual ICollection<Category> ChildCategories { get; set; } // bu kategorinin birden fazla alt kategorisi olabilir
     }
 }

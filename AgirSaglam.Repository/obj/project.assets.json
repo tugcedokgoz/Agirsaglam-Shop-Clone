@@ -3239,6 +3239,7 @@
     "net6.0": [
       "AgirSaglam.Model >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.9",
+      "Microsoft.EntityFrameworkCore.Relational >= 7.0.9",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.9"
     ]
   },
@@ -3291,6 +3292,10 @@
         "targetAlias": "net6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.9, )"
+          },
+          "Microsoft.EntityFrameworkCore.Relational": {
             "target": "Package",
             "version": "[7.0.9, )"
           },

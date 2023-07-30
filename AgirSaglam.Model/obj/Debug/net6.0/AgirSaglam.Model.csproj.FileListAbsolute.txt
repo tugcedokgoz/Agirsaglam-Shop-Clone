@@ -1,0 +1,12 @@
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Model\bin\Debug\net6.0\AgirSaglam.Model.deps.json
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Model\bin\Debug\net6.0\AgirSaglam.Model.dll
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Model\bin\Debug\net6.0\AgirSaglam.Model.pdb
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Model\obj\Debug\net6.0\AgirSaglam.Model.csproj.AssemblyReference.cache
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Model\obj\Debug\net6.0\AgirSaglam.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Model\obj\Debug\net6.0\AgirSaglam.Model.AssemblyInfoInputs.cache
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Model\obj\Debug\net6.0\AgirSaglam.Model.AssemblyInfo.cs
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Model\obj\Debug\net6.0\AgirSaglam.Model.csproj.CoreCompileInputs.cache
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Model\obj\Debug\net6.0\AgirSaglam.Model.dll
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Model\obj\Debug\net6.0\refint\AgirSaglam.Model.dll
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Model\obj\Debug\net6.0\AgirSaglam.Model.pdb
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Model\obj\Debug\net6.0\ref\AgirSaglam.Model.dll

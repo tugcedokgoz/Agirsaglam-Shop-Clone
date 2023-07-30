@@ -1,4 +1,5 @@
 ﻿using AgirSaglam.Model;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,11 @@ namespace AgirSaglam.Repository
         {
             
         }
-       
+        //include denildiği için bir üst kategori getiriyo
+
+        public void RemoveCategory(int categoryId)
+        {
+            RepositoryContext.Categories.Where(r => r.Id == categoryId).ExecuteDelete();
+        }
     }
 }

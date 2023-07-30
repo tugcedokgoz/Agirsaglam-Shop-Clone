@@ -1,0 +1,519 @@
+2023-07-30 21:46:02.2371||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-07-30 21:46:02.3205||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-07-30 21:46:02.3205||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-30 21:46:02.3205||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-30 21:46:02.3205||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-07-30 21:46:03.3876||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-07-30 21:46:04.1611||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-07-30 21:46:04.2240||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 843.8261ms 
+2023-07-30 21:46:04.2240||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 65.1129ms 
+2023-07-30 21:46:04.5879||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-07-30 21:46:04.8971||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 309.2731ms 
+2023-07-30 21:46:05.4614||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-07-30 21:46:05.8086||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 347.1424ms 
+2023-07-30 21:46:10.0328||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/GetCategory - - 
+2023-07-30 21:46:10.0508||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.GetCategory (AgirSaglam.Api)' 
+2023-07-30 21:46:10.0762||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Object GetCategory() on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 21:46:11.5185||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-07-30 21:46:12.8701||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (74ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t] 
+2023-07-30 21:46:12.9315||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 21:46:12.9506||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.GetCategory (AgirSaglam.Api) in 2866.9513ms 
+2023-07-30 21:46:12.9506||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.GetCategory (AgirSaglam.Api)' 
+2023-07-30 21:46:12.9800||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/GetCategory - - - 200 - application/json;+charset=utf-8 2947.4695ms 
+2023-07-30 21:46:14.3934||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/GetCategory - - 
+2023-07-30 21:46:14.3934||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.GetCategory (AgirSaglam.Api)' 
+2023-07-30 21:46:14.3934||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Object GetCategory() on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 21:46:14.4097||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t] 
+2023-07-30 21:46:14.4097||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 21:46:14.4097||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.GetCategory (AgirSaglam.Api) in 12.3818ms 
+2023-07-30 21:46:14.4097||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.GetCategory (AgirSaglam.Api)' 
+2023-07-30 21:46:14.4097||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/GetCategory - - - 200 - application/json;+charset=utf-8 20.2319ms 
+2023-07-30 21:46:26.3448||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/2 - - 
+2023-07-30 21:46:26.3448||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.Get (AgirSaglam.Api)' 
+2023-07-30 21:46:26.3643||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Object Get(Int32) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 21:46:26.7991||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (55ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t]
+WHERE [t].[Id] = @__id_0 
+2023-07-30 21:46:26.7991||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-07-30 21:46:26.7991||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.Get (AgirSaglam.Api) in 438.1786ms 
+2023-07-30 21:46:26.7991||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.Get (AgirSaglam.Api)' 
+2023-07-30 21:46:26.8037||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/2 - - - 200 - application/json;+charset=utf-8 458.9386ms 
+2023-07-30 21:48:38.9804||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-07-30 21:48:39.0244||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-07-30 21:48:39.0244||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-30 21:48:39.0244||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-30 21:48:39.0244||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-07-30 21:48:39.6347||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-07-30 21:48:39.9870||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 356.5411ms 
+2023-07-30 21:48:39.9937||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-07-30 21:48:39.9937||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 4.6982ms 
+2023-07-30 21:48:40.3291||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-07-30 21:48:40.3805||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.4562ms 
+2023-07-30 21:48:41.0259||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-07-30 21:48:41.2371||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 211.1714ms 
+2023-07-30 21:48:46.7353||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/ParentCategory - - 
+2023-07-30 21:48:46.7456||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.ParentCategory (AgirSaglam.Api)' 
+2023-07-30 21:48:46.7637||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ParentCategory", controller = "Category"}. Executing controller action with signature System.Object ParentCategory() on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 21:48:47.6416||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-07-30 21:48:48.5960||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] IS NULL 
+2023-07-30 21:48:48.6259||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 21:48:48.6383||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.ParentCategory (AgirSaglam.Api) in 1869.9057ms 
+2023-07-30 21:48:48.6383||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.ParentCategory (AgirSaglam.Api)' 
+2023-07-30 21:48:48.6383||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/ParentCategory - - - 200 - application/json;+charset=utf-8 1911.6406ms 
+2023-07-30 21:51:11.2598||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-07-30 21:51:11.3135||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-07-30 21:51:11.3135||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-30 21:51:11.3203||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-30 21:51:11.3203||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-07-30 21:51:11.6414||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-07-30 21:51:11.8653||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 225.6833ms 
+2023-07-30 21:51:11.8795||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-07-30 21:51:11.8795||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 2.5893ms 
+2023-07-30 21:51:12.1080||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-07-30 21:51:12.1239||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.8988ms 
+2023-07-30 21:51:12.7742||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-07-30 21:51:12.8713||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 97.0257ms 
+2023-07-30 21:58:05.9260||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-07-30 21:58:05.9908||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-07-30 21:58:05.9954||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-30 21:58:05.9954||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-30 21:58:05.9954||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-07-30 21:58:06.8698||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-07-30 21:58:07.6727||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-07-30 21:58:07.6727||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 814.5032ms 
+2023-07-30 21:58:07.6843||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 11.6058ms 
+2023-07-30 21:58:08.0177||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-07-30 21:58:08.0759||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.1439ms 
+2023-07-30 21:58:08.6518||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-07-30 21:58:08.8816||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 229.7399ms 
+2023-07-30 21:58:20.1492||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/3 - - 
+2023-07-30 21:58:20.1492||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 21:58:20.2041||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ChildCategory", controller = "Category"}. Executing controller action with signature System.Object ChildCategory(Int32) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 21:58:21.8005||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-07-30 21:58:23.4202||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (64ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] IS NULL 
+2023-07-30 21:58:23.5147||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 21:58:23.5377||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api) in 3325.0511ms 
+2023-07-30 21:58:23.5395||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 21:58:23.5747||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/3 - - - 200 - application/json;+charset=utf-8 3425.5075ms 
+2023-07-30 21:58:55.5361||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/ParentCategory - - 
+2023-07-30 21:58:55.5531||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.ParentCategory (AgirSaglam.Api)' 
+2023-07-30 21:58:55.5543||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ParentCategory", controller = "Category"}. Executing controller action with signature System.Object ParentCategory() on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 21:58:55.5543||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] IS NULL 
+2023-07-30 21:58:55.5543||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 21:58:55.5694||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.ParentCategory (AgirSaglam.Api) in 14.7032ms 
+2023-07-30 21:58:55.5694||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.ParentCategory (AgirSaglam.Api)' 
+2023-07-30 21:58:55.5694||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/ParentCategory - - - 200 - application/json;+charset=utf-8 33.9330ms 
+2023-07-30 21:59:33.9838||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-07-30 21:59:34.0861||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-07-30 21:59:34.0861||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-30 21:59:34.0861||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-30 21:59:34.0861||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-07-30 21:59:35.2387||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-07-30 21:59:35.9347||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-07-30 21:59:35.9453||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 713.6329ms 
+2023-07-30 21:59:35.9622||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 27.4700ms 
+2023-07-30 21:59:36.2347||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-07-30 21:59:36.3133||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 78.6052ms 
+2023-07-30 21:59:36.8804||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-07-30 21:59:37.2423||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 361.9610ms 
+2023-07-30 21:59:46.2145||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/2 - - 
+2023-07-30 21:59:46.2267||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 21:59:46.2679||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ChildCategory", controller = "Category"}. Executing controller action with signature System.Object ChildCategory(Int32) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 21:59:47.7060||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-07-30 21:59:49.4263||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (47ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] IS NULL 
+2023-07-30 21:59:49.4815||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 21:59:49.5118||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api) in 3237.6345ms 
+2023-07-30 21:59:49.5118||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 21:59:49.5405||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/2 - - - 200 - application/json;+charset=utf-8 3326.0516ms 
+2023-07-30 22:00:06.1409||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/5 - - 
+2023-07-30 22:00:06.1743||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:00:06.1743||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ChildCategory", controller = "Category"}. Executing controller action with signature System.Object ChildCategory(Int32) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:00:06.1954||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] IS NULL 
+2023-07-30 22:00:06.1954||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 22:00:06.1954||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api) in 24.4367ms 
+2023-07-30 22:00:06.1954||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:00:06.1954||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/5 - - - 200 - application/json;+charset=utf-8 61.7212ms 
+2023-07-30 22:01:24.7819||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-07-30 22:01:24.8629||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-07-30 22:01:24.8717||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-30 22:01:24.8717||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-30 22:01:24.8717||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-07-30 22:01:26.0567||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-07-30 22:01:26.7898||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 738.3441ms 
+2023-07-30 22:01:26.8298||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-07-30 22:01:26.8421||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 12.2875ms 
+2023-07-30 22:01:27.1863||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-07-30 22:01:27.2880||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 101.7490ms 
+2023-07-30 22:01:27.8543||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-07-30 22:01:28.1940||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 339.6577ms 
+2023-07-30 22:01:36.5149||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/3 - - 
+2023-07-30 22:01:36.5270||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:01:36.5668||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ChildCategory", controller = "Category"}. Executing controller action with signature System.Object ChildCategory(Int32) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:01:38.0674||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-07-30 22:01:39.7112||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (50ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] IS NOT NULL 
+2023-07-30 22:01:39.7725||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 22:01:39.8056||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api) in 3222.2603ms 
+2023-07-30 22:01:39.8056||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:01:39.8738||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/3 - - - 200 - application/json;+charset=utf-8 3358.9244ms 
+2023-07-30 22:02:42.3081||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/5 - - 
+2023-07-30 22:02:42.3216||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:02:42.3216||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ChildCategory", controller = "Category"}. Executing controller action with signature System.Object ChildCategory(Int32) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:02:42.3461||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] IS NOT NULL 
+2023-07-30 22:02:42.3461||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 22:02:42.3461||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api) in 24.9765ms 
+2023-07-30 22:02:42.3461||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:02:42.3461||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/5 - - - 200 - application/json;+charset=utf-8 40.9379ms 
+2023-07-30 22:03:39.3261||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/4 - - 
+2023-07-30 22:03:39.3261||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.Get (AgirSaglam.Api)' 
+2023-07-30 22:03:39.3466||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Object Get(Int32) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:03:39.5489||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (88ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t]
+WHERE [t].[Id] = @__id_0 
+2023-07-30 22:03:39.5489||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-07-30 22:03:39.5489||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.Get (AgirSaglam.Api) in 205.4297ms 
+2023-07-30 22:03:39.5489||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.Get (AgirSaglam.Api)' 
+2023-07-30 22:03:39.5543||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/4 - - - 200 - application/json;+charset=utf-8 228.2105ms 
+2023-07-30 22:04:59.5768||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-07-30 22:04:59.6748||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-07-30 22:04:59.6798||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-30 22:04:59.6798||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-30 22:04:59.6798||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-07-30 22:05:01.1212||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-07-30 22:05:02.0361||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 924.0524ms 
+2023-07-30 22:05:02.4368||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-07-30 22:05:02.4368||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-07-30 22:05:02.4497||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 12.7288ms 
+2023-07-30 22:05:02.5306||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 93.8336ms 
+2023-07-30 22:05:03.1110||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-07-30 22:05:03.4714||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 360.4423ms 
+2023-07-30 22:05:14.6267||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/GetCategory - - 
+2023-07-30 22:05:14.6414||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.GetCategory (AgirSaglam.Api)' 
+2023-07-30 22:05:14.6700||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCategory", controller = "Category"}. Executing controller action with signature System.Object GetCategory() on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:05:16.2429||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-07-30 22:05:17.6449||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (61ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t] 
+2023-07-30 22:05:17.7097||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 22:05:17.7301||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.GetCategory (AgirSaglam.Api) in 3053.9336ms 
+2023-07-30 22:05:17.7301||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.GetCategory (AgirSaglam.Api)' 
+2023-07-30 22:05:17.7611||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/GetCategory - - - 200 - application/json;+charset=utf-8 3134.3589ms 
+2023-07-30 22:07:06.4139||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-07-30 22:07:06.4746||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-07-30 22:07:06.4802||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-30 22:07:06.4802||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-30 22:07:06.4802||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-07-30 22:07:11.5168||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-07-30 22:07:12.4431||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-07-30 22:07:12.4560||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 13.6842ms 
+2023-07-30 22:07:12.4560||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 944.0974ms 
+2023-07-30 22:07:12.9163||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-07-30 22:07:13.1449||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 228.6138ms 
+2023-07-30 22:07:13.8234||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-07-30 22:07:14.1605||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 337.1167ms 
+2023-07-30 22:07:20.3918||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/4 - - 
+2023-07-30 22:07:20.4057||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:07:20.4441||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ChildCategory", controller = "Category"}. Executing controller action with signature System.Object ChildCategory(Int32) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:07:21.8654||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-07-30 22:07:23.5918||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (72ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] IS NOT NULL 
+2023-07-30 22:07:23.6863||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 22:07:23.7246||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api) in 3272.2498ms 
+2023-07-30 22:07:23.7246||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:07:23.7610||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/4 - - - 200 - application/json;+charset=utf-8 3369.2039ms 
+2023-07-30 22:09:57.8898||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-07-30 22:09:57.9838||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-07-30 22:09:57.9838||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-30 22:09:57.9927||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-30 22:09:57.9927||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-07-30 22:10:03.8599||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-07-30 22:10:06.3551||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-07-30 22:10:06.3979||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 2550.8450ms 
+2023-07-30 22:10:06.4162||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 61.1230ms 
+2023-07-30 22:10:06.8940||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-07-30 22:10:07.2297||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 335.7057ms 
+2023-07-30 22:10:07.8825||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-07-30 22:10:08.3088||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 426.1909ms 
+2023-07-30 22:10:34.1532||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/3 - - 
+2023-07-30 22:10:34.1532||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:10:34.2060||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ChildCategory", controller = "Category"}. Executing controller action with signature System.Object ChildCategory(Int32) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:10:35.7630||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-07-30 22:10:37.5526||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (107ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t]
+WHERE [t].[Id] = @__id_0 
+2023-07-30 22:10:37.6448||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 22:10:37.6723||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api) in 3455.1889ms 
+2023-07-30 22:10:37.6723||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:10:37.7205||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/3 - - - 200 - application/json;+charset=utf-8 3567.3297ms 
+2023-07-30 22:10:47.1534||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/4 - - 
+2023-07-30 22:10:47.1645||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:10:47.1645||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ChildCategory", controller = "Category"}. Executing controller action with signature System.Object ChildCategory(Int32) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:10:47.1645||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t]
+WHERE [t].[Id] = @__id_0 
+2023-07-30 22:10:47.1800||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 22:10:47.1800||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api) in 17.1321ms 
+2023-07-30 22:10:47.1800||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:10:47.1800||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/4 - - - 200 - application/json;+charset=utf-8 30.6046ms 
+2023-07-30 22:11:22.0609||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/5 - - 
+2023-07-30 22:11:22.0609||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:11:22.0609||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ChildCategory", controller = "Category"}. Executing controller action with signature System.Object ChildCategory(Int32) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:11:22.1778||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t]
+WHERE [t].[Id] = @__id_0 
+2023-07-30 22:11:22.1790||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 22:11:22.1790||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api) in 107.2691ms 
+2023-07-30 22:11:22.1790||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:11:22.1790||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/5 - - - 200 - application/json;+charset=utf-8 119.6167ms 
+2023-07-30 22:13:01.6526||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-07-30 22:13:01.7112||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-07-30 22:13:01.7112||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-30 22:13:01.7112||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-30 22:13:01.7112||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-07-30 22:13:04.9654||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-07-30 22:13:06.3184||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1378.8612ms 
+2023-07-30 22:13:06.4969||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-07-30 22:13:06.5155||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 18.5750ms 
+2023-07-30 22:13:06.8970||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-07-30 22:13:06.9767||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 79.5709ms 
+2023-07-30 22:13:07.6849||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-07-30 22:13:08.0333||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 348.3720ms 
+2023-07-30 22:13:14.7152||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/5 - - 
+2023-07-30 22:13:14.7152||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:13:14.7522||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ChildCategory", controller = "Category"}. Executing controller action with signature System.Object ChildCategory(Int32) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:13:15.6601||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-07-30 22:13:16.5844||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (48ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] <> @__id_0 OR ([t].[ParentCategoryId] IS NULL) 
+2023-07-30 22:13:16.6153||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 22:13:16.6296||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api) in 1873.1832ms 
+2023-07-30 22:13:16.6296||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:13:16.6442||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/5 - - - 200 - application/json;+charset=utf-8 1928.9159ms 
+2023-07-30 22:14:43.0384||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Category/ChildCategory - - 
+2023-07-30 22:14:43.0433||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.Get (AgirSaglam.Api)' 
+2023-07-30 22:14:43.0433||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Object Get(Int32) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:14:43.0577||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2023-07-30 22:14:43.0577||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.Get (AgirSaglam.Api) in 15.5015ms 
+2023-07-30 22:14:43.0577||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.Get (AgirSaglam.Api)' 
+2023-07-30 22:14:43.0577||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Category/ChildCategory - - - 400 - application/problem+json;+charset=utf-8 23.8749ms 
+2023-07-30 22:14:47.3440||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Category/ChildCategory/4 - - 
+2023-07-30 22:14:47.3440||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:14:47.3440||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ChildCategory", controller = "Category"}. Executing controller action with signature System.Object ChildCategory(Int32) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:14:47.4339||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (17ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] <> @__id_0 OR ([t].[ParentCategoryId] IS NULL) 
+2023-07-30 22:14:47.4339||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 22:14:47.4339||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api) in 90.533ms 
+2023-07-30 22:14:47.4339||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:14:47.4339||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Category/ChildCategory/4 - - - 200 - application/json;+charset=utf-8 93.3184ms 
+2023-07-30 22:15:55.8758||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-07-30 22:15:55.9379||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-07-30 22:15:55.9449||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-30 22:15:55.9449||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-30 22:15:55.9449||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-07-30 22:15:56.7742||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-07-30 22:15:57.3897||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-07-30 22:15:57.3897||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 631.4352ms 
+2023-07-30 22:15:57.4338||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 44.0157ms 
+2023-07-30 22:15:57.6667||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-07-30 22:15:57.7265||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 59.7964ms 
+2023-07-30 22:15:58.2912||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-07-30 22:15:58.5866||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 295.3553ms 
+2023-07-30 22:16:05.7723||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/4 - - 
+2023-07-30 22:16:05.7859||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:16:05.8380||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ChildCategory", controller = "Category"}. Executing controller action with signature System.Object ChildCategory(Int32) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:16:07.3228||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-07-30 22:16:23.5963||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (75ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] IS NOT NULL 
+2023-07-30 22:16:38.5443||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 22:16:56.3056||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api) in 50455.4242ms 
+2023-07-30 22:16:56.3056||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:16:56.3398||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/4 - - - 200 - application/json;+charset=utf-8 50567.4341ms 
+2023-07-30 22:18:37.3512||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-07-30 22:18:37.4323||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-07-30 22:18:37.4323||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-30 22:18:37.4477||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-30 22:18:37.4477||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-07-30 22:18:38.9197||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-07-30 22:18:39.5868||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-07-30 22:18:39.5868||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 12.8110ms 
+2023-07-30 22:18:39.6035||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 689.7269ms 
+2023-07-30 22:18:39.9378||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-07-30 22:18:39.9983||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.4929ms 
+2023-07-30 22:18:40.5753||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-07-30 22:18:40.8636||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 288.3742ms 
+2023-07-30 22:18:45.7858||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/5 - - 
+2023-07-30 22:18:45.7982||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:18:45.8508||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ChildCategory", controller = "Category"}. Executing controller action with signature System.Object ChildCategory(Int32) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:18:47.3403||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-07-30 22:18:49.4055||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (108ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t]
+WHERE ([t].[ParentCategoryId] IS NOT NULL) AND [t].[ParentCategoryId] = @__id_0 
+2023-07-30 22:18:49.4606||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 22:18:49.4798||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api) in 3620.2555ms 
+2023-07-30 22:18:49.4798||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:18:49.5129||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/5 - - - 200 - application/json;+charset=utf-8 3727.4672ms 
+2023-07-30 22:18:58.0391||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/3 - - 
+2023-07-30 22:18:58.0391||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:18:58.0391||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ChildCategory", controller = "Category"}. Executing controller action with signature System.Object ChildCategory(Int32) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:18:58.0726||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (15ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[Status]
+FROM [tblCategory] AS [t]
+WHERE ([t].[ParentCategoryId] IS NOT NULL) AND [t].[ParentCategoryId] = @__id_0 
+2023-07-30 22:18:58.0855||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 22:18:58.0855||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api) in 45.3886ms 
+2023-07-30 22:18:58.0855||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.ChildCategory (AgirSaglam.Api)' 
+2023-07-30 22:18:58.0855||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/ChildCategory/3 - - - 200 - application/json;+charset=utf-8 53.2310ms 
+2023-07-30 22:26:32.6450||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-07-30 22:26:32.7267||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-07-30 22:26:32.7267||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-30 22:26:32.7267||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-30 22:26:32.7267||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-07-30 22:26:33.8553||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-07-30 22:26:34.6744||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-07-30 22:26:34.6876||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 846.9798ms 
+2023-07-30 22:26:34.6876||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 11.0822ms 
+2023-07-30 22:26:35.1087||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-07-30 22:26:35.3109||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 202.1473ms 
+2023-07-30 22:26:35.9879||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-07-30 22:26:36.3950||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 407.0251ms 
+2023-07-30 22:29:00.7008||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7119/api/Category/Save application/json 39 
+2023-07-30 22:29:00.7192||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.Save (AgirSaglam.Api)' 
+2023-07-30 22:29:00.7914||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Save", controller = "Category"}. Executing controller action with signature System.Object Save(System.Object) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:29:02.6264||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-07-30 22:29:02.9660||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2023-07-30 22:29:02.9840||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.Save (AgirSaglam.Api) in 2179.8925ms 
+2023-07-30 22:29:02.9840||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.Save (AgirSaglam.Api)' 
+2023-07-30 22:29:03.0008||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7119/api/Category/Save application/json 39 - 400 - application/problem+json;+charset=utf-8 2299.9279ms 
+2023-07-30 22:30:59.5594||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Category/Save - - 
+2023-07-30 22:30:59.5690||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.Get (AgirSaglam.Api)' 
+2023-07-30 22:30:59.5690||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "Category"}. Executing controller action with signature System.Object Get(Int32) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:30:59.6427||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2023-07-30 22:30:59.6427||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.Get (AgirSaglam.Api) in 71.6664ms 
+2023-07-30 22:30:59.6427||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.Get (AgirSaglam.Api)' 
+2023-07-30 22:30:59.6427||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Category/Save - - - 400 - application/problem+json;+charset=utf-8 85.6351ms 
+2023-07-30 22:32:24.9251||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Category/Save application/json 62 
+2023-07-30 22:32:24.9306||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.Save (AgirSaglam.Api)' 
+2023-07-30 22:32:24.9306||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Save", controller = "Category"}. Executing controller action with signature System.Object Save(System.Object) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:33:41.9094||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-07-30 22:33:41.9499||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-07-30 22:33:41.9499||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-30 22:33:41.9499||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-30 22:33:41.9499||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-07-30 22:33:45.5428||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-07-30 22:33:46.6927||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1152.4558ms 
+2023-07-30 22:33:48.0820||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-07-30 22:33:48.0903||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 8.1633ms 
+2023-07-30 22:33:49.6070||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-07-30 22:33:49.6449||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.8819ms 
+2023-07-30 22:33:50.6482||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-07-30 22:33:50.7805||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 132.2659ms 
+2023-07-30 22:34:01.5704||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Category/Save application/json 75 
+2023-07-30 22:34:01.5704||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.Save (AgirSaglam.Api)' 
+2023-07-30 22:34:01.6097||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Save", controller = "Category"}. Executing controller action with signature System.Object Save(System.Object) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:34:02.5355||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-07-30 22:34:03.4606||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (48ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tblCategory] ([Name], [ParentCategoryId], [Status])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2); 
+2023-07-30 22:34:03.5209||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 22:34:03.5265||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.Save (AgirSaglam.Api) in 1913.9033ms 
+2023-07-30 22:34:03.5265||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.Save (AgirSaglam.Api)' 
+2023-07-30 22:34:03.5424||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7119/api/Category/Save application/json 75 - 200 - application/json;+charset=utf-8 1971.9611ms 
+2023-07-30 22:34:48.5607||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Category/Save application/json 83 
+2023-07-30 22:34:48.5607||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.Save (AgirSaglam.Api)' 
+2023-07-30 22:34:48.5607||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Save", controller = "Category"}. Executing controller action with signature System.Object Save(System.Object) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:34:48.5812||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tblCategory] ([Name], [ParentCategoryId], [Status])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2); 
+2023-07-30 22:34:48.5812||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 22:34:48.5812||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.Save (AgirSaglam.Api) in 17.8762ms 
+2023-07-30 22:34:48.5812||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.Save (AgirSaglam.Api)' 
+2023-07-30 22:34:48.5812||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7119/api/Category/Save application/json 83 - 200 - application/json;+charset=utf-8 23.8578ms 
+2023-07-30 22:35:14.5385||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Category/Save application/json 88 
+2023-07-30 22:35:14.5385||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.Save (AgirSaglam.Api)' 
+2023-07-30 22:35:14.5385||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Save", controller = "Category"}. Executing controller action with signature System.Object Save(System.Object) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:35:14.6244||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [tblCategory] SET [Name] = @p0, [ParentCategoryId] = @p1, [Status] = @p2
+OUTPUT 1
+WHERE [Id] = @p3; 
+2023-07-30 22:35:14.6244||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 22:35:14.6244||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.Save (AgirSaglam.Api) in 84.0033ms 
+2023-07-30 22:35:14.6244||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.Save (AgirSaglam.Api)' 
+2023-07-30 22:35:14.6244||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7119/api/Category/Save application/json 88 - 200 - application/json;+charset=utf-8 88.2326ms 
+2023-07-30 22:40:22.4381||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-07-30 22:40:22.5017||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-07-30 22:40:22.5017||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-30 22:40:22.5080||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-30 22:40:22.5080||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-07-30 22:40:22.6636||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-07-30 22:40:22.8950||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 232.6987ms 
+2023-07-30 22:40:22.9494||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-07-30 22:40:22.9494||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 4.4628ms 
+2023-07-30 22:40:23.2182||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-07-30 22:40:23.2445||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.2322ms 
+2023-07-30 22:40:23.8745||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-07-30 22:40:24.0135||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 138.9865ms 
+2023-07-30 22:40:38.3977||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-07-30 22:40:38.3977||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 8.3312ms 
+2023-07-30 22:40:38.4258||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-07-30 22:40:38.4258||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-07-30 22:40:38.4258||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 0.6799ms 
+2023-07-30 22:40:38.4354||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 9.0978ms 
+2023-07-30 22:40:39.4203||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-07-30 22:40:39.4203||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.5489ms 
+2023-07-30 22:41:32.2389||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7119/api/Category/Delete?id=14 - 0 
+2023-07-30 22:41:32.2455||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.Delete (AgirSaglam.Api)' 
+2023-07-30 22:41:32.2774||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Delete", controller = "Category"}. Executing controller action with signature System.Object Delete(Int32) on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-07-30 22:41:33.1146||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-07-30 22:41:33.9259||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (56ms) [Parameters=[@__categoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+DELETE FROM [t]
+FROM [tblCategory] AS [t]
+WHERE [t].[Id] = @__categoryId_0 
+2023-07-30 22:41:33.9404||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-07-30 22:41:33.9470||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.Delete (AgirSaglam.Api) in 1665.8693ms 
+2023-07-30 22:41:33.9470||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.Delete (AgirSaglam.Api)' 
+2023-07-30 22:41:33.9470||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7119/api/Category/Delete?id=14 - 0 - 200 - application/json;+charset=utf-8 1717.4661ms 
