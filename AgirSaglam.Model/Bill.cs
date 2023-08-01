@@ -17,6 +17,7 @@ namespace AgirSaglam.Model
         public string Email { get; set; }
         public string PhoneNo { get; set; }
         public string TcNo { get; set; }
+        public int UserId { get; set; }
 
     }
 }

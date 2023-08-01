@@ -16,9 +16,9 @@ namespace AgirSaglam.Model
         public string Explanation { get; set; }
         public DateTime Date { get; set; }
         public decimal Point { get; set; }
-        public string Answer { get; set; }
-        public bool Status { get; set; }
-        public DateTime StatusDate { get; set; }
-        public int ConfirmUserId { get; set; }
+        public string? Answer { get; set; }
+        public bool? Status { get; set; }
+        public DateTime? StatusDate { get; set; }
+        public int? ConfirmUserId { get; set; }
     }
 }

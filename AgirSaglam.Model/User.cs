@@ -14,12 +14,13 @@ namespace AgirSaglam.Model
         public string UserName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public DateTime CreateDate { get; set; }
-        public DateTime UpdateDate { get; set; }
+        public DateTime? CreateDate { get; set; }
+        public DateTime? UpdateDate { get; set; }
         public bool EmailConfirm { get; set; }
-        public DateTime EmailConfirmDate { get; set; }
+        public DateTime? EmailConfirmDate { get; set; }
         public bool Status { get; set; }
         public int RoleId { get; set; }
         public int AdressId { get; set; }
+  
     }
 }
