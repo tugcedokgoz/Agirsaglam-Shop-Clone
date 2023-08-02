@@ -20,5 +20,20 @@ namespace AgirSaglam.Repository
         {
             RepositoryContext.Categories.Where(r => r.Id == categoryId).ExecuteDelete();
         }
+
+        // categoryId'ye göre PropertyGroup listesini getirme
+        public List<PropertyGroup> GetPropertyGroupsByCategoryId(int categoryId)
+        {
+            return RepositoryContext.CategoryPropertyGroups
+                .Where(cpg => cpg.CategoryId == categoryId)
+                .Join(RepositoryContext.PropertyGroups,
+                    cpg => cpg.GroupId,
+                    pg => pg.Id,
+                    (cpg, pg) => pg)
+                .ToList();
+        }
+
+
+
     }
 }

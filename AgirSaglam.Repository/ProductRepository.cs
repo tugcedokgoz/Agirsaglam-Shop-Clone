@@ -29,5 +29,27 @@ namespace AgirSaglam.Repository
         {
             RepositoryContext.Products.Where(r => r.Id == productId).ExecuteDelete();
         }
+
+        // productId'ye göre ürüne ait özellikleri listeleme
+        public List<Property> GetPropertiesByProductId(int productId)
+        {
+            var product = RepositoryContext.Products
+                .Where(p => p.Id == productId)
+                .FirstOrDefault();
+
+            if (product == null)
+                return new List<Property>();
+
+            var propertyIds = RepositoryContext.ProductProperties
+                .Where(pp => pp.ProductId == productId)
+                .Select(pp => pp.PropertyId)
+                .ToList();
+
+            var properties = RepositoryContext.Properties
+                .Where(p => propertyIds.Contains(p.Id))
+                .ToList();
+
+            return properties;
+        }
     }
 }

@@ -98,5 +98,17 @@ namespace AgirSaglam.Api.Controllers
                 message = "Deleted"
             };
         }
+
+        // ürün id'sine göre ilgili özellikleri getirme
+        [HttpGet("{productId}/Properties")]
+        public dynamic GetPropertiesByProductId(int productId)
+        {
+            var properties = repo.ProductRepository.GetPropertiesByProductId(productId);
+            return new
+            {
+                success = true,
+                data = properties
+            };
+        }
     }
 }

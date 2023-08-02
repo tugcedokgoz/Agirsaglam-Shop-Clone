@@ -123,5 +123,19 @@ namespace AgirSaglam.Api.Controllers
             };
         }
 
+        // categoryId'ye göre PropertyGroup listesini getiren method
+        [HttpGet("{categoryId}/PropertyGroups")]
+        public dynamic GetPropertyGroupsByCategoryId(int categoryId)
+        {
+            var propertyGroups = repo.CategoryRepository.GetPropertyGroupsByCategoryId(categoryId);
+
+            // dynamic olarak dönüş yapalım
+            return new
+            {
+                success = true,
+                data = propertyGroups
+            };
+        }
+
     }
 }
