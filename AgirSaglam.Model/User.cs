@@ -20,7 +20,9 @@ namespace AgirSaglam.Model
         public DateTime? EmailConfirmDate { get; set; }
         public bool Status { get; set; }
         public int RoleId { get; set; }
+        public Role Role { get; set; }
         public int AdressId { get; set; }
-  
+        public Adress Adress { get; set; }
+
     }
 }

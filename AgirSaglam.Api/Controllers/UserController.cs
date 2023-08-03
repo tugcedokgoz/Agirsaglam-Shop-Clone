@@ -18,26 +18,31 @@ namespace AgirSaglam.Api.Controllers
 
         //tüm ürünleri getirme
         [HttpGet("GetUsers")]
-        public dynamic GetUser()
+        public dynamic GetUsers()
         {
-            // throw new ApplicationException("test hata");
-
-            List<User> items;
-            if (!cache.TryGetValue("GetUsers", out items))
+            List<User> users;
+            if (!cache.TryGetValue("GetUsers", out users))
             {
-                items = repo.UserRepository.FindAll().ToList<User>();
+                users = repo.UserRepository.FindAll().ToList<User>();
 
-                cache.Set("GetUsers", items, DateTimeOffset.UtcNow.AddSeconds(20));
+                foreach (var user in users)
+                {
+                    var (role, adress) = repo.UserRepository.GetUserRoleAndAdressById(user.Id).Result;
+                    user.Role = role;
+                    user.Adress = adress;
+                }
 
+                cache.Set("GetUsers", users, DateTimeOffset.UtcNow.AddSeconds(20));
                 cache.Remove("GetUsers");
             }
 
             return new
             {
-                sucess = true,
-                data = items
+                success = true,
+                data = users
             };
         }
+
 
 
         //kaydetme-update
@@ -97,15 +102,45 @@ namespace AgirSaglam.Api.Controllers
 
         //id ye göre getirme
         [HttpGet("{id}")]
-        public dynamic Get(int id)
+        public async Task<IActionResult> Get(int id)
         {
-            User items = repo.UserRepository.FindByCondition(a => a.Id == id).SingleOrDefault<User>();
-            return new
+            User user = await repo.UserRepository.GetUserById(id);
+            if (user == null)
             {
-                sucess = true,
-                data = items
-            };
+                return NotFound();
+            }
+
+            return Ok(new
+            {
+                success = true,
+                data = new
+                {
+                    user.Id,
+                    user.UserName,
+                    user.Email,
+                    user.CreateDate,
+                    user.UpdateDate,
+                    user.EmailConfirm,
+                    user.EmailConfirmDate,
+                    user.Status,
+                    Adress = new
+                    {
+                        user.Adress?.Id,
+                        user.Adress?.City,
+                        user.Adress?.District,
+                        user.Adress?.PostCode
+                        
+                    },
+                    Role = new
+                    {
+                        user.Role?.Id,
+                        user.Role?.Name
+                     
+                    }
+                }
+            });
         }
+
 
         //kullanıcı id ye rol getirme
 

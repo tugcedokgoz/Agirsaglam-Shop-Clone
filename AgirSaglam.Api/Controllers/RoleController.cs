@@ -96,7 +96,6 @@ namespace AgirSaglam.Api.Controllers
         }
 
         //roleId ye göre user getirme
-
         [HttpGet("{roleId}/Users")]
         public async Task<IActionResult> GetUsersByRoleId(int roleId)
         {
@@ -106,11 +105,32 @@ namespace AgirSaglam.Api.Controllers
                 return NotFound();
             }
 
+            var usersWithAdress = users.Select(user => new
+            {
+                user.Id,
+                user.UserName,
+                user.Email,
+                user.CreateDate,
+                user.UpdateDate,
+                user.EmailConfirm,
+                user.EmailConfirmDate,
+                user.Status,
+                Adress = new
+                {
+                    user.Adress?.Id,
+                    user.Adress?.City,
+                    user.Adress?.District,
+                    user.Adress?.PostCode
+                    // Adress nesnesinin diğer verilerini buraya ekleyebilirsiniz
+                }
+            }).ToList();
+
             return Ok(new
             {
                 success = true,
-                data = users
+                data = usersWithAdress
             });
         }
+
     }
 }

@@ -22,10 +22,12 @@ namespace AgirSaglam.Repository
         public async Task<List<User>> GetUsersByRoleId(int roleId)
         {
             var users = await RepositoryContext.Users
+                .Include(u => u.Adress) // Adress nesnesini Include ederek ilişkili veriyi getirin
                 .Where(u => u.RoleId == roleId)
                 .ToListAsync();
 
             return users;
         }
+
     }
 }

@@ -17,6 +17,7 @@ namespace AgirSaglam.Model
         public int Amount { get; set; }
         public string? Description { get; set; }
         public string? Image { get; set; }
+
         public virtual ICollection<Category> Categories { get; set; }
         public virtual ICollection<ProductCategory> ProductCategories { get; set; }
     }

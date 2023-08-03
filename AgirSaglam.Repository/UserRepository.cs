@@ -14,6 +14,21 @@ namespace AgirSaglam.Repository
         {
 
         }
+        //tüm kullanıcıları listeleme
+        public async Task<(Role Role, Adress Adress)> GetUserRoleAndAdressById(int userId)
+        {
+            var user = await RepositoryContext.Users
+                .Include(u => u.Role) // Role nesnesini Include ederek ilişkili veriyi getirin
+                .Include(u => u.Adress) // Adress nesnesini Include ederek ilişkili veriyi getirin
+                .Where(u => u.Id == userId)
+                .FirstOrDefaultAsync();
+
+            if (user == null)
+                return (null, null);
+
+            return (user.Role, user.Adress);
+        }
+
         //silme
         public void RemoveUser(int userId)
         {
@@ -52,6 +67,19 @@ namespace AgirSaglam.Repository
 
             return adress;
         }
+
+        //userId göre listeleme
+        public async Task<User> GetUserById(int userId)
+        {
+            var user = await RepositoryContext.Users
+                .Include(u => u.Role) // Role nesnesini Include ederek ilişkili veriyi getirin
+                .Include(u => u.Adress) // Adress nesnesini Include ederek ilişkili veriyi getirin
+                .Where(u => u.Id == userId)
+                .FirstOrDefaultAsync();
+
+            return user;
+        }
+
 
     }
 }
