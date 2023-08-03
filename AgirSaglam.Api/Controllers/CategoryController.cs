@@ -2,6 +2,7 @@
 using AgirSaglam.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using Newtonsoft.Json.Linq;
 
@@ -18,14 +19,14 @@ namespace AgirSaglam.Api.Controllers
         //tüm kategorileri getiren 
 
         [HttpGet("GetCategories")]
-        public dynamic GetCategory()
+        public dynamic GetCategories()
         {
-            // throw new ApplicationException("test hata");
-
             List<Category> items;
             if (!cache.TryGetValue("GetCategory", out items))
             {
-                items = repo.CategoryRepository.FindAll().ToList<Category>();
+                items = repo.CategoryRepository.FindAll()
+                    .Include(c => c.ParentCategory) // Include parent category data
+                    .ToList<Category>();
 
                 cache.Set("GetCategory", items, DateTimeOffset.UtcNow.AddSeconds(20));
 

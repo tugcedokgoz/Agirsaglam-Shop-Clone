@@ -2,6 +2,7 @@
 using AgirSaglam.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using Newtonsoft.Json.Linq;
 using System.Linq;
@@ -19,16 +20,14 @@ namespace AgirSaglam.Api.Controllers
         [HttpGet("GetBills")]
         public dynamic GetBill()
         {
-            // throw new ApplicationException("test hata");
-
             List<Bill> items;
             if (!cache.TryGetValue("GetBills", out items))
             {
-                items = repo.BillRepository.FindAll().ToList<Bill>();
+                items = repo.BillRepository.FindAll()
+                    .Include(b => b.Adress) // Include metodu ile Adress'i yanında getiriyoruz
+                    .ToList();
 
                 cache.Set("GetBills", items, DateTimeOffset.UtcNow.AddSeconds(20));
-
-                cache.Remove("GetBills");
             }
 
             return new
@@ -37,6 +36,7 @@ namespace AgirSaglam.Api.Controllers
                 data = items
             };
         }
+
 
 
         //kaydetme-update

@@ -2,6 +2,7 @@
 using AgirSaglam.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using Newtonsoft.Json.Linq;
 using System.Linq;
@@ -21,21 +22,46 @@ namespace AgirSaglam.Api.Controllers
         [HttpGet("GetOrder")]
         public dynamic GetOrder()
         {
-            // throw new ApplicationException("test hata");
-
-            List<Order> items;
-            if (!cache.TryGetValue("GetOrder", out items))
+            var items = cache.GetOrCreate("GetOrder", entry =>
             {
-                items = repo.OrderRepository.FindAll().ToList<Order>();
-
-                cache.Set("GetOrder", items, DateTimeOffset.UtcNow.AddSeconds(20));
-
-                cache.Remove("GetOrder");
-            }
+                entry.SetAbsoluteExpiration(TimeSpan.FromSeconds(20));
+                return repo.OrderRepository.FindAll()
+                    .Include(c => c.User)
+                    .Include(c => c.Product)
+                    .Include(c => c.Bill)
+                    .Select(c => new
+                    {
+                        c.Id,
+                        c.UserId,
+                        c.ProductId,
+                        c.BillId,
+                        c.OrderNo,
+                        c.OrderDate,
+                        c.OrderAmount,
+                        c.CargoNo,
+                        User = new
+                        {
+                            c.User.Id,
+                            c.User.UserName,
+                        },
+                        Product = new
+                        {
+                            c.Product.Id,
+                            c.Product.Name,
+                        },
+                        Bill = new
+                        {
+                            c.Bill.Id,
+                            c.Bill.Name,
+                            c.Bill.Surname,
+                        }
+                    })
+                    .ToList();
+            });
 
             return new
             {
-                sucess = true,
+                success = true,
                 data = items
             };
         }
@@ -98,11 +124,13 @@ namespace AgirSaglam.Api.Controllers
             Order item;
             if (!cache.TryGetValue($"GetOrderByOrderNo_{orderNo}", out item))
             {
-                item = repo.OrderRepository.FindByCondition(o => o.OrderNo == orderNo).FirstOrDefault();
+                item = repo.OrderRepository.FindByCondition(o => o.OrderNo == orderNo)
+                    .Include(o => o.User)    // User ilişkisel verisini yükleme
+                    .Include(o => o.Product) // Product ilişkisel verisini yükleme
+                    .Include(o => o.Bill)    // Bill ilişkisel verisini yükleme
+                    .FirstOrDefault();
 
                 cache.Set($"GetOrderByOrderNo_{orderNo}", item, DateTimeOffset.UtcNow.AddSeconds(20));
-
-                cache.Remove($"GetOrderByOrderNo_{orderNo}");
             }
 
             if (item != null)
@@ -110,7 +138,38 @@ namespace AgirSaglam.Api.Controllers
                 return new
                 {
                     success = true,
-                    data = item
+                    data = new
+                    {
+                        item.Id,
+                        item.OrderNo,
+                        item.UserId,
+                        item.ProductId,
+                        item.BillId,
+                        // Diğer Order özelliklerini ekleyin
+                        // Örneğin: item.OrderDate, item.Quantity, vs.
+                        User = new
+                        {
+                            item.User.Id,
+                            item.User.UserName,
+                            // Diğer User özelliklerini ekleyin
+                            // Örneğin: item.User.FirstName, item.User.LastName, vs.
+                        },
+                        Product = new
+                        {
+                            item.Product.Id,
+                            item.Product.Name,
+                            // Diğer Product özelliklerini ekleyin
+                            // Örneğin: item.Product.Description, item.Product.Price, vs.
+                        },
+                        Bill = new
+                        {
+                            item.Bill.Id,
+                            item.Bill.Name,
+                            item.Bill.Surname,
+                            // Diğer Bill özelliklerini ekleyin
+                            // Örneğin: item.Bill.PaymentDate, item.Bill.IsPaid, vs.
+                        }
+                    }
                 };
             }
             else
@@ -128,21 +187,65 @@ namespace AgirSaglam.Api.Controllers
         [HttpGet("GetOrdersByUserId")]
         public dynamic GetOrdersByUserId(int userId)
         {
-            List<Order> items;
-            if (!cache.TryGetValue($"GetOrdersByUserId_{userId}", out items))
+            Order item;
+            if (!cache.TryGetValue($"GetOrdersByUserId{userId}", out item))
             {
-                items = repo.OrderRepository.FindByCondition(o => o.UserId == userId).ToList();
+                item = repo.OrderRepository.FindByCondition(o => o.UserId == userId)
+                    .Include(o => o.User)    // User ilişkisel verisini yükleme
+                    .Include(o => o.Product) // Product ilişkisel verisini yükleme
+                    .Include(o => o.Bill)    // Bill ilişkisel verisini yükleme
+                    .FirstOrDefault();
 
-                cache.Set($"GetOrdersByUserId_{userId}", items, DateTimeOffset.UtcNow.AddSeconds(20));
-
-                cache.Remove($"GetOrdersByUserId_{userId}");
+                cache.Set($"GetOrdersByUserId{userId}", item, DateTimeOffset.UtcNow.AddSeconds(20));
             }
 
-            return new
+            if (item != null)
             {
-                success = true,
-                data = items
-            };
+                return new
+                {
+                    success = true,
+                    data = new
+                    {
+                        item.Id,
+                        item.OrderNo,
+                        item.UserId,
+                        item.ProductId,
+                        item.BillId,
+                        // Diğer Order özelliklerini ekleyin
+                        // Örneğin: item.OrderDate, item.Quantity, vs.
+                        User = new
+                        {
+                            item.User.Id,
+                            item.User.UserName,
+                            // Diğer User özelliklerini ekleyin
+                            // Örneğin: item.User.FirstName, item.User.LastName, vs.
+                        },
+                        Product = new
+                        {
+                            item.Product.Id,
+                            item.Product.Name,
+                            // Diğer Product özelliklerini ekleyin
+                            // Örneğin: item.Product.Description, item.Product.Price, vs.
+                        },
+                        Bill = new
+                        {
+                            item.Bill.Id,
+                            item.Bill.Name,
+                            item.Bill.Surname,
+                            // Diğer Bill özelliklerini ekleyin
+                            // Örneğin: item.Bill.PaymentDate, item.Bill.IsPaid, vs.
+                        }
+                    }
+                };
+            }
+            else
+            {
+                return new
+                {
+                    success = false,
+                    message = "Order not found"
+                };
+            }
         }
 
 

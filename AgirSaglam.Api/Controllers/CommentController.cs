@@ -2,6 +2,7 @@
 using AgirSaglam.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using Newtonsoft.Json.Linq;
 using System.Linq;
@@ -20,24 +21,45 @@ namespace AgirSaglam.Api.Controllers
         [HttpGet("GetComment")]
         public dynamic GetComment()
         {
-            // throw new ApplicationException("test hata");
-
-            List<Comment> items;
-            if (!cache.TryGetValue("GetComment", out items))
+            var items = cache.GetOrCreate("GetComment", entry =>
             {
-                items = repo.CommentRepository.FindAll().ToList<Comment>();
-
-                cache.Set("GetComment", items, DateTimeOffset.UtcNow.AddSeconds(20));
-
-                cache.Remove("GetComment");
-            }
+                entry.SetAbsoluteExpiration(TimeSpan.FromSeconds(20));
+                return repo.CommentRepository.FindAll()
+                    .Include(c => c.User)
+                    .Include(c => c.Product)
+                    .Select(c => new
+                    {
+                        c.Id,
+                        c.UserId,
+                        c.ProductId,
+                        c.Explanation,
+                        c.Date,
+                        c.Point,
+                        c.Answer,
+                        c.Status,
+                        c.StatusDate,
+                        c.ConfirmUserId,
+                        User = new
+                        {
+                            c.User.Id,
+                            c.User.UserName,
+                        },
+                        Product = new
+                        {
+                            c.Product.Id,
+                            c.Product.Name,
+                        }
+                    })
+                    .ToList();
+            });
 
             return new
             {
-                sucess = true,
+                success = true,
                 data = items
             };
         }
+
 
         //kaydetme-update
 
@@ -97,17 +119,97 @@ namespace AgirSaglam.Api.Controllers
         [HttpGet("GetCommentsByUserId/{userId}")]
         public async Task<IActionResult> GetCommentsByUserId(int userId)
         {
+
             var comments = await repo.CommentRepository.GetCommentsByUserId(userId);
+
             if (comments == null || comments.Count == 0)
             {
                 return NotFound();
             }
 
+            var commentsWithRelatedProperties = comments.Select(c => new
+            {
+                c.Id,
+                c.UserId,
+                c.ProductId,
+                c.Explanation,
+                c.Date,
+                c.Point,
+                c.Answer,
+                c.Status,
+                c.StatusDate,
+                c.ConfirmUserId,
+                User = c.User != null ? new
+                {
+                    c.User.Id,
+                    c.User.UserName,
+                    // Diğer User özelliklerini ekleyin
+                    // Örneğin: c.User.FirstName, c.User.LastName, vs.
+                } : null,
+                Product = c.Product != null ? new
+                {
+                    c.Product.Id,
+                    c.Product.Name,
+                    // Diğer Product özelliklerini ekleyin
+                    // Örneğin: c.Product.Description, c.Product.Price, vs.
+                } : null
+            });
+
             return Ok(new
             {
                 success = true,
-                data = comments
+                data = commentsWithRelatedProperties
             });
         }
+
+
+
+        [HttpGet("GetCommentsByProductId/{productId}")]
+        public async Task<IActionResult> GetCommentsByProductId(int productId)
+        {
+            var comments = await repo.CommentRepository.GetCommentsByProductId(productId);
+
+            if (comments == null || comments.Count == 0)
+            {
+                return NotFound();
+            }
+
+            var commentsWithRelatedProperties = comments.Select(c => new
+            {
+                c.Id,
+                c.UserId,
+                c.ProductId,
+                c.Explanation,
+                c.Date,
+                c.Point,
+                c.Answer,
+                c.Status,
+                c.StatusDate,
+                c.ConfirmUserId,
+                User = c.User != null ? new
+                {
+                    c.User.Id,
+                    c.User.UserName,
+                    // Diğer User özelliklerini ekleyin
+                    // Örneğin: c.User.FirstName, c.User.LastName, vs.
+                } : null,
+                Product = c.Product != null ? new
+                {
+                    c.Product.Id,
+                    c.Product.Name,
+                    // Diğer Product özelliklerini ekleyin
+                    // Örneğin: c.Product.Description, c.Product.Price, vs.
+                } : null
+            });
+
+            return Ok(new
+            {
+                success = true,
+                data = commentsWithRelatedProperties
+            });
+        }
+
+
+
     }
 }

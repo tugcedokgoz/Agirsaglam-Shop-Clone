@@ -15,17 +15,30 @@ namespace AgirSaglam.Api.Controllers
         {
             
         }
-        //kategoriId göre ürün getirme
-        [HttpGet("api/{categoryId}")]
-        public dynamic Products(int categoryId)
+
+        // categoryId'ye göre ürünleri getirme
+        //[HttpGet("GetProductsByCategoryId/{categoryId}")]
+        //public dynamic GetProductsByCategoryId(int categoryId)
+        //{
+        //    var products = repo.ProductRepository.GetProductsByCategoryId(categoryId);
+        //    return new
+        //    {
+        //        success = true,
+        //        data = products
+        //    };
+        //}
+
+        [HttpGet("GetProductsByCategoryId/{categoryId}")]
+        public dynamic GetProductsByCategoryId(int categoryId)
         {
-            List<Product> items = repo.ProductRepository.ProductGetByCategoryId(categoryId);
+            var products = repo.ProductRepository.GetProductsByCategoryId(categoryId);
             return new
             {
                 success = true,
-                data = items
+                data = products
             };
         }
+
 
         //tüm ürünleri getirme
         [HttpGet("GetProducts")]

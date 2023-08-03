@@ -20,9 +20,28 @@ namespace AgirSaglam.Repository
             RepositoryContext.Orders.Where(r => r.Id == orderId).ExecuteDelete();
         }
         // UserId'ye göre siparişleri getirme
-        public List<Order> GetOrdersByUserId(int userId)
+        public async Task<List<Order>> GetOrderByUserId(int userId)
         {
-            return RepositoryContext.Orders.Where(o => o.UserId == userId).ToList();
+            var comments = await RepositoryContext.Orders
+                .Where(c => c.UserId == userId)
+                .Include(c => c.User)    // User ilişkisel verisini yükleme
+                .Include(c => c.Product) // Product ilişkisel verisini yükleme
+                .Include(c => c.Bill) // Bill ilişkisel verisini yükleme
+                .ToListAsync();
+
+            return comments;
+        }
+        //orderno ya göre sipariş getirme
+        public async Task<List<Order>> GetOrderByOrderNo(int orderNo)
+        {
+            var comments = await RepositoryContext.Orders
+                .Where(c => c.OrderNo == orderNo)
+                .Include(c => c.User)    // User ilişkisel verisini yükleme
+                .Include(c => c.Product) // Product ilişkisel verisini yükleme
+                .Include(c => c.Bill) // Bill ilişkisel verisini yükleme
+                .ToListAsync();
+
+            return comments;
         }
     }
 }

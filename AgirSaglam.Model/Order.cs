@@ -14,9 +14,12 @@ namespace AgirSaglam.Model
         public int OrderNo { get; set; }
         public DateTime OrderDate { get; set; }
         public int UserId { get; set; }
+        public User User { get; set; }
         public int ProductId { get; set; }
+        public Product Product { get; set; }    
         public int OrderAmount { get; set; }
         public int BillId { get; set; }
+        public Bill Bill { get; set; }
         public string CargoNo { get; set; }
     }
 }

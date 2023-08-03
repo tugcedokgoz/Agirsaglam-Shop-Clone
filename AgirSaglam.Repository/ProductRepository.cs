@@ -12,17 +12,44 @@ namespace AgirSaglam.Repository
     {
         public ProductRepository(RepositoryContext context) : base(context)
         {
+          
+        }
 
-        }
-        //kategori id göre ürün listeleme
-        public List<Product> ProductGetByCategoryId(int categoryId)
+        //kategori id ye göre
+        //public List<Product> GetProductsByCategoryId(int categoryId)
+        //{
+        //    var productIds = RepositoryContext.ProductCategories
+        //        .Where(pc => pc.CategoryId == categoryId)
+        //        .Select(pc => pc.ProductId)
+        //        .ToList();
+
+        //    var products = RepositoryContext.Products
+        //        .Where(p => productIds.Contains(p.Id))
+        //        .ToList();
+
+        //    return products;
+        //}
+
+        public List<object> GetProductsByCategoryId(int categoryId)
         {
-            List<Product> items = (from u in RepositoryContext.Products
-                                join k in RepositoryContext.ProductCategories on u.Id equals k.ProductId
-                                where k.CategoryId == categoryId
-                                select u).ToList<Product>();
-            return items;
+            var products = RepositoryContext.ProductCategories
+                .Where(pc => pc.CategoryId == categoryId)
+                .Select(pc => new
+                {
+                    Id = pc.Product.Id,
+                    Name = pc.Product.Name,
+                    Price = pc.Product.Price,
+                    DiscountPrice = pc.Product.DiscountPrice,
+                    Amount = pc.Product.Amount,
+                    Description = pc.Product.Description,
+                    Image = pc.Product.Image,
+                    CategoryName = pc.Category.Name
+                })
+                .ToList();
+
+            return products.Cast<object>().ToList();//tipi bilinmeyen yani categoryname için
         }
+
 
         //silme
         public void RemoveProduct(int productId)
