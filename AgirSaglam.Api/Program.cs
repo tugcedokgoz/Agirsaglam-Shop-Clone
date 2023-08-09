@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 //NLog
@@ -34,9 +35,42 @@ builder.Services.AddControllers().AddJsonOptions(options => options.JsonSerializ
 
 //cash için
 builder.Services.AddMemoryCache();
+
+
+
+
 /*
 * JWT Authentication için eklenmesi gereken kodlar
 */
+
+
+//builder.Services.AddAuthentication(options =>
+//{
+//    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+//    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+//    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+//}).AddJwtBearer(options =>
+//{
+//    options.Events = new JwtBearerEvents
+//    {
+//        OnAuthenticationFailed = context =>
+//        {
+//            Console.WriteLine("Authentication failed.");
+//            return Task.CompletedTask;
+//        }
+//    };
+//    options.TokenValidationParameters = new TokenValidationParameters
+//    {
+//        ValidateIssuer = false,
+//        ValidateAudience = false,
+//        ValidateLifetime = true,
+//        ValidateIssuerSigningKey = true,
+//        ValidIssuer = jwtSettings.Issuer,
+//        ValidAudience = jwtSettings.Audience,
+//        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.Key))
+//    };
+//});
+
 
 builder.Services.AddAuthentication(x =>
 {
@@ -59,7 +93,15 @@ builder.Services.AddAuthentication(x =>
 //json serialization da reference handler oluþursa onu ignore et
 builder.Services.AddControllers().AddJsonOptions(options => options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
-
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
 
 
 var app = builder.Build();
@@ -79,11 +121,14 @@ else
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+
 app.UseAuthentication();
 
 
+app.UseAuthorization();
 
+
+app.UseCors();
 
 app.MapControllers();
 
