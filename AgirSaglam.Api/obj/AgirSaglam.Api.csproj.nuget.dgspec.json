@@ -49,6 +49,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "NLog": {
               "target": "Package",
               "version": "[5.2.2, )"
@@ -66,6 +74,10 @@
               "version": "[13.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
               "version": "[6.5.0, )"
             }

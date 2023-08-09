@@ -85,3 +85,7 @@ C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\AgirSaglam.Api.pdb
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\AgirSaglam.Api.genruntimeconfig.cache
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\ref\AgirSaglam.Api.dll
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -1,4 +1,5 @@
-﻿using AgirSaglam.Model;
+﻿using AgirSaglam.Model.Models;
+using AgirSaglam.Model.View;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,14 @@ namespace AgirSaglam.Repository
             this.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
         //classlar burada tanımlanır --> Dependencies model referance eklendi
+        protected override void OnModelCreating(ModelBuilder modelBuilder)//modeller oluşturulurken kurallar oluşturulur.
+        {
+            modelBuilder.Entity<V_AktiveUsers>().HasNoKey();
+            modelBuilder.Entity<User>().Property(d => d.CreateDate).HasDefaultValue();
+
+        }
+
+
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<Adress> Adresses { get; set; }
@@ -30,5 +39,6 @@ namespace AgirSaglam.Repository
         public DbSet<PropertyGroup> PropertyGroups { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<V_AktiveUsers> AktiveUsers { get; set; }
     }
 }

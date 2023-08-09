@@ -3,6 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using NLog.Extensions.Logging;
 using NLog;
 using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,11 +18,6 @@ builder.Services.AddLogging(loggingBuilder =>
     loggingBuilder.ClearProviders();
     loggingBuilder.AddNLog();
 });
-
-
-
-
-
 //database
 builder.Services.AddDbContext<RepositoryContext>(opts => opts.UseSqlServer("Data Source=DESKTOP-KSSIRCE; Initial Catalog=AgirSaglamDb; Integrated Security=true; TrustServerCertificate=True"));
 builder.Services.AddScoped<RepositoryWrapper, RepositoryWrapper>();
@@ -36,6 +34,33 @@ builder.Services.AddControllers().AddJsonOptions(options => options.JsonSerializ
 
 //cash için
 builder.Services.AddMemoryCache();
+/*
+* JWT Authentication için eklenmesi gereken kodlar
+*/
+
+builder.Services.AddAuthentication(x =>
+{
+    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(o =>
+{
+    var Key = Encoding.UTF8.GetBytes("AgirSaglamShopCloneAHLEgitim");
+    o.SaveToken = true;
+    o.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = false,
+        ValidateAudience = false,
+        ValidateIssuerSigningKey = true,
+        ValidateLifetime = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Key)
+    };
+});
+
+//json serialization da reference handler oluþursa onu ignore et
+builder.Services.AddControllers().AddJsonOptions(options => options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
+
+
 
 var app = builder.Build();
 
@@ -55,6 +80,10 @@ else
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+app.UseAuthentication();
+
+
+
 
 app.MapControllers();
 

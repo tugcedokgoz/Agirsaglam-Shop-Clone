@@ -1,4 +1,4 @@
-﻿using AgirSaglam.Model;
+﻿using AgirSaglam.Model.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

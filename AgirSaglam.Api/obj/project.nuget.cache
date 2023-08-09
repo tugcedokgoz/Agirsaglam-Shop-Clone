@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "1B/TMeWFJmA0cXiYSHPAePD26sn+zy0FUkhnaOsV8TUbG/YIBqcHJp9AGh1JeGvtMHhDwxSrXjoseAr3d42MfA==",
+  "dgSpecHash": "Xo/qhvdjq8VWIujf5lwZn0t/ZBgY0hn1s/diYKOi2+IgmmAMCofrknIegxe8/N+MpwyXYXY+DL6hs48WpqrbAg==",
   "success": true,
   "projectFilePath": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\AgirSaglam.Api\\AgirSaglam.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tugcedokgoz\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\tugcedokgoz\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\tugcedokgoz\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\tugcedokgoz\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\tugcedokgoz\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
+    "C:\\Users\\tugcedokgoz\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.0\\microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
     "C:\\Users\\tugcedokgoz\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\tugcedokgoz\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\tugcedokgoz\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.2\\microsoft.data.sqlclient.5.0.2.nupkg.sha512",

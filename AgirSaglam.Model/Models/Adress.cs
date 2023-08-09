@@ -5,13 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AgirSaglam.Model
+namespace AgirSaglam.Model.Models
 {
-    [Table("tblProductProperty")]
-    public class ProductProperty
+    [Table("tblAdress")]
+    public class Adress
     {
         public int Id { get; set; }
-        public int ProductId { get; set; }
-        public int PropertyId { get; set; }
+        public string City { get; set; }
+        public string District { get; set; }
+        public string PostCode { get; set; }
     }
 }

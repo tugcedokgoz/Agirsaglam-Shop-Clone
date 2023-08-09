@@ -1,6 +1,11 @@
-﻿using AgirSaglam.Model;
+﻿using AgirSaglam.Api.Code.Validations;
+using AgirSaglam.Model.Models;
+using AgirSaglam.Model.View;
 using AgirSaglam.Repository;
+using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 using Newtonsoft.Json.Linq;
@@ -44,11 +49,8 @@ namespace AgirSaglam.Api.Controllers
         }
 
 
-
         //kaydetme-update
-
         [HttpPost("Save")]
-
         public dynamic Save([FromBody] dynamic model)
         {
             dynamic json = JObject.Parse(model.GetRawText());
@@ -81,7 +83,6 @@ namespace AgirSaglam.Api.Controllers
 
 
         //silme
-
         [HttpPost("Delete")]
         public dynamic Delete(int id)
         {
@@ -98,7 +99,6 @@ namespace AgirSaglam.Api.Controllers
                 message = "Deleted"
             };
         }
-
 
         //id ye göre getirme
         [HttpGet("{id}")]
@@ -129,21 +129,19 @@ namespace AgirSaglam.Api.Controllers
                         user.Adress?.City,
                         user.Adress?.District,
                         user.Adress?.PostCode
-                        
+
                     },
                     Role = new
                     {
                         user.Role?.Id,
                         user.Role?.Name
-                     
+
                     }
                 }
             });
         }
 
-
         //kullanıcı id ye rol getirme
-
         [HttpGet("{id}/Role")]
         public async Task<IActionResult> GetUserRoleById(int id)
         {
@@ -161,7 +159,6 @@ namespace AgirSaglam.Api.Controllers
         }
 
         //kullanıcı id ye adress getirme
-
         [HttpGet("{id}/Adress")]
         public async Task<IActionResult> GetUserAdressById(int id)
         {
@@ -176,6 +173,63 @@ namespace AgirSaglam.Api.Controllers
                 success = true,
                 data = userAdress
             });
+        }
+
+        //View Aktif kullanici getirme
+        [Authorize]
+        [HttpGet("AktiveUsers")]
+        public dynamic AktiveUsers()
+        {
+            List<V_AktiveUsers> items = repo.UserRepository.GetAktiveUsers();
+
+            // Nullable alanların kontrolü
+            var filteredItems = items.Where(item =>
+                !string.IsNullOrEmpty(item.Email) &&
+                item.CreateDate != null
+            ).ToList();
+
+            return new
+            {
+                success = true,
+                data = filteredItems
+            };
+        }
+
+
+
+        ////üye ol
+        [HttpPost("SignUp")]
+        public dynamic SignUp([FromBody] dynamic model)
+        {
+            dynamic json = JObject.Parse(model.GetRawText());
+
+            string userName = json.UserName;
+            string password = json.Password;
+
+            User item = new User()
+            {
+                Status = true,
+                UserName = userName,
+                Password = password,
+                RoleId = Enums.Roles.Kullanici
+            };
+            User user=repo.UserRepository.FindByCondition(u=>u.UserName==item.UserName).SingleOrDefault<User>();
+            if (user !=null)
+            {
+                return new
+                {
+                    success = false,
+                    message = "bu kullanıcı adı zaten kullanılıyor."
+                };
+            }
+
+            repo.UserRepository.Create(item);
+            repo.SaveChanges();
+
+            return new
+            {
+                success = true
+            };
         }
     }
 }

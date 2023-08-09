@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AgirSaglam.Model
+namespace AgirSaglam.Model.Models
 {
     [Table("tblBill")]
     public class Bill

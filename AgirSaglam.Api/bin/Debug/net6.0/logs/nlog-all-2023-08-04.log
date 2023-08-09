@@ -1,0 +1,68 @@
+2023-08-04 00:53:44.4011||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-04 00:53:44.4738||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-04 00:53:44.4814||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-04 00:53:44.4814||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-04 00:53:44.4814||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-04 00:53:47.1162||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger - - 
+2023-08-04 00:53:47.4031||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger - - - 301 0 - 294.1840ms 
+2023-08-04 00:53:47.4422||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-04 00:53:47.9464||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/swagger-ui.css - - 
+2023-08-04 00:53:47.9464||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/swagger-ui-bundle.js - - 
+2023-08-04 00:53:47.9464||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/swagger-ui-standalone-preset.js - - 
+2023-08-04 00:53:47.9464||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-04 00:53:47.9619||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 519.6690ms 
+2023-08-04 00:53:47.9933||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 46.6917ms 
+2023-08-04 00:53:48.0337||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2023-08-04 00:53:48.0337||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2023-08-04 00:53:48.0337||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 87.8163ms 
+2023-08-04 00:53:48.0337||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2023-08-04 00:53:48.0376||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/swagger-ui.css - - - 200 144929 text/css 91.2437ms 
+2023-08-04 00:53:48.0376||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 93.2805ms 
+2023-08-04 00:53:48.0799||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-04 00:53:48.0799||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/swagger-ui-standalone-preset.js - - 
+2023-08-04 00:53:48.0799||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 0.6705ms 
+2023-08-04 00:53:48.0993||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2023-08-04 00:53:48.0993||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 21.2781ms 
+2023-08-04 00:53:48.1474||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/swagger-ui-bundle.js - - 
+2023-08-04 00:53:48.1741||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2023-08-04 00:53:48.1741||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 28.4336ms 
+2023-08-04 00:53:48.4924||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-04 00:53:48.8129||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 320.5311ms 
+2023-08-04 00:53:48.9642||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/favicon-32x32.png - - 
+2023-08-04 00:53:48.9642||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+2023-08-04 00:53:48.9642||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/favicon-32x32.png - - - 200 628 image/png 1.3039ms 
+2023-08-04 00:53:49.5950||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-04 00:53:49.9389||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 343.9202ms 
+2023-08-04 00:53:51.5061||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-04 00:53:51.5239||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.8426ms 
+2023-08-04 00:54:10.8954||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/User/GetUsers - - 
+2023-08-04 00:54:10.9140||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.UserController.GetUsers (AgirSaglam.Api)' 
+2023-08-04 00:54:10.9376||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetUsers", controller = "User"}. Executing controller action with signature System.Object GetUsers() on controller AgirSaglam.Api.Controllers.UserController (AgirSaglam.Api). 
+2023-08-04 00:54:12.5662||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-04 00:54:12.5662||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-04 00:54:12.5694||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-04 00:54:14.0311||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (60ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t] 
+2023-08-04 00:54:14.5889||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (93ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName], [t0].[Id], [t0].[Name], [t1].[Id], [t1].[City], [t1].[District], [t1].[PostCode]
+FROM [tblUser] AS [t]
+INNER JOIN [tblRole] AS [t0] ON [t].[RoleId] = [t0].[Id]
+INNER JOIN [tblAdress] AS [t1] ON [t].[AdressId] = [t1].[Id]
+WHERE [t].[Id] = @__userId_0 
+2023-08-04 00:54:14.6334||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName], [t0].[Id], [t0].[Name], [t1].[Id], [t1].[City], [t1].[District], [t1].[PostCode]
+FROM [tblUser] AS [t]
+INNER JOIN [tblRole] AS [t0] ON [t].[RoleId] = [t0].[Id]
+INNER JOIN [tblAdress] AS [t1] ON [t].[AdressId] = [t1].[Id]
+WHERE [t].[Id] = @__userId_0 
+2023-08-04 00:54:14.6334||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName], [t0].[Id], [t0].[Name], [t1].[Id], [t1].[City], [t1].[District], [t1].[PostCode]
+FROM [tblUser] AS [t]
+INNER JOIN [tblRole] AS [t0] ON [t].[RoleId] = [t0].[Id]
+INNER JOIN [tblAdress] AS [t1] ON [t].[AdressId] = [t1].[Id]
+WHERE [t].[Id] = @__userId_0 
+2023-08-04 00:54:14.6496||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.User, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-04 00:54:14.6771||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.UserController.GetUsers (AgirSaglam.Api) in 3732.7127ms 
+2023-08-04 00:54:14.6771||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.UserController.GetUsers (AgirSaglam.Api)' 
+2023-08-04 00:54:14.7132||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/User/GetUsers - - - 200 - application/json;+charset=utf-8 3817.8578ms 

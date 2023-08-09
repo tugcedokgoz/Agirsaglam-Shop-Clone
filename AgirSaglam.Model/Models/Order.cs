@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AgirSaglam.Model
+namespace AgirSaglam.Model.Models
 {
     [Table("tblOrder")]
     public class Order
@@ -16,7 +16,7 @@ namespace AgirSaglam.Model
         public int UserId { get; set; }
         public User User { get; set; }
         public int ProductId { get; set; }
-        public Product Product { get; set; }    
+        public Product Product { get; set; }
         public int OrderAmount { get; set; }
         public int BillId { get; set; }
         public Bill Bill { get; set; }

@@ -1,4 +1,4 @@
-﻿using AgirSaglam.Model;
+﻿using AgirSaglam.Model.Models;
 using AgirSaglam.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

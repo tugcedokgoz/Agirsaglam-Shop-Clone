@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AgirSaglam.Model
+namespace AgirSaglam.Model.Models
 {
-    [Table("tblCategoryPropertyGroup")]
-    public class CategoryPropertyGroup
+    [Table("tblProductProperty")]
+    public class ProductProperty
     {
         public int Id { get; set; }
-        public int CategoryId { get; set; }
-        public int GroupId { get; set; }
+        public int ProductId { get; set; }
+        public int PropertyId { get; set; }
     }
 }

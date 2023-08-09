@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AgirSaglam.Model
+namespace AgirSaglam.Model.Models
 {
     [Table("tblProductCategory")]
     public class ProductCategory
@@ -17,8 +17,8 @@ namespace AgirSaglam.Model
         public int ProductId { get; set; }
 
         public int CategoryId { get; set; }
-        public Category Category { get; set; }  
-        public Product Product { get; set; }    
+        public Category Category { get; set; }
+        public Product Product { get; set; }
 
     }
 }

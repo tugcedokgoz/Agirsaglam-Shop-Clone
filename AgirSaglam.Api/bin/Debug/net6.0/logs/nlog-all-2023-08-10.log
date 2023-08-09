@@ -1,0 +1,652 @@
+2023-08-10 00:02:04.8259||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:02:05.4415||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:02:05.4415||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:02:05.4415||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:02:05.4415||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:02:05.4415||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:02:07.0448||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:02:08.0992||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:02:08.1238||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 24.6833ms 
+2023-08-10 00:02:08.1586||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1125.8117ms 
+2023-08-10 00:02:08.4265||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:02:08.5601||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 133.6385ms 
+2023-08-10 00:02:09.0620||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:02:09.4642||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 402.1900ms 
+2023-08-10 00:02:15.2076||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/User/AktiveUsers - - 
+2023-08-10 00:02:15.2250||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.UserController.AktiveUsers (AgirSaglam.Api)' 
+2023-08-10 00:02:15.2628||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AktiveUsers", controller = "User"}. Executing controller action with signature System.Object AktiveUsers() on controller AgirSaglam.Api.Controllers.UserController (AgirSaglam.Api). 
+2023-08-10 00:02:18.0156||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:02:18.0156||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:02:18.0156||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:02:45.9289||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:02:46.7206||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:02:46.7253||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:02:46.7253||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:02:46.7253||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:02:46.7253||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:02:47.9768||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:02:48.9075||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:02:48.9269||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 17.9893ms 
+2023-08-10 00:02:48.9840||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1018.0921ms 
+2023-08-10 00:02:49.2157||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:02:49.3888||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 173.1225ms 
+2023-08-10 00:02:49.8753||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:02:50.2592||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 385.7449ms 
+2023-08-10 00:02:55.7135||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/User/AktiveUsers - - 
+2023-08-10 00:02:55.7423||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.UserController.AktiveUsers (AgirSaglam.Api)' 
+2023-08-10 00:02:55.8019||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AktiveUsers", controller = "User"}. Executing controller action with signature System.Object AktiveUsers() on controller AgirSaglam.Api.Controllers.UserController (AgirSaglam.Api). 
+2023-08-10 00:02:58.7225||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:02:58.7245||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:02:58.7245||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:03:00.9109||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (85ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [v].[CreateDate], [v].[EmailConfirm], [v].[Name], [v].[RoleId], [v].[UserId], [v].[UserName]
+FROM [V_AktiveUsers] AS [v] 
+2023-08-10 00:03:01.0223||ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'AgirSaglam.Repository.RepositoryContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_DateTime()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDateTime(Int32 i)
+   at lambda_method18(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_DateTime()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDateTime(Int32 i)
+   at lambda_method18(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-08-10 00:04:16.1592||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:04:16.9911||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:04:16.9911||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:04:16.9911||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:04:16.9911||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:04:16.9911||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:04:18.1390||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:04:19.0456||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:04:19.0679||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 20.3616ms 
+2023-08-10 00:04:19.1088||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 981.9968ms 
+2023-08-10 00:04:19.3992||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:04:19.5288||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 129.5622ms 
+2023-08-10 00:04:20.0936||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:04:20.7859||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 692.3612ms 
+2023-08-10 00:04:25.9724||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/User/AktiveUsers - - 
+2023-08-10 00:04:25.9841||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.UserController.AktiveUsers (AgirSaglam.Api)' 
+2023-08-10 00:04:26.0241||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AktiveUsers", controller = "User"}. Executing controller action with signature System.Object AktiveUsers() on controller AgirSaglam.Api.Controllers.UserController (AgirSaglam.Api). 
+2023-08-10 00:04:28.8969||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:04:28.8969||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:04:28.8969||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:04:31.0917||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (106ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [v].[CreateDate], [v].[EmailConfirm], [v].[Name], [v].[RoleId], [v].[UserId], [v].[UserName]
+FROM [V_AktiveUsers] AS [v] 
+2023-08-10 00:04:31.1859||ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'AgirSaglam.Repository.RepositoryContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_DateTime()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDateTime(Int32 i)
+   at lambda_method18(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_DateTime()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDateTime(Int32 i)
+   at lambda_method18(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-08-10 00:06:05.1757||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:06:05.6565||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:06:05.6565||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:06:05.6646||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:06:05.6646||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:06:05.6646||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:06:06.9981||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:06:08.1210||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:06:08.1561||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 34.0968ms 
+2023-08-10 00:06:08.1631||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1175.3365ms 
+2023-08-10 00:06:08.4498||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:06:08.5259||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 76.0546ms 
+2023-08-10 00:06:09.1817||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:06:09.6293||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 447.7351ms 
+2023-08-10 00:06:14.8238||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/User/AktiveUsers - - 
+2023-08-10 00:06:14.8372||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.UserController.AktiveUsers (AgirSaglam.Api)' 
+2023-08-10 00:06:14.8796||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AktiveUsers", controller = "User"}. Executing controller action with signature System.Object AktiveUsers() on controller AgirSaglam.Api.Controllers.UserController (AgirSaglam.Api). 
+2023-08-10 00:06:17.4785||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:06:17.4785||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:06:17.4785||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:06:55.4341||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (91ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [v].[CreateDate], [v].[EmailConfirm], [v].[Name], [v].[RoleId], [v].[UserId], [v].[UserName]
+FROM [V_AktiveUsers] AS [v] 
+2023-08-10 00:06:55.5687||ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'AgirSaglam.Repository.RepositoryContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_DateTime()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDateTime(Int32 i)
+   at lambda_method18(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_DateTime()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDateTime(Int32 i)
+   at lambda_method18(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-08-10 00:07:46.2421||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:07:46.7051||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:07:46.7072||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:07:46.7362||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:07:46.8239||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:07:46.8378||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:07:48.3513||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:07:49.4597||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:07:49.4796||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 18.5038ms 
+2023-08-10 00:07:49.5606||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1188.8868ms 
+2023-08-10 00:07:49.8689||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:07:50.0078||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 138.9434ms 
+2023-08-10 00:07:50.5377||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:07:51.0038||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 466.2002ms 
+2023-08-10 00:07:57.0823||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/User/AktiveUsers - - 
+2023-08-10 00:07:57.0936||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.UserController.AktiveUsers (AgirSaglam.Api)' 
+2023-08-10 00:07:57.1348||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AktiveUsers", controller = "User"}. Executing controller action with signature System.Object AktiveUsers() on controller AgirSaglam.Api.Controllers.UserController (AgirSaglam.Api). 
+2023-08-10 00:07:59.8750||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:07:59.8750||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:07:59.8750||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:08:02.2112||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (175ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [v].[CreateDate], [v].[EmailConfirm], [v].[Name], [v].[RoleId], [v].[UserId], [v].[UserName]
+FROM [V_AktiveUsers] AS [v] 
+2023-08-10 00:08:02.3027||ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'AgirSaglam.Repository.RepositoryContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_DateTime()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDateTime(Int32 i)
+   at lambda_method18(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_DateTime()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDateTime(Int32 i)
+   at lambda_method18(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-08-10 00:10:09.1500||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:10:09.8165||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:10:09.8165||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:10:09.8165||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:10:09.8385||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:10:09.8385||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:10:11.1811||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:10:11.9344||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:10:11.9858||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 50.2179ms 
+2023-08-10 00:10:12.0084||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 838.5194ms 
+2023-08-10 00:10:12.2681||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:10:12.4069||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 138.8529ms 
+2023-08-10 00:10:12.8567||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:10:13.3081||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 451.3819ms 
+2023-08-10 00:10:17.7108||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/User/AktiveUsers - - 
+2023-08-10 00:10:17.7237||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.UserController.AktiveUsers (AgirSaglam.Api)' 
+2023-08-10 00:10:17.7751||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AktiveUsers", controller = "User"}. Executing controller action with signature System.Object AktiveUsers() on controller AgirSaglam.Api.Controllers.UserController (AgirSaglam.Api). 
+2023-08-10 00:10:20.4884||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:10:20.4884||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:10:20.4884||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:10:22.5681||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (97ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [v].[CreateDate], [v].[EmailConfirm], [v].[Name], [v].[RoleId], [v].[UserId], [v].[UserName]
+FROM [V_AktiveUsers] AS [v] 
+2023-08-10 00:10:22.6735||ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'AgirSaglam.Repository.RepositoryContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_DateTime()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDateTime(Int32 i)
+   at lambda_method18(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_DateTime()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDateTime(Int32 i)
+   at lambda_method18(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-08-10 00:12:24.3495||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:12:24.7546||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:12:24.7546||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:12:24.7546||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:12:24.7546||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:12:24.7546||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:12:25.8582||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:12:26.9355||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:12:26.9615||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 23.9191ms 
+2023-08-10 00:12:27.0079||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1158.7433ms 
+2023-08-10 00:12:27.2852||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:12:27.4222||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 137.1277ms 
+2023-08-10 00:12:27.8589||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:12:28.2625||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 403.6534ms 
+2023-08-10 00:13:08.3058||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:13:08.7517||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:13:08.7517||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:13:08.7581||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:13:08.7581||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:13:08.7581||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:13:09.8966||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:13:10.9925||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:13:11.0113||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 17.7707ms 
+2023-08-10 00:13:11.0113||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1128.3987ms 
+2023-08-10 00:13:11.3518||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:13:11.5955||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 243.6712ms 
+2023-08-10 00:13:12.0784||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:13:12.5352||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 456.7361ms 
+2023-08-10 00:13:17.4766||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/User/AktiveUsers - - 
+2023-08-10 00:13:17.4901||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.UserController.AktiveUsers (AgirSaglam.Api)' 
+2023-08-10 00:13:17.5261||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AktiveUsers", controller = "User"}. Executing controller action with signature System.Object AktiveUsers() on controller AgirSaglam.Api.Controllers.UserController (AgirSaglam.Api). 
+2023-08-10 00:13:20.1841||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:13:20.1841||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:13:20.1841||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:13:22.5217||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (104ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [v].[CreateDate], [v].[EmailConfirm], [v].[Name], [v].[RoleId], [v].[UserId], [v].[UserName]
+FROM [V_AktiveUsers] AS [v] 
+2023-08-10 00:13:22.6352||ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'AgirSaglam.Repository.RepositoryContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_DateTime()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDateTime(Int32 i)
+   at lambda_method18(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_DateTime()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDateTime(Int32 i)
+   at lambda_method18(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-08-10 00:18:45.5189||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:18:45.9734||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:18:45.9734||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:18:45.9734||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:18:45.9948||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:18:45.9948||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:18:47.2618||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:18:48.3419||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:18:48.3583||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 15.3504ms 
+2023-08-10 00:18:48.3866||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1134.6261ms 
+2023-08-10 00:18:48.7420||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:18:48.8908||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 148.7001ms 
+2023-08-10 00:18:49.4705||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:18:49.9809||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 510.2011ms 
+2023-08-10 00:18:54.4049||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/User/AktiveUsers - - 
+2023-08-10 00:18:54.4168||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.UserController.AktiveUsers (AgirSaglam.Api)' 
+2023-08-10 00:18:54.4536||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AktiveUsers", controller = "User"}. Executing controller action with signature System.Object AktiveUsers() on controller AgirSaglam.Api.Controllers.UserController (AgirSaglam.Api). 
+2023-08-10 00:18:56.9508||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:18:56.9508||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:18:56.9508||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:18:59.0910||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (74ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [v].[CreateDate], [v].[Email], [v].[EmailConfirm], [v].[Name], [v].[RoleId], [v].[UserId], [v].[UserName]
+FROM [V_AktiveUsers] AS [v] 
+2023-08-10 00:18:59.1822||ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'AgirSaglam.Repository.RepositoryContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_DateTime()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDateTime(Int32 i)
+   at lambda_method18(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_DateTime()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDateTime(Int32 i)
+   at lambda_method18(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-08-10 00:19:24.8100||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:19:25.4468||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:19:25.4468||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:19:25.4468||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:19:25.4576||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:19:25.4576||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:19:27.7890||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:19:28.8556||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:19:28.9108||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 54.0659ms 
+2023-08-10 00:19:28.9464||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1170.5614ms 
+2023-08-10 00:19:29.2422||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:19:29.4568||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 214.6417ms 
+2023-08-10 00:19:29.9176||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:19:30.3350||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 417.4098ms 
+2023-08-10 00:19:35.1453||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/User/AktiveUsers - - 
+2023-08-10 00:19:35.1453||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.UserController.AktiveUsers (AgirSaglam.Api)' 
+2023-08-10 00:19:35.2094||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AktiveUsers", controller = "User"}. Executing controller action with signature System.Object AktiveUsers() on controller AgirSaglam.Api.Controllers.UserController (AgirSaglam.Api). 
+2023-08-10 00:19:37.8352||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:19:37.8352||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:19:37.8352||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:19:39.7941||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (85ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [v].[CreateDate], [v].[Email], [v].[EmailConfirm], [v].[Name], [v].[RoleId], [v].[UserId], [v].[UserName]
+FROM [V_AktiveUsers] AS [v] 
+2023-08-10 00:19:39.8914||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.View.V_AktiveUsers, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-10 00:19:39.9410||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.UserController.AktiveUsers (AgirSaglam.Api) in 4709.7125ms 
+2023-08-10 00:19:39.9410||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.UserController.AktiveUsers (AgirSaglam.Api)' 
+2023-08-10 00:19:40.0254||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/User/AktiveUsers - - - 200 - application/json;+charset=utf-8 4880.0907ms 
+2023-08-10 00:20:17.9840||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:20:18.6813||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:20:18.6813||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:20:18.6813||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:20:18.6946||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:20:18.6946||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:20:19.9737||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:20:21.2613||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:20:21.2896||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 24.9851ms 
+2023-08-10 00:20:21.3460||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1395.8178ms 
+2023-08-10 00:20:21.7773||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:20:21.9166||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 139.2714ms 
+2023-08-10 00:20:22.4896||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:20:22.9467||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 457.1132ms 
+2023-08-10 00:20:49.2305||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7119/api/Auth/Login application/json 36 
+2023-08-10 00:20:49.2501||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-10 00:20:49.3249||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-10 00:20:52.3268||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:20:52.3321||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:20:52.3321||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:20:55.5134||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (157ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-10 00:20:55.6194||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__item_RoleId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[Name]
+FROM [tblRole] AS [t]
+WHERE [t].[Id] = @__item_RoleId_0 
+2023-08-10 00:20:55.9632||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-10 00:20:55.9894||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api) in 6648.6085ms 
+2023-08-10 00:20:55.9894||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-10 00:20:56.0298||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7119/api/Auth/Login application/json 36 - 200 - application/json;+charset=utf-8 6799.2651ms 
+2023-08-10 00:21:12.9367||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 
+2023-08-10 00:21:12.9547||INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-08-10 00:21:13.2807||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-08-10 00:21:13.2857||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 - 401 0 - 348.9529ms 
+2023-08-10 00:27:56.0227||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:27:56.4896||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:27:56.4896||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:27:56.4896||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:27:56.4896||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:27:56.5047||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:27:57.7917||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:27:58.9297||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:27:58.9580||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 26.9314ms 
+2023-08-10 00:27:58.9580||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1186.1279ms 
+2023-08-10 00:27:59.3042||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:27:59.4948||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 190.5787ms 
+2023-08-10 00:28:00.0961||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:28:00.6055||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 509.4253ms 
+2023-08-10 00:28:05.5864||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 
+2023-08-10 00:28:05.6085||INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-08-10 00:28:07.2742||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-08-10 00:28:07.2861||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 - 401 0 - 1699.6445ms 
+2023-08-10 00:31:00.9899||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:31:01.4621||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:31:01.4621||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:31:01.4621||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:31:01.4765||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:31:01.4765||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:31:03.0497||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:31:03.8916||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:31:03.9098||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 17.2919ms 
+2023-08-10 00:31:03.9743||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 930.3565ms 
+2023-08-10 00:31:04.2551||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:31:04.4794||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 224.5538ms 
+2023-08-10 00:31:05.0312||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:31:05.6244||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 593.1575ms 
+2023-08-10 00:31:22.1353||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7119/api/Auth/Login application/json 36 
+2023-08-10 00:31:22.1488||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-10 00:31:22.2119||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-10 00:31:25.9210||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:31:25.9210||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:31:25.9210||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:31:30.8405||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (204ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-10 00:31:30.9675||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[@__item_RoleId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[Name]
+FROM [tblRole] AS [t]
+WHERE [t].[Id] = @__item_RoleId_0 
+2023-08-10 00:31:31.4717||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-10 00:31:31.5029||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api) in 9271.871ms 
+2023-08-10 00:31:31.5029||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-10 00:31:31.5903||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7119/api/Auth/Login application/json 36 - 200 - application/json;+charset=utf-8 9454.9909ms 
+2023-08-10 00:31:44.6469||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 
+2023-08-10 00:31:44.6690||INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin) 
+2023-08-10 00:31:44.9748||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-08-10 00:31:44.9748||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 - 401 0 - 331.1158ms 
+2023-08-10 00:36:16.5214||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:36:17.0343||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:36:17.0381||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:36:17.0381||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:36:17.0381||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:36:17.0381||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:36:18.6116||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:36:19.7333||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:36:19.7574||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 23.0461ms 
+2023-08-10 00:36:19.7721||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1168.3773ms 
+2023-08-10 00:36:20.1638||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:36:20.4325||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 267.0157ms 
+2023-08-10 00:36:20.9945||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:36:21.5491||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 554.6478ms 
+2023-08-10 00:36:34.0596||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7119/api/Auth/Login application/json 37 
+2023-08-10 00:36:34.0725||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-10 00:36:34.1376||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-10 00:36:37.1409||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:36:37.1409||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:36:37.1477||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:36:40.2917||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (161ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-10 00:36:40.4085||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[@__item_RoleId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[Name]
+FROM [tblRole] AS [t]
+WHERE [t].[Id] = @__item_RoleId_0 
+2023-08-10 00:36:40.7614||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-10 00:36:40.7858||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api) in 6635.8569ms 
+2023-08-10 00:36:40.7858||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-10 00:36:40.8394||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7119/api/Auth/Login application/json 37 - 200 - application/json;+charset=utf-8 6779.8021ms 
+2023-08-10 00:36:50.5401||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 
+2023-08-10 00:36:50.5817||INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin) 
+2023-08-10 00:36:50.9240||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-08-10 00:36:50.9240||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 - 401 0 - 385.1502ms 
+2023-08-10 00:44:12.6748||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:44:13.4639||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:44:13.4639||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:44:13.4639||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:44:13.4744||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:44:13.4744||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:44:15.6720||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:44:16.7638||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:44:16.7875||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 22.4808ms 
+2023-08-10 00:44:16.8297||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1174.1491ms 
+2023-08-10 00:44:17.2954||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:44:17.5306||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 235.2435ms 
+2023-08-10 00:44:18.1899||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:44:18.8460||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 656.1791ms 
+2023-08-10 00:44:22.2942||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 
+2023-08-10 00:44:22.3156||INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-08-10 00:44:23.0811||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-08-10 00:44:23.0910||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 - 401 0 - 796.5814ms 
+2023-08-10 00:44:33.9787||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/User/AktiveUsers - - 
+2023-08-10 00:44:33.9787||INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-08-10 00:44:33.9787||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-08-10 00:44:33.9787||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/User/AktiveUsers - - - 401 0 - 7.5543ms 
+2023-08-10 00:44:47.4726||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 
+2023-08-10 00:44:47.4726||INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-08-10 00:44:47.4726||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-08-10 00:44:47.4726||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 - 401 0 - 7.4695ms 
+2023-08-10 00:45:32.9521||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:45:33.7837||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:45:33.7995||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:45:33.8081||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:45:33.8081||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:45:33.8081||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:45:35.2644||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:45:36.6503||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:45:36.6805||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 28.8713ms 
+2023-08-10 00:45:36.7072||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1456.1969ms 
+2023-08-10 00:45:37.0496||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:45:37.2087||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 159.0932ms 
+2023-08-10 00:45:37.8312||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:45:38.4509||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 619.7907ms 
+2023-08-10 00:45:46.7884||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/User/AktiveUsers - - 
+2023-08-10 00:45:46.8095||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.UserController.AktiveUsers (AgirSaglam.Api)' 
+2023-08-10 00:45:46.8507||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AktiveUsers", controller = "User"}. Executing controller action with signature System.Object AktiveUsers() on controller AgirSaglam.Api.Controllers.UserController (AgirSaglam.Api). 
+2023-08-10 00:45:49.7163||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:45:49.7163||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:45:49.7163||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:45:52.0483||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (114ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [v].[CreateDate], [v].[Email], [v].[EmailConfirm], [v].[Name], [v].[RoleId], [v].[UserId], [v].[UserName]
+FROM [V_AktiveUsers] AS [v] 
+2023-08-10 00:45:52.1481||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.View.V_AktiveUsers, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-10 00:45:52.2025||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.UserController.AktiveUsers (AgirSaglam.Api) in 5326.5365ms 
+2023-08-10 00:45:52.2025||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.UserController.AktiveUsers (AgirSaglam.Api)' 
+2023-08-10 00:45:52.2914||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/User/AktiveUsers - - - 200 - application/json;+charset=utf-8 5502.9414ms 
+2023-08-10 00:50:39.1321||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:50:39.6355||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:50:39.6355||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:50:39.6355||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:50:39.6479||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:50:39.6479||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:50:41.2294||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:50:42.3295||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1108.3299ms 
+2023-08-10 00:50:42.5051||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:50:42.5234||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 18.2418ms 
+2023-08-10 00:50:42.8867||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:50:43.0308||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 144.0706ms 
+2023-08-10 00:50:43.5590||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:50:43.9818||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 422.7894ms 
+2023-08-10 00:50:49.3571||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/User/AktiveUsers - - 
+2023-08-10 00:50:49.3817||INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-08-10 00:50:49.5149||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-08-10 00:50:49.5149||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/User/AktiveUsers - - - 401 0 - 158.3942ms 
+2023-08-10 00:50:54.7616||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 
+2023-08-10 00:50:54.7766||INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-08-10 00:50:55.3110||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-08-10 00:50:55.3266||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 - 401 0 - 565.1224ms 
+2023-08-10 00:51:44.9153||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:51:45.4062||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:51:45.4062||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:51:45.4136||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:51:45.4136||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:51:45.4136||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:51:46.7553||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:51:47.7637||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:51:47.7859||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 21.1190ms 
+2023-08-10 00:51:47.8241||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1080.3185ms 
+2023-08-10 00:51:48.0594||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:51:48.1814||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 122.0469ms 
+2023-08-10 00:51:48.6286||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:51:49.0733||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 445.0461ms 
+2023-08-10 00:51:52.1707||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 
+2023-08-10 00:51:52.1891||INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-08-10 00:51:52.8538||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-08-10 00:51:52.8748||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 - 401 0 - 704.0909ms 
+2023-08-10 00:53:35.2489||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:53:35.6960||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:53:35.6960||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:53:35.7114||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:53:35.7114||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:53:35.7114||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:53:37.1626||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:53:38.5458||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1388.5239ms 
+2023-08-10 00:53:39.8230||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:53:39.8230||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:53:39.8422||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 17.8140ms 
+2023-08-10 00:53:40.0439||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 220.9645ms 
+2023-08-10 00:53:40.6478||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:53:41.1168||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 468.9041ms 
+2023-08-10 00:53:41.8530||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 
+2023-08-10 00:53:41.8937||INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-08-10 00:53:42.6972||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-08-10 00:53:42.6972||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 - 401 0 - 853.8256ms 
+2023-08-10 00:53:44.2596||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 
+2023-08-10 00:53:44.2596||INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-08-10 00:53:44.2715||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-08-10 00:53:44.2715||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 - 401 0 - 13.1807ms 
+2023-08-10 00:56:54.2905||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 00:56:54.8040||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 00:56:54.8040||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 00:56:54.8040||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 00:56:54.8215||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 00:56:54.8215||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 00:56:56.2718||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 00:56:57.1691||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 00:56:57.1867||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 16.4713ms 
+2023-08-10 00:56:57.2359||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 979.7638ms 
+2023-08-10 00:56:57.5830||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 00:56:57.7361||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 153.1829ms 
+2023-08-10 00:56:58.1886||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 00:56:58.6727||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 484.1195ms 
+2023-08-10 00:57:09.1752||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7119/api/Auth/Login application/json 44 
+2023-08-10 00:57:09.1860||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-10 00:57:09.2685||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-10 00:57:11.9436||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:57:11.9436||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:57:11.9436||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-10 00:57:15.2851||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (211ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-10 00:57:15.4860||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__item_RoleId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[Name]
+FROM [tblRole] AS [t]
+WHERE [t].[Id] = @__item_RoleId_0 
+2023-08-10 00:57:16.0607||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-10 00:57:16.0967||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api) in 6811.9161ms 
+2023-08-10 00:57:16.0967||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-10 00:57:16.1733||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7119/api/Auth/Login application/json 44 - 200 - application/json;+charset=utf-8 6998.1378ms 
+2023-08-10 00:57:22.0182||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/User/AktiveUsers - - 
+2023-08-10 00:57:22.0408||INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-08-10 00:57:22.1125||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-08-10 00:57:22.1130||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/User/AktiveUsers - - - 401 0 - 94.8513ms 
+2023-08-10 00:57:42.2096||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 
+2023-08-10 00:57:42.2096||INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-08-10 00:57:42.4210||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-08-10 00:57:42.4210||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 - 401 0 - 212.8633ms 
+2023-08-10 01:00:55.8008||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 01:00:56.3186||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 01:00:56.3186||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 01:00:56.3186||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 01:00:56.3300||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 01:00:56.3300||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 01:00:57.4830||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 01:00:58.6563||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 01:00:58.6830||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 25.2500ms 
+2023-08-10 01:00:58.7166||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1246.0125ms 
+2023-08-10 01:00:59.0036||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 01:00:59.1328||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 129.0991ms 
+2023-08-10 01:00:59.6253||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 01:01:00.1315||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 506.2484ms 
+2023-08-10 01:01:27.8537||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 01:01:28.3173||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 01:01:28.3173||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 01:01:28.3173||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 01:01:28.3303||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 01:01:28.3303||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 01:01:29.6385||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 01:01:30.4419||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 01:01:30.4645||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 17.0418ms 
+2023-08-10 01:01:30.4922||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 864.0381ms 
+2023-08-10 01:01:30.7450||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 01:01:30.9102||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 165.1842ms 
+2023-08-10 01:01:31.4127||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 01:01:31.8436||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 430.9090ms 
+2023-08-10 01:01:37.7370||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 
+2023-08-10 01:01:37.7635||INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-08-10 01:01:38.7083||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-08-10 01:01:38.7189||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 - 401 0 - 981.9410ms 
+2023-08-10 01:02:17.4313||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-10 01:02:17.8812||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-10 01:02:17.8812||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-10 01:02:17.8812||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-10 01:02:17.8947||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-10 01:02:17.8947||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-10 01:02:19.2913||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 01:02:20.0396||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 01:02:20.0605||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 18.2809ms 
+2023-08-10 01:02:20.0975||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 816.9058ms 
+2023-08-10 01:02:20.2958||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 01:02:20.4434||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 147.5692ms 
+2023-08-10 01:02:20.9645||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 01:02:21.3768||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 412.3314ms 
+2023-08-10 01:02:29.4420||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 
+2023-08-10 01:02:29.4640||INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-08-10 01:02:30.1392||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-08-10 01:02:30.1392||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 - 401 0 - 705.6359ms 
+2023-08-10 01:03:30.3225||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-10 01:03:30.3738||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 51.2998ms 
+2023-08-10 01:03:30.7059||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-10 01:03:30.7202||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-10 01:03:30.7202||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 0.6796ms 
+2023-08-10 01:03:30.7485||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.6082ms 
+2023-08-10 01:03:31.9789||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-10 01:03:32.0029||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 23.9381ms 
+2023-08-10 01:03:34.5961||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 
+2023-08-10 01:03:34.5961||INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user. 
+2023-08-10 01:03:34.5961||INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged. 
+2023-08-10 01:03:34.6070||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/User/AktiveUsers application/json 88 - 401 0 - 10.8112ms 

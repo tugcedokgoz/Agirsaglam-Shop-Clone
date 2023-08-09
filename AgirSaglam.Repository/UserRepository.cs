@@ -1,4 +1,5 @@
-﻿using AgirSaglam.Model;
+﻿using AgirSaglam.Model.Models;
+using AgirSaglam.Model.View;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -78,6 +79,12 @@ namespace AgirSaglam.Repository
                 .FirstOrDefaultAsync();
 
             return user;
+        }
+
+        //Aktif kullaniciları getirme
+        public List<V_AktiveUsers> GetAktiveUsers()
+        {
+            return RepositoryContext.AktiveUsers.ToList<V_AktiveUsers>();
         }
 
 
