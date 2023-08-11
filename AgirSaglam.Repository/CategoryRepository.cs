@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace AgirSaglam.Repository
 {
-    public class CategoryRepository:RepositoryBase<Category>
+    public class CategoryRepository : RepositoryBase<Category>
     {
-        public CategoryRepository(RepositoryContext context):base(context)
+        public CategoryRepository(RepositoryContext context) : base(context)
         {
-            
+
         }
         //include denildiği için bir üst kategori getiriyo
 
