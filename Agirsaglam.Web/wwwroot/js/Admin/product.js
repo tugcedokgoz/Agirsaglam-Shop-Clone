@@ -45,12 +45,12 @@
                 $("#divProducts").html(html);
             }
             else {
-                alert(response.message);
+
                 console.log(response);
             }
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
-            alert(XMLHttpRequest + "-" + textStatus + "-" + errorThrown);
+            console.log(XMLHttpRequest + "-" + textStatus + "-" + errorThrown);
         }
     });
 }

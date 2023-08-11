@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rTwu/wkZa31NnCSkZuHRWhkbrfxj2/9RoIY9B1bjbr8=",
+  "Hash": "QL+jdYNwoRCP2QSElGKG2J8fS4P5qmfjmVDYz2zXVoE=",
   "Source": "Agirsaglam.Web",
   "BasePath": "_content/Agirsaglam.Web",
   "Mode": "Default",
@@ -1494,6 +1494,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\Admin\\category.js",
+      "SourceId": "Agirsaglam.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\",
+      "BasePath": "_content/Agirsaglam.Web",
+      "RelativePath": "js/Admin/category.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Admin\\category.js"
     },
     {
       "Identity": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\Admin\\product.js",

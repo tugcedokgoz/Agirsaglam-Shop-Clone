@@ -70,6 +70,7 @@ namespace AgirSaglam.Api.Controllers
         public dynamic Save([FromBody] dynamic model)
         {
             dynamic json = JObject.Parse(model.GetRawText());
+          
 
             Product item = new Product()
             {

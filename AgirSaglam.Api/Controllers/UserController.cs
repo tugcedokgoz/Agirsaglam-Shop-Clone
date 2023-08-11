@@ -233,7 +233,7 @@ namespace AgirSaglam.Api.Controllers
         }
 
         [HttpGet("GetUsersByName")]
-        public dynamic GetUserssByName(string userName)
+        public dynamic GetUsersByName(string userName)
         {
             List<User> items;
             if (!cache.TryGetValue("GetUsersByName" + userName, out items))

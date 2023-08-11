@@ -9,5 +9,6 @@ namespace Agirsaglam.Web.Areas.Admin.Controllers
         public IActionResult Role()=>View();
         public IActionResult Product()=>View();
         public IActionResult User()=>View();
+        public IActionResult Category()=>View();
     }
 }

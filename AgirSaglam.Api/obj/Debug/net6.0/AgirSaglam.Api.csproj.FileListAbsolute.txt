@@ -1,10 +1,3 @@
-C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\AgirSaglam.Api.csproj.AssemblyReference.cache
-C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\AgirSaglam.Api.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\AgirSaglam.Api.AssemblyInfoInputs.cache
-C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\AgirSaglam.Api.AssemblyInfo.cs
-C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\AgirSaglam.Api.csproj.CoreCompileInputs.cache
-C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\AgirSaglam.Api.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\AgirSaglam.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\appsettings.json
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\AgirSaglam.Api.exe
@@ -14,6 +7,10 @@ C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\AgirSaglam.Api.pdb
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\Azure.Core.dll
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
@@ -71,6 +68,13 @@ C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\AgirSaglam.Repository.dll
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\AgirSaglam.Repository.pdb
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\AgirSaglam.Model.pdb
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\AgirSaglam.Api.csproj.AssemblyReference.cache
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\AgirSaglam.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\AgirSaglam.Api.AssemblyInfoInputs.cache
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\AgirSaglam.Api.AssemblyInfo.cs
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\AgirSaglam.Api.csproj.CoreCompileInputs.cache
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\AgirSaglam.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\AgirSaglam.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\staticwebassets\msbuild.AgirSaglam.Api.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\staticwebassets\msbuild.build.AgirSaglam.Api.props
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AgirSaglam.Api.props
@@ -85,7 +89,3 @@ C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\AgirSaglam.Api.pdb
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\AgirSaglam.Api.genruntimeconfig.cache
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\obj\Debug\net6.0\ref\AgirSaglam.Api.dll
-C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\FluentValidation.dll
-C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
-C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
-C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

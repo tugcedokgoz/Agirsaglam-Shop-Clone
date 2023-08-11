@@ -24,13 +24,15 @@ namespace AgirSaglam.Api.Controllers
             List<Category> items;
             if (!cache.TryGetValue("GetCategory", out items))
             {
-                items = repo.CategoryRepository.FindAll()
+                     items = repo.CategoryRepository.FindAll()
                     .Include(c => c.ParentCategory) // Include parent category data
                     .ToList<Category>();
 
+                cache.Remove("GetCategory");
+
                 cache.Set("GetCategory", items, DateTimeOffset.UtcNow.AddSeconds(20));
 
-                cache.Remove("GetCategory");
+          
             }
 
             return new

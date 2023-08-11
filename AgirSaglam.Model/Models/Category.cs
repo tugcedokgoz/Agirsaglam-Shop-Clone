@@ -19,6 +19,7 @@ namespace AgirSaglam.Model.Models
         public int? ParentCategoryId { get; set; }
         public bool? Status { get; set; }
 
+
         public virtual Category? ParentCategory { get; set; } //kategorinin bir üst kategorisi olabilir oda null olabilir
         public virtual ICollection<Category> ChildCategories { get; set; } // bu kategorinin birden fazla alt kategorisi olabilir
     }
