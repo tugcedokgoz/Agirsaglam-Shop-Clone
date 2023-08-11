@@ -118,7 +118,13 @@ else
 {
     app.UseExceptionHandler("/error");
 }
-
+//mvc
+app.UseCors(
+    options =>
+    {
+        options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+    }
+    );
 app.UseHttpsRedirection();
 
 

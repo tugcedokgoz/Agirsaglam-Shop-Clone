@@ -231,5 +231,23 @@ namespace AgirSaglam.Api.Controllers
                 success = true
             };
         }
+
+        [HttpGet("GetUsersByName")]
+        public dynamic GetUserssByName(string userName)
+        {
+            List<User> items;
+            if (!cache.TryGetValue("GetUsersByName" + userName, out items))
+            {
+                items = repo.UserRepository.FindByCondition(r => r.UserName.Contains(userName)).ToList<User>();
+
+                cache.Set("GetUsersByName" + userName, items, DateTimeOffset.UtcNow.AddSeconds(20));
+            }
+
+            return new
+            {
+                success = true,
+                data = items
+            };
+        }
     }
 }

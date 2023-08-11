@@ -35,7 +35,7 @@ namespace AgirSaglam.Api.Controllers
 
             return new
             {
-                sucess = true,
+                success = true,
                 data = items
             };
         }
@@ -48,7 +48,7 @@ namespace AgirSaglam.Api.Controllers
             Category items = repo.CategoryRepository.FindByCondition(a => a.Id == id).SingleOrDefault<Category>();
             return new
             {
-                sucess = true,
+                success = true,
                 data = items
             };
         }
@@ -60,7 +60,7 @@ namespace AgirSaglam.Api.Controllers
             List<Category> items = repo.CategoryRepository.FindByCondition(a => a.ParentCategoryId == null).ToList<Category>();
             return new
             {
-                sucess = true,
+                success = true,
                 data = items
             };
         }
@@ -73,7 +73,7 @@ namespace AgirSaglam.Api.Controllers
             List<Category> items = repo.CategoryRepository.FindByCondition(a => a.ParentCategoryId != null && a.ParentCategoryId == id).ToList<Category>();
             return new
             {
-                sucess = true,
+                success = true,
                 data = items
             };
         }

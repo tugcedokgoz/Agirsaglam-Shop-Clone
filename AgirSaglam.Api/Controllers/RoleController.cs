@@ -32,7 +32,7 @@ namespace AgirSaglam.Api.Controllers
 
             return new
             {
-                sucess = true,
+                success = true,
                 data = items
             };
         }
@@ -45,7 +45,7 @@ namespace AgirSaglam.Api.Controllers
             Role items = repo.RoleRepository.FindByCondition(a => a.Id == id).SingleOrDefault<Role>();
             return new
             {
-                sucess = true,
+                success = true,
                 data = items
             };
         }
@@ -60,7 +60,7 @@ namespace AgirSaglam.Api.Controllers
 
             Role item = new Role()
             {
-                Id = json.Id,
+                Id = /*Int32.Parse*/(json.Id),
                 Name = json.Name,
                
             };
@@ -130,6 +130,25 @@ namespace AgirSaglam.Api.Controllers
                 success = true,
                 data = usersWithAdress
             });
+        }
+
+
+        [HttpGet("GetRolesByName")]
+        public dynamic GetRolesByName(string name)
+        {
+            List<Role> items;
+            if (!cache.TryGetValue("GetRolesByName_" + name, out items))
+            {
+                items = repo.RoleRepository.FindByCondition(r => r.Name.Contains(name)).ToList<Role>();
+
+                cache.Set("GetRolesByName_" + name, items, DateTimeOffset.UtcNow.AddSeconds(20));
+            }
+
+            return new
+            {
+                success = true,
+                data = items
+            };
         }
 
     }

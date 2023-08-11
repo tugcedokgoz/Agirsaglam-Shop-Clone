@@ -58,7 +58,7 @@ namespace AgirSaglam.Api.Controllers
 
             return new
             {
-                sucess = true,
+                success = true,
                 data = items
             };
         }
@@ -121,6 +121,25 @@ namespace AgirSaglam.Api.Controllers
             {
                 success = true,
                 data = properties
+            };
+        }
+
+
+        [HttpGet("GetProductsByName")]
+        public dynamic GetProductsByName(string name)
+        {
+            List<Product> items;
+            if (!cache.TryGetValue("GetProductsByName" + name, out items))
+            {
+                items = repo.ProductRepository.FindByCondition(r => r.Name.Contains(name)).ToList<Product>();
+
+                cache.Set("GetProductsByName" + name, items, DateTimeOffset.UtcNow.AddSeconds(20));
+            }
+
+            return new
+            {
+                success = true,
+                data = items
             };
         }
     }

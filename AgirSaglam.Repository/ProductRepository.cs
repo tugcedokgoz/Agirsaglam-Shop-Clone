@@ -71,5 +71,14 @@ namespace AgirSaglam.Repository
 
             return properties;
         }
+
+        public List<Product> GetProductsByName(string name)
+        {
+            var products = RepositoryContext.Products
+                .Where(r => r.Name.Contains(name))
+                .ToList();
+
+            return products;
+        }
     }
 }

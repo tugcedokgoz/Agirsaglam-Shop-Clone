@@ -29,5 +29,13 @@ namespace AgirSaglam.Repository
             return users;
         }
 
+        public List<Role> GetRolesByName(string name)
+        {
+            var roles = RepositoryContext.Roles
+                .Where(r => r.Name.Contains(name))
+                .ToList();
+
+            return roles;
+        }
     }
 }

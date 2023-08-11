@@ -87,6 +87,13 @@ namespace AgirSaglam.Repository
             return RepositoryContext.AktiveUsers.ToList<V_AktiveUsers>();
         }
 
+        public List<User> GetUsersByName(string userName)
+        {
+            var users = RepositoryContext.Users
+                .Where(r => r.UserName.Contains(userName))
+                .ToList();
 
+            return users;
+        }
     }
 }

@@ -32,7 +32,7 @@ namespace AgirSaglam.Api.Controllers
 
             return new
             {
-                sucess = true,
+                success = true,
                 data = items
             };
         }

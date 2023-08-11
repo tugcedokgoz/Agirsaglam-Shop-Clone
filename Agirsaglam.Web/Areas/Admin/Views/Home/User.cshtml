@@ -1,0 +1,93 @@
+﻿
+<div class="container" style="padding:10px">
+    <h2>Users</h2>
+    <div class="d-flex flex-row my-4">
+        <input class="mr-3" placeholder="Search by User Name" id="userNameInput" value="" />
+        <button type="button" class="btn btn-outline-primary" id="searchButton">Search</button>
+    </div>
+
+    <div id="divUsers">
+    </div>
+
+
+
+
+    <!--Kaydetme-->
+    <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="userForm">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Product</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="inputEditProductName" class="form-label">Product Name</label>
+                        <input type="text" id="inputEditProductName" class="form-control" name="productName" />
+
+                        <label for="inputEditPrice" class="form-label">Product Price</label>
+                        <input type="text" id="inputEditPrice" class="form-control" name="productPrice" />
+
+                        <label for="inputEditDiscountPrice" class="form-label">Discount Price</label>
+                        <input type="text" id="inputEditDiscountPrice" class="form-control" name="discountPrice" />
+
+                        <label for="inputEditAmount" class="form-label">Product Amount</label>
+                        <input type="text" id="inputEditAmount" class="form-control" name="productAmount" />
+
+                        <label for="inputEditDescription" class="form-label">Product Description</label>
+                        <input type="text" id="inputEditDescription" class="form-control" name="productDescription" />
+
+                        <label for="inputEditImage" class="form-label">Product Image</label>
+                        <input type="text" id="inputEditImage" class="form-control" name="productImage" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Düzenleme-->
+    <div class="modal fade" id="productEditModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="productEditForm">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Product</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="inputEditProductName" class="form-label">Product Name</label>
+                        <input type="text" id="inputProductName" class="form-control" name="productName" />
+
+                        <label for="inputEditPrice" class="form-label">Product Price</label>
+                        <input type="text" id="inputPrice" class="form-control" name="productPrice" />
+
+                        <label for="inputEditDiscountPrice" class="form-label">Discount Price</label>
+                        <input type="text" id="inputDiscountPrice" class="form-control" name="discountPrice" />
+
+                        <label for="inputEditAmount" class="form-label">Product Amount</label>
+                        <input type="text" id="inputAmount" class="form-control" name="productAmount" />
+
+                        <label for="inputEditDescription" class="form-label">Product Description</label>
+                        <input type="text" id="inputDescription" class="form-control" name="productDescription" />
+
+                        <label for="inputEditImage" class="form-label">Product Image</label>
+                        <input type="text" id="inputImage" class="form-control" name="productImage" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/js/admin/user.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+@*<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>*@
