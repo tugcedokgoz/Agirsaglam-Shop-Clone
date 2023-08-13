@@ -5,6 +5,11 @@ function Get(action, success) {
     $.ajax({
         type: "GET",
         url: `${BASE_API_URI}/${action}`,
+
+        beforeSend: function (xhr) {
+            xhr.setRequestHeader('Authorization', `Bearer ${TOKEN}`);
+        },
+
         success: function (response) {
             if (response.success) {
 
@@ -21,6 +26,7 @@ function Get(action, success) {
     });
 }
 
+//kaydet-düzenle
 function Post(action, data, success) {
 
     $.ajax({
@@ -42,4 +48,34 @@ function Post(action, data, success) {
         }
     });
 }
+
+function Delete(action, success, ask = true) {
+    var confirmed = true;
+    if (ask) {
+        confirmed = confirm("Kaydı silmek istediğinizden emin misiniz?");
+    }
+    if (confirmed) {
+        $.ajax({
+            type: "POST",
+            url: `${BASE_API_URI}/${action}`,
+            //beforeSend: function (xhr) {
+            //    xhr.setRequestHeader('Authorization', `Bearer ${TOKEN}`);
+            //},
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function (response) {
+                if (response.success) {
+                    success(response.data);
+                }
+                else {
+                    alert(response.message);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert(XMLHttpRequest + "-" + textStatus + "-" + errorThrown);
+            }
+        });
+    }
+}
+
 

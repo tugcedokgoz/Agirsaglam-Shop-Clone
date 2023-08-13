@@ -51,7 +51,8 @@ namespace AgirSaglam.Api.Controllers
                 return new
                 {
                     success = true,
-                    data = tokenHandler.WriteToken(token)
+                    data = tokenHandler.WriteToken(token),
+                     role = role?.Name
                 };
             }
             else

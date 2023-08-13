@@ -1,12 +1,19 @@
 ﻿let categories = [];
 function GetCategory() {
     Get("Category/GetAllCategory", (data) => {
-        var arr = data;
-        $('#selectParentCategory').empty();
+        var arr = data
+        $('#inputParentCategoryName').empty();
+
         $.each(arr, function(i, item){
-            $('#selectParentCategory').append($('<option>',{
+            $('#inputParentCategoryName').append($('<option>',{
                 value:item.id,
                 text:item.name
+            }));
+        });
+        $.each(arr, function (i, item) {
+            $('#inputEditParentCategoryName').append($('<option>', {
+                value: item.id,
+                text: item.name
             }));
         });
     });
@@ -35,7 +42,7 @@ function GetAdminCategory() {
                     
                                      <button type="button" class="btn btn-danger btn-sm m-2"  onclick='DeleteCategory(${arr[i].id})'>Delete</button>
                                     
-                                     <button type="button" class="btn btn-warning btn-sm m-2" data-bs-toggle="modal" data-bs-target="#categoryEditModal" onclick='SetProductIdforEditModal(${arr[i].id})'>Edit</button>
+                                     <button type="button" class="btn btn-warning btn-sm m-2" data-bs-toggle="modal" data-bs-target="#categoryEditModal" onclick='SetCategoryIdforEditModal(${arr[i].id})'>Edit</button>
                                     
                              </td>`;
             html += `</tr>`
@@ -47,9 +54,61 @@ function GetAdminCategory() {
 
 }
 
+function SaveCategory() {
+    var status = $("#toggleSwitch").prop("checked") ? 1 : 0;
 
+    var category = {
+        Id: 0,
+        Name: $("#inputCategoryName").val(),
+        ParentCategoryId: $("#inputParentCategoryName").val(),
+        Status: status
+    };
+
+    Post("Category/Save", category, (data) => {
+
+        GetAdminCategory();
+        $("#categoryModal").modal("hide");
+    });
+}
+
+function DeleteCategory(id) {
+    Delete(`Category/Delete?id=${id}`, (data) => {
+        GetAdminCategory();
+    });
+}
+
+function SetCategoryIdforEditModal(id) {
+    GetCategory();
+    $("#EditCategoryId").val(parseInt(id))
+
+
+
+}
+function UpdateCategory() {
+    var status = $("#toggleSwitch").prop("checked") ? 1 : 0;
+    var category = {
+        Id: $("#EditCategoryId").val(),
+        Name: $("#inputEditCategoryName").val(),
+        ParentCategoryId: parseInt($("#inputEditParentCategoryName").val()),
+        Status: status
+    };
+
+    Post("Category/Save", category, (data) => {
+        GetAdminCategory();
+        $("#categoryEditModal").modal("hide");
+    });
+}
 
 $(document).ready(function () {
     GetAdminCategory();
     GetCategory();
+    $("#categoryForm").submit(function (event) {
+        event.preventDefault(); // Form gönderimini engelle
+
+        SaveCategory(); // SaveCategory fonksiyonunu burada çağırın
+    });
+    $("#categoryEditForm").submit(function (event) {
+        event.preventDefault();
+        UpdateCategory();
+    });
 });

@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Agirsaglam.Web.Code;
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -15,6 +18,11 @@
     <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+
+    <script>
+        let TOKEN = "@Repo.Session.Token";
+    </script>
 </head>
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">

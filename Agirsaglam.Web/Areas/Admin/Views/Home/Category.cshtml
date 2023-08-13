@@ -24,12 +24,13 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <label for="inputEditCategoryName" class="form-label">Category Name</label>
-                        <input type="text" id="inputEditCategoryName" class="form-control" name="categoryName" />
+                        <label for="inputCategoryName" class="form-label">Category Name</label>
+                        <input type="text" id="inputCategoryName" class="form-control" name="categoryName" />
 
+                        <label for="inputParentCategoryName" class="form-label">Parent Category</label>
+                        <select type="text" id="inputParentCategoryName" class="form-control">
                         <option value="" disabled selected>Select Parent Category</option>
-                        <select type="text" id="selectParentCategory" class="form-control"></select>
-
+                        </select>
 
                         <div class="form-check">
                             <input for="inputStatus" class="form-check-input" type="checkbox" id="toggleSwitch">
@@ -60,12 +61,17 @@
                     <div class="modal-body">
                         <label for="inputEditCategoryName" class="form-label">Category Name</label>
                         <input type="text" id="inputEditCategoryName" class="form-control" name="productName" />
+                        <input type="hidden" value="" id="EditCategoryId" />
 
-                        <label for="inputEditParentCategory" class="form-label">Parent Category</label>
-                        <input type="text" id="inputEditParentCategory" class="form-control" name="productParentCategory" />
+                        <label for="inputEditParentCategoryName" class="form-label">Parent Category</label>
+                        <select type="text" id="inputEditParentCategoryName" class="form-control">
+                            <option value="" disabled selected>Select Parent Category</option>
+                        </select>
 
-                        <label for="inputEditStatus" class="form-label">Status</label>
-                        <input type="text" id="inputEditStatus" class="form-control" name="status" />
+                        <div class="form-check">
+                            <input for="inputStatus" class="form-check-input" type="checkbox" id="toggleSwitch">
+                            <label for="inputStatus" class="form-check-label">Status</label>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

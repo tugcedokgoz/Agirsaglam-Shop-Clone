@@ -34,27 +34,11 @@ function SaveRole() {
 }
 
 function DeleteRole(id) {
-    if (confirm("Kaydı silmek istediğinizden emin misiniz?")) {
-        $.ajax({
-            type: "POST",
-            url: `${BASE_API_URI}/Delete?id=${id}`,
-            dataType: "json",
-            contentType: "application/json; charset=utf-8",
-            success: function (response) {
-                if (response.success) {
-                    GetRoles();
+    Delete(`Role/Delete?id=${id}`, (data) => {
+        GetRoles();
+    });
+};
 
-                }
-                else {
-                    console.log(response)
-                }
-            },
-            error: function (XMLHttpRequest, textStatus, errorThrown) {
-                console.log(XMLHttpRequest + "-" + textStatus + "-" + errorThrown);
-            }
-        });
-    }
-}
 
 function SetRoleIdforEditModal(id) {
     $("#EditRoleId").val(parseInt(id))
@@ -64,23 +48,10 @@ function UpdateRole() {
         Id: $("#EditRoleId").val(),
         Name: $("#inputEditRoleName").val()
     };
-    $.ajax({
-        type: "POST",
-        url: `${BASE_API_URI}/Role/Save`,
-        dataType: "json",
-        contentType: "application/json; charset=utf-8",
-        data: JSON.stringify(role),
-        success: function (response) {
-            if (response.success) {
-                GetRoles();
-                $("#roleEditModal").modal("hide");
-            } else {
-                console.log(response)
-            }
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            console.log(XMLHttpRequest + "-" + textStatus + "-" + errorThrown);
-        }
+
+    Post("Role/Save", role, (data) => {
+        GetRoles();
+        $("#roleEditModal").modal("hide");
     });
 }
 
