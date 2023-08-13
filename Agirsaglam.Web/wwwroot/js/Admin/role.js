@@ -1,67 +1,35 @@
 ﻿function GetRoles() {
-    $.ajax({
-        type: "GET",
-        url: `${BASE_API_URI}/api/Role/GetRoles`,
-        /*  dataType: "application/json; charset=utf-8",*/
+    Get("Role/GetRoles", (data) => {
+        var html = `<table class="table table-hover">` +
+            `<tr><th style="width:50px"Id></th><th>Role Name</th><th></th></tr>`;
+        var arr = data;
 
-        success: function (response) {
-            if (response.success) {
-                var html = `<table class="table table-hover">` +
-                    `<tr><th style="width:50px"Id></th><th>Role Name</th><th></th></tr>`;
-
-                var arr = response.data;
-
-                for (var i = 0; i < arr.length; i++) {
-                    html += `<tr>`;
-                    html += `<td>${arr[i].id}</td><td>${arr[i].name}</td>`;
-                    //html += `<td><i class="fa fa-trash text-danger" onclick='DeleteRole(${arr[i].id})'></i><i class="fa-pencil-square" onclick='EditRole(${arr[i]})'></i></td>`;
-                    html += `<td>
+        for (var i = 0; i < arr.length; i++) {
+            html += `<tr>`;
+            html += `<td>${arr[i].id}</td><td>${arr[i].name}</td>`;
+            //html += `<td><i class="fa fa-trash text-danger" onclick='DeleteRole(${arr[i].id})'></i><i class="fa-pencil-square" onclick='EditRole(${arr[i]})'></i></td>`;
+            html += `<td>
                                      <button type="button" class="btn btn-danger"  onclick='DeleteRole(${arr[i].id})'>Delete</button>
                                      &nbsp;
                                      <button type="button" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#roleEditModal" onclick='SetRoleIdforEditModal(${arr[i].id})'>Edit</button>
                              </td>`;
-                    html += `</tr>`
-                }
-                html += `</table>`;
-
-                $("#divRoles").html(html);
-            }
-            else {
-            
-                console.log(response);
-            }
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            console.log(XMLHttpRequest + "-" + textStatus + "-" + errorThrown);
+            html += `</tr>`
         }
+        html += `</table>`;
+        $("#divRoles").html(html);
     });
 }
+
+
 function SaveRole() {
     var role = {
         Id: 0,
         Name: $("#inputRoleName").val()
     };
 
-    $.ajax({
-        type: "POST",
-        url: `${BASE_API_URI}/api/Role/Save`,
-        dataType: "json",
-        contentType: "application/json; charset=utf-8",
-        data: JSON.stringify(role),
-        success: function (response) {
-            if (response.success) {
-                // Eğer başarılı bir yanıt dönerse, rolleri yeniden almak veya başka bir işlem yapmak için GetRoles() fonksiyonunu çağırabilirsiniz.
-                GetRoles();
-                $("#roleModal").modal("hide"); // Modalı kapatma işlemi
-            } else {
-                // Başarısız yanıt durumunda kullanıcıya hata mesajı gösterilebilir.
-                console.log(response)
-            }
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            // Hata durumunda kullanıcıya detaylı hata bilgisi gösterilebilir.
-            console.log(XMLHttpRequest + "-" + textStatus + "-" + errorThrown);
-        }
+    Post("Role/Save", role, (data) => {
+        GetRoles();
+        $("#roleModal").modal("hide");
     });
 }
 
@@ -69,7 +37,7 @@ function DeleteRole(id) {
     if (confirm("Kaydı silmek istediğinizden emin misiniz?")) {
         $.ajax({
             type: "POST",
-            url: `${BASE_API_URI}/api/Role/Delete?id=${id}`,
+            url: `${BASE_API_URI}/Delete?id=${id}`,
             dataType: "json",
             contentType: "application/json; charset=utf-8",
             success: function (response) {
@@ -98,7 +66,7 @@ function UpdateRole() {
     };
     $.ajax({
         type: "POST",
-        url: `${BASE_API_URI}/api/Role/Save`,
+        url: `${BASE_API_URI}/Role/Save`,
         dataType: "json",
         contentType: "application/json; charset=utf-8",
         data: JSON.stringify(role),
@@ -119,7 +87,7 @@ function UpdateRole() {
 function GetRolesByName(name) {
     $.ajax({
         type: "GET",
-        url: `${BASE_API_URI}/api/Role/GetRolesByName?name=${name}`, // name parametresini ekliyoruz
+        url: `${BASE_API_URI}/Role/GetRolesByName?name=${name}`, // name parametresini ekliyoruz
         success: function (response) {
             if (response.success) {
                 var html = `<table class="table table-hover">` +
@@ -141,7 +109,7 @@ function GetRolesByName(name) {
 
                 $("#divRoles").html(html);
             } else {
-              
+
                 console.log(response);
             }
         },

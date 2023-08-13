@@ -1,4 +1,5 @@
 ﻿using AgirSaglam.Model.Models;
+using AgirSaglam.Model.View;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,12 +9,18 @@ using System.Threading.Tasks;
 
 namespace AgirSaglam.Repository
 {
-    public class CategoryRepository : RepositoryBase<Category>
+    public class CategoryRepository:RepositoryBase<Category>
     {
-        public CategoryRepository(RepositoryContext context) : base(context)
+        public CategoryRepository(RepositoryContext context): base(context)
         {
-
+            
         }
+        public IEnumerable<Category> GetAllCategories()
+        {
+            return FindAll().ToList();
+        }
+
+
         //include denildiği için bir üst kategori getiriyo
 
         public void RemoveCategory(int categoryId)
@@ -33,7 +40,8 @@ namespace AgirSaglam.Repository
                 .ToList();
         }
 
-
+        public List<V_CategoryAdminList> CategoryAdminLists() => RepositoryContext.CategoryAdminLists.OrderBy(c => c.Id)
+            .ToList<V_CategoryAdminList>();
 
     }
 }

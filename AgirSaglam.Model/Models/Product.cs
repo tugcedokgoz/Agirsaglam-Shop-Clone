@@ -10,6 +10,11 @@ namespace AgirSaglam.Model.Models
     [Table("tblProduct")]
     public class Product
     {
+        public Product()
+        {
+            ProductCategories = new HashSet<ProductCategory>();
+            Categories = new HashSet<Category>();
+        }
         public int Id { get; set; }
         public string Name { get; set; }
         public decimal? Price { get; set; }

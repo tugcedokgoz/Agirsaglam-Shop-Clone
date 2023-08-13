@@ -40,5 +40,6 @@ namespace AgirSaglam.Repository
         public DbSet<Role> Roles { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<V_AktiveUsers> AktiveUsers { get; set; }
+        public DbSet<V_CategoryAdminList> CategoryAdminLists { get; set; }
     }
 }

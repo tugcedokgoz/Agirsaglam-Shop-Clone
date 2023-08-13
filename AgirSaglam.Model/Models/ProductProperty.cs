@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -12,6 +13,12 @@ namespace AgirSaglam.Model.Models
     {
         public int Id { get; set; }
         public int ProductId { get; set; }
+
         public int PropertyId { get; set; }
+
+        public Category Category { get; set; }
+
+        [ForeignKey("ProductId")]
+        public Product Product { get; set; }
     }
 }

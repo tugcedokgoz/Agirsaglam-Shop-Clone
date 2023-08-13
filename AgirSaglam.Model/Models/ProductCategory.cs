@@ -18,6 +18,7 @@ namespace AgirSaglam.Model.Models
 
         public int? CategoryId { get; set; }
         public Category Category { get; set; }
+        [ForeignKey("ProductId")]
         public Product Product { get; set; }
 
     }

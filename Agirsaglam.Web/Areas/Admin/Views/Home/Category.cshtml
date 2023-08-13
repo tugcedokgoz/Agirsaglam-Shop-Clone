@@ -25,13 +25,17 @@
                     </div>
                     <div class="modal-body">
                         <label for="inputEditCategoryName" class="form-label">Category Name</label>
-                        <input type="text" id="inputEditCategoryName" class="form-control" name="productName" />
+                        <input type="text" id="inputEditCategoryName" class="form-control" name="categoryName" />
 
-                        <label for="inputEditParentCategory" class="form-label">Parent Category</label>
-                        <input type="text" id="inputEditParentCategory" class="form-control" name="productParentCategory" />
+                        <option value="" disabled selected>Select Parent Category</option>
+                        <select type="text" id="selectParentCategory" class="form-control"></select>
 
-                        <label for="inputEditStatus" class="form-label">Status</label>
-                        <input type="text" id="inputEditStatus" class="form-control" name="status" />
+
+                        <div class="form-check">
+                            <input for="inputStatus" class="form-check-input" type="checkbox" id="toggleSwitch">
+                            <label for="inputStatus" class="form-check-label">Status</label>
+                        </div>
+                    
 
                      
                     </div>

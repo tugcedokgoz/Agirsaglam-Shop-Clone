@@ -14,6 +14,7 @@ namespace AgirSaglam.Model.Models
         public int UserId { get; set; }
         public User User { get; set; }
         public int ProductId { get; set; }
+        [ForeignKey("ProductId")]
         public Product Product { get; set; }
         public string Explanation { get; set; }
         public DateTime Date { get; set; }

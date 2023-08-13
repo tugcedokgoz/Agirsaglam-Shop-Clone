@@ -1,8 +1,9 @@
 ﻿using AgirSaglam.Model.Models;
+using AgirSaglam.Model.View;
 using AgirSaglam.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using Newtonsoft.Json.Linq;
 
@@ -16,21 +17,15 @@ namespace AgirSaglam.Api.Controllers
         {
 
         }
-        //tüm kategorileri getiren 
-
-        [HttpGet("GetCategories")]
-        public dynamic GetCategories()
+        [HttpGet("GetAllCategory")]
+        public dynamic GetAllCategory()
         {
             List<Category> items;
-            if (!cache.TryGetValue("GetCategory", out items))
+
+            if (!cache.TryGetValue("GetAllCategory", out items))
             {
-                items = repo.CategoryRepository.FindAll()
-                    .Include(c => c.ParentCategory) // Include parent category data
-                    .ToList<Category>();
-
-                cache.Set("GetCategory", items, DateTimeOffset.UtcNow.AddSeconds(20));
-
-                cache.Remove("GetCategory");
+                items = repo.CategoryRepository.FindAll().ToList<Category>();
+                cache.Set("TumKategoriler", items, DateTimeOffset.UtcNow.AddHours(1));
             }
 
             return new
@@ -39,6 +34,8 @@ namespace AgirSaglam.Api.Controllers
                 data = items
             };
         }
+
+
 
         //idye göre getiren
 
@@ -135,6 +132,19 @@ namespace AgirSaglam.Api.Controllers
             {
                 success = true,
                 data = propertyGroups
+            };
+        }
+
+        //admin listeleyeceği Kategori
+        [HttpGet("CategoryAdminLists")]
+       // [Authorize(Roles = "admin")]
+        public dynamic CategoryAdminLists()
+        {
+            List<V_CategoryAdminList> items = repo.CategoryRepository.CategoryAdminLists();
+            return new
+            {
+                success = true,
+                data = items
             };
         }
 
