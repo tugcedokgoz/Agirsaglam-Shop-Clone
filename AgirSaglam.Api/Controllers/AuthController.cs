@@ -35,7 +35,9 @@ namespace AgirSaglam.Api.Controllers
                 Role role = repo.RoleRepository.FindByCondition(r => r.Id == item.RoleId).SingleOrDefault<Role>();
 
                 Dictionary<string, object> claims = new Dictionary<string, object>();
-                claims.Add(ClaimTypes.Role, role.Name);
+
+                if (role != null)
+                    claims.Add(ClaimTypes.Role, role.Name);
 
                 var tokenHandler = new JwtSecurityTokenHandler();
                 var tokenKey = Encoding.UTF8.GetBytes("AgirSaglamShopCloneAHLEgitim");
@@ -52,7 +54,7 @@ namespace AgirSaglam.Api.Controllers
                 {
                     success = true,
                     data = tokenHandler.WriteToken(token),
-                     role = role?.Name
+                    role = role?.Name
                 };
             }
             else

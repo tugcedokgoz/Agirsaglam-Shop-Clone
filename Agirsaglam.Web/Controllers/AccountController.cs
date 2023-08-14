@@ -10,6 +10,7 @@ namespace Agirsaglam.Web.Controllers
         public IActionResult Login() => View();
 
 
+
         public IActionResult GirisYap(LoginModel model)
         {
 
@@ -21,9 +22,13 @@ namespace Agirsaglam.Web.Controllers
 
             if (success)
             {
-                Repo.Session.UserName = model.UserName;
-                Repo.Session.Token = (string)result.data;
-                Repo.Session.Role = (string)result.role;
+
+                HttpContext.Session.SetString("userName",model.UserName);
+                HttpContext.Session.SetString("token", (string)result.data);
+                HttpContext.Session.SetString("rol", (string)result.role);
+                //Repo.Session.UserName = model.UserName;
+                //Repo.Session.Token = (string)result.data;
+                //Repo.Session.Role = (string)result.role;
 
                 return RedirectToAction("Index", "Home");
             }

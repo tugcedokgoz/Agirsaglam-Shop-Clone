@@ -1,4 +1,6 @@
-﻿namespace Agirsaglam.Web.Code
+﻿//kullanamdım
+
+namespace Agirsaglam.Web.Code
 {
     public class Repo
     {
