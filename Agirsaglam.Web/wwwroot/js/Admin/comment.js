@@ -44,7 +44,7 @@ function GetAdminComment() {
                     
                                      <button type="button" class="btn btn-danger btn-sm m-2"  onclick='DeleteComment(${arr[i].id})'>Delete</button>
                                     
-                                     <button type="button" class="btn btn-warning btn-sm m-2" data-bs-toggle="modal" data-bs-target="#productEditModal" onclick='SetProductIdforEditModal(${arr[i].id})'>Edit</button>
+                                     <button type="button" class="btn btn-warning btn-sm m-2" data-bs-toggle="modal" data-bs-target="#commentEditModal" onclick='SetCommentIdforEditModal(${arr[i].id})'>Edit</button>
                                     
                              </td>`;
             html += `</tr>`
@@ -62,6 +62,27 @@ function DeleteComment(id) {
         GetAdminComment();
     });
 }
+
+function SetCommentIdforEditModal(id) {
+    GetComments();
+    $("#EditCommentId").val(parseInt(id))
+
+
+
+}
+function UpdateComment() {
+    var status = $("#toggleSwitch").prop("checked") ? 1 : 0;
+    var comment = {
+        
+        Status: status
+    };
+
+    Post("Comment/Save", comment, (data) => {
+        GetAdminComment();
+        $("#commentEditModal").modal("hide");
+    });
+}
+
 
 function GetCommentByName(name) {
     $.ajax({
@@ -135,5 +156,9 @@ $(document).ready(function () {
         } else {
             GetAdminComment();
         }
+    });
+    $("#commentEditForm").submit(function (event) {
+        event.preventDefault();
+        UpdateComment();
     });
 });

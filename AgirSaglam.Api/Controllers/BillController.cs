@@ -24,18 +24,39 @@ namespace AgirSaglam.Api.Controllers
             if (!cache.TryGetValue("GetBills", out items))
             {
                 items = repo.BillRepository.FindAll()
-                    .Include(b => b.Adress) // Include metodu ile Adress'i yanında getiriyoruz
+                    .Include(b => b.Adress) // Adres bilgisini yanında getiriyoruz
                     .ToList();
 
                 cache.Set("GetBills", items, DateTimeOffset.UtcNow.AddSeconds(20));
             }
 
+            var formattedItems = items.Select(bill => new
+            {
+                bill.Id,
+                bill.AdressId,
+                Adress = new
+                {
+                    bill.Adress.Id,
+                    bill.Adress.City, 
+                    bill.Adress.District,  
+                    bill.Adress.PostCode,   
+
+                },
+                bill.Name,
+                bill.Surname,
+                bill.Email,
+                bill.PhoneNo,
+                bill.TcNo,
+                bill.UserId
+            }).ToList();
+
             return new
             {
                 success = true,
-                data = items
+                data = formattedItems
             };
         }
+
 
 
 

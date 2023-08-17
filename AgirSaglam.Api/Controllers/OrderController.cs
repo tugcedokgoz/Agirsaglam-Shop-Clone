@@ -249,5 +249,6 @@ namespace AgirSaglam.Api.Controllers
         }
 
 
+
     }
 }

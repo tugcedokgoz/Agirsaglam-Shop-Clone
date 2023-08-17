@@ -1,4 +1,5 @@
 ﻿using AgirSaglam.Model.Models;
+using AgirSaglam.Model.View;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -43,5 +44,8 @@ namespace AgirSaglam.Repository
 
             return comments;
         }
+
+        
+
     }
 }

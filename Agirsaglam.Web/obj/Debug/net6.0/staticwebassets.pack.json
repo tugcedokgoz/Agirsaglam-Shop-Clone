@@ -2477,12 +2477,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\Admin\\bill.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\bill.js"
+    },
+    {
       "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\Admin\\category.js",
       "PackagePath": "staticwebassets\\js\\Admin\\category.js"
     },
     {
       "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\Admin\\comment.js",
       "PackagePath": "staticwebassets\\js\\Admin\\comment.js"
+    },
+    {
+      "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\Admin\\order.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\order.js"
     },
     {
       "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\Admin\\product.js",
