@@ -249,5 +249,46 @@ namespace AgirSaglam.Api.Controllers
                 data = items
             };
         }
+
+        [HttpGet("UserAdminLists")]
+        // [Authorize(Roles = "admin")]
+        public async Task<IActionResult> Get()
+        {
+            User user = await repo.UserRepository.GetUserAdminList();
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(new
+            {
+                success = true,
+                data = new
+                {
+                    user.Id,
+                    user.UserName,
+                    user.Email,
+                    user.CreateDate,
+                    user.UpdateDate,
+                    user.EmailConfirm,
+                    user.EmailConfirmDate,
+                    user.Status,
+                    Adress = new
+                    {
+                        user.Adress?.Id,
+                        user.Adress?.City,
+                        user.Adress?.District,
+                        user.Adress?.PostCode
+
+                    },
+                    Role = new
+                    {
+                        user.Role?.Id,
+                        user.Role?.Name
+
+                    }
+                }
+            });
+        }
     }
 }

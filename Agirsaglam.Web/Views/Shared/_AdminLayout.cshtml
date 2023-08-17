@@ -20,10 +20,24 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
 
 
-    <script>
+@*    <script>
         let TOKEN = "@Repo.Session.Token";
-    </script>
+    </script>*@
+  @*  action burda çağırıyorum*@
+    <script>
+        async function getToken() {
+            try {
+                const response = await fetch('/Account/GetToken');
+                const data = await response.json();
+                const TOKEN = data.Token;
+                // Kullan TOKEN değişkenini burada istediğiniz gibi kullanabilirsiniz
+            } catch (error) {
+                console.error('Hata:', error);
+            }
+        }
 
+        getToken();
+    </script>
 
 </head>
 <body class="sb-nav-fixed">

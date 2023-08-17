@@ -1,4 +1,5 @@
 ﻿using AgirSaglam.Model.Models;
+using AgirSaglam.Model.View;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ namespace AgirSaglam.Repository
     {
         public ProductRepository(RepositoryContext context) : base(context)
         {
-          
+
         }
 
         //kategori id ye göre
@@ -80,5 +81,26 @@ namespace AgirSaglam.Repository
 
             return products;
         }
+
+        public List<V_ProductAdminList> GetProductAdminList()
+        {
+            var products = RepositoryContext.ProductAdminList
+                .Select(p => new V_ProductAdminList
+                {
+                    ProductId = p.ProductId,
+                    CategoryId = p.CategoryId,
+                    ProductName = p.ProductName,
+                    CategoryName = p.CategoryName,
+                    Price = p.Price,
+                    DiscountPrice = p.DiscountPrice,
+                    Amount = p.Amount,
+                    Description = p.Description,
+                    Image = p.Image
+                })
+                .ToList();
+
+            return products;
+        }
+
     }
 }

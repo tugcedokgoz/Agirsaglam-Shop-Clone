@@ -48,6 +48,30 @@ function Post(action, data, success) {
         }
     });
 }
+//function GetByName(action, data, success) {
+//    $.ajax({
+//        type: "GET",
+//        url: `${BASE_API_URI}/${action}`,
+
+//        //beforeSend: function (xhr) {
+//        //    xhr.setRequestHeader('Authorization', `Bearer ${TOKEN}`);
+//        //},
+
+//        success: function (response) {
+//            if (response.success) {
+
+//                success(response.data);
+//            }
+//            else {
+
+//                console.log(response);
+//            }
+//        },
+//        error: function (XMLHttpRequest, textStatus, errorThrown) {
+//            console.log(XMLHttpRequest + "-" + textStatus + "-" + errorThrown);
+//        }
+//    });
+//}
 
 function Delete(action, success, ask = true) {
     var confirmed = true;

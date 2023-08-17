@@ -148,5 +148,24 @@ namespace AgirSaglam.Api.Controllers
             };
         }
 
+        [HttpGet("GetCategoryByName")]
+        public dynamic GetCategoryByName(string name)
+        {
+            List<Category> items;
+            if (!cache.TryGetValue("GetCategoryByName_" + name, out items))
+            {
+                items=repo.CategoryRepository.FindByCondition(c=>c.Name.Contains(name)).ToList<Category>();
+               
+
+                cache.Set("GetCategoryByName_" + name, items, DateTimeOffset.UtcNow.AddSeconds(20));
+            }
+
+            return new
+            {
+                success = true,
+                data = items
+            };
+        }
+
     }
 }

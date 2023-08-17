@@ -10,5 +10,6 @@ namespace Agirsaglam.Web.Areas.Admin.Controllers
         public IActionResult Product()=>View();
         public IActionResult User()=>View();
         public IActionResult Category()=>View();
+        public IActionResult Comment()=>View();
     }
 }

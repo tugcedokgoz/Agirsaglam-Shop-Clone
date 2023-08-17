@@ -211,5 +211,38 @@ namespace AgirSaglam.Api.Controllers
 
 
 
+        [HttpGet("GetAdminComments")]
+        public dynamic GetAdminComments()
+        {
+            var comments = repo.CommentRepository.GetCommentAdminList();
+
+            return new
+            {
+                success = true,
+                data = comments
+            };
+        }
+
+
+        [HttpGet("GetCommentByName")]
+        public dynamic GetCommentByName(string name)
+        {
+            List<Comment> items;
+            if (!cache.TryGetValue("GetCommentByName" + name, out items))
+            {
+                items = repo.CommentRepository.FindByCondition(c => c.Explanation.Contains(name)).ToList<Comment>();
+
+
+                cache.Set("GetCommentByName" + name, items, DateTimeOffset.UtcNow.AddSeconds(20));
+            }
+
+            return new
+            {
+                success = true,
+                data = items
+            };
+        }
+
+
     }
 }

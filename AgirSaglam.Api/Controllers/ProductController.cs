@@ -1,9 +1,12 @@
 ﻿using AgirSaglam.Model.Models;
+using AgirSaglam.Model.View;
 using AgirSaglam.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Caching.Memory;
 using Newtonsoft.Json.Linq;
+using System.Dynamic;
 
 namespace AgirSaglam.Api.Controllers
 {
@@ -11,9 +14,9 @@ namespace AgirSaglam.Api.Controllers
     [ApiController]
     public class ProductController : BaseController
     {
-        public ProductController(RepositoryWrapper repo,IMemoryCache cache):base(repo,cache)
+        public ProductController(RepositoryWrapper repo, IMemoryCache cache) : base(repo, cache)
         {
-            
+
         }
 
         // categoryId'ye göre ürünleri getirme
@@ -70,7 +73,7 @@ namespace AgirSaglam.Api.Controllers
         public dynamic Save([FromBody] dynamic model)
         {
             dynamic json = JObject.Parse(model.GetRawText());
-          
+
 
             Product item = new Product()
             {
@@ -143,5 +146,20 @@ namespace AgirSaglam.Api.Controllers
                 data = items
             };
         }
+
+        [HttpGet("GetAdminProducts")]
+        public dynamic GetAdminProducts()
+        {
+            var products = repo.ProductRepository.GetProductAdminList();
+
+            return new
+            {
+                success = true,
+                data = products
+            };
+        }
+
+
+
     }
 }

@@ -99,6 +99,48 @@ function UpdateCategory() {
     });
 }
 
+function GetCategoryByName(name) {
+    $.ajax({
+        type: "GET",
+        url: `${BASE_API_URI}/Category/GetCategoryByName?name=${name}`, // name parametresini ekliyoruz
+        success: function (response) {
+            if (response.success) {
+                var html = `<table class="table table-hover">` +
+                    `<tr>
+                 
+                    <th>Category Name</th>
+                    <th>Parent Category</th>
+                    <th>Status</th>         
+            </tr>`;
+
+                var arr = response.data;
+
+                for (var i = 0; i < arr.length; i++) {
+                    html += `<tr>`;
+                    html += `<td>${arr[i].name}</td>`;
+                    html += `<td>${arr[i].parentCategoryName}</td>`;
+                    html += `<td>${arr[i].status}</td>`;
+                    html += `<td>
+                                 <button type="button" class="btn btn-danger" onclick='DeleteRole(${arr[i].id})'>Delete</button>
+                                 &nbsp;
+                                 <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#roleEditModal" onclick='SetRoleIdforEditModal(${arr[i].id})'>Edit</button>
+                             </td>`;
+                    html += `</tr>`
+                }
+                html += `</table>`;
+
+                $("#divCategory").html(html);
+            } else {
+
+                console.log(response);
+            }
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest + "-" + textStatus + "-" + errorThrown);
+        }
+    });
+}
+
 $(document).ready(function () {
     GetAdminCategory();
     GetCategory();
@@ -110,5 +152,13 @@ $(document).ready(function () {
     $("#categoryEditForm").submit(function (event) {
         event.preventDefault();
         UpdateCategory();
+    });
+    $("#searchButton").click(function () {
+        var categoryName = $("#categoryIdInput").val();
+        if (categoryName !== "") {
+            GetCategoryByName(categoryName);
+        } else {
+            GetAdminCategory();
+        }
     });
 });

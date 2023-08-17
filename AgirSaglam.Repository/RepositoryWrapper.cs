@@ -19,6 +19,7 @@ namespace AgirSaglam.Repository
         private BillRepository billRepository;
         private CommentRepository commentRepository;
         private OrderRepository orderRepository;
+        private ProductCategoryRepository productCategoryRepository;
 
         public RepositoryWrapper(RepositoryContext context)
         {
@@ -107,11 +108,22 @@ namespace AgirSaglam.Repository
                 return orderRepository;
             }
         }
+        public ProductCategoryRepository ProductCategoryRepository
+        {
+            get
+            {
+                if (productCategoryRepository == null)
+                    productCategoryRepository = new ProductCategoryRepository(context);
+                return productCategoryRepository;
+            }
+        }
 
 
         public void SaveChanges()
         {
+            Console.WriteLine(context);
             context.SaveChanges();
+            Console.WriteLine(context);
         }
     }
 }

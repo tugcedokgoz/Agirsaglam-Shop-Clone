@@ -90,6 +90,7 @@ function GetRolesByName(name) {
     });
 }
 
+
 $(document).ready(function () {
     GetRoles();
     $("#roleForm").submit(function (event) {
@@ -102,6 +103,7 @@ $(document).ready(function () {
     });
     $("#searchButton").click(function () {
         var roleName = $("#roleIdInput").val(); // roleName değişkeni olarak alınacak
+        console.log(roleName)
         if (roleName !== "") {
             GetRolesByName(roleName);
         } else {

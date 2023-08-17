@@ -1,4 +1,5 @@
 ﻿using AgirSaglam.Model.Models;
+using AgirSaglam.Model.View;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace AgirSaglam.Repository
 {
-    public class CommentRepository:RepositoryBase<Comment>
+    public class CommentRepository : RepositoryBase<Comment>
     {
-        public CommentRepository(RepositoryContext context):base(context)
+        public CommentRepository(RepositoryContext context) : base(context)
         {
-                
+
         }
         //silme
         public void RemoveComment(int commentId)
@@ -50,6 +51,38 @@ namespace AgirSaglam.Repository
                 .Include(c => c.User)    // User ilişkisel verisini yükleme
                 .Include(c => c.Product) // Product ilişkisel verisini yükleme
                 .ToListAsync();
+
+            return comments;
+        }
+
+        public List<V_CommentAdminList> GetCommentAdminList()
+        {
+            var comments = RepositoryContext.CommentAdminLists
+                .Select(c => new V_CommentAdminList
+                {
+                    Id = c.Id,
+                    UserId = c.UserId,
+                    ProductId = c.ProductId,
+                    Explanation = c.Explanation,
+                    Date = c.Date,
+                    Point = c.Point,
+                    Answer = c.Answer,
+                    Status = c.Status,
+                    StatusDate = c.StatusDate,
+                    ConfirmUserId = c.ConfirmUserId,
+                    UserName = RepositoryContext.Users.FirstOrDefault(u => u.Id == c.UserId).UserName,
+                    ProductName = RepositoryContext.Products.FirstOrDefault(p => p.Id == c.ProductId).Name // Değişiklik burada
+                })
+                .ToList();
+
+            return comments;
+        }
+
+        public List<Comment> GetCommentByName(string name)
+        {
+            var comments = RepositoryContext.Comments
+                .Where(r => r.Explanation.Contains(name))
+                .ToList();
 
             return comments;
         }

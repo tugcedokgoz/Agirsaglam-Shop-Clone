@@ -2481,6 +2481,10 @@
       "PackagePath": "staticwebassets\\js\\Admin\\category.js"
     },
     {
+      "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\Admin\\comment.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\comment.js"
+    },
+    {
       "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\Admin\\product.js",
       "PackagePath": "staticwebassets\\js\\Admin\\product.js"
     },

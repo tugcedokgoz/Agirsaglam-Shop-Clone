@@ -75,7 +75,7 @@ namespace AgirSaglam.Repository
             var user = await RepositoryContext.Users
                 .Include(u => u.Role) // Role nesnesini Include ederek ilişkili veriyi getirin
                 .Include(u => u.Adress) // Adress nesnesini Include ederek ilişkili veriyi getirin
-                .Where(u => u.Id == userId)
+                //.Where(u => u.Id == userId)
                 .FirstOrDefaultAsync();
 
             return user;
@@ -94,6 +94,17 @@ namespace AgirSaglam.Repository
                 .ToList();
 
             return users;
+        }
+
+        public async Task<User> GetUserAdminList()
+        {
+            var user = await RepositoryContext.Users
+                .Include(u => u.Role) // Role nesnesini Include ederek ilişkili veriyi getirin
+                .Include(u => u.Adress) // Adress nesnesini Include ederek ilişkili veriyi getirin
+                                       
+                .FirstOrDefaultAsync();
+
+            return user;
         }
     }
 }

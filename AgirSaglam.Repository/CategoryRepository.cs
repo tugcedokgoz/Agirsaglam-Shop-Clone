@@ -43,5 +43,14 @@ namespace AgirSaglam.Repository
         public List<V_CategoryAdminList> CategoryAdminLists() => RepositoryContext.CategoryAdminLists.OrderBy(c => c.Id)
             .ToList<V_CategoryAdminList>();
 
+        public List<Category> GetCategoryByName(string name)
+        {
+            var categories = RepositoryContext.Categories
+                .Where(r => r.Name.Contains(name))
+                .ToList();
+
+            return categories;
+        }
+
     }
 }
