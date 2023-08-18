@@ -26,8 +26,8 @@ namespace AgirSaglam.Repository
         {
             var comments = await RepositoryContext.Comments
                 .Where(c => c.UserId == userId)
-                .Include(c => c.User)    // User ilişkisel verisini yükleme
-                .Include(c => c.Product) // Product ilişkisel verisini yükleme
+                .Include(c => c.User)    
+                .Include(c => c.Product) 
                 .ToListAsync();
 
             return comments;
@@ -48,8 +48,8 @@ namespace AgirSaglam.Repository
         {
             var comments = await RepositoryContext.Comments
                 .Where(c => c.ProductId == productId)
-                .Include(c => c.User)    // User ilişkisel verisini yükleme
-                .Include(c => c.Product) // Product ilişkisel verisini yükleme
+                .Include(c => c.User)    
+                .Include(c => c.Product) 
                 .ToListAsync();
 
             return comments;
@@ -71,20 +71,36 @@ namespace AgirSaglam.Repository
                     StatusDate = c.StatusDate,
                     ConfirmUserId = c.ConfirmUserId,
                     UserName = RepositoryContext.Users.FirstOrDefault(u => u.Id == c.UserId).UserName,
-                    ProductName = RepositoryContext.Products.FirstOrDefault(p => p.Id == c.ProductId).Name // Değişiklik burada
+                    ProductName = RepositoryContext.Products.FirstOrDefault(p => p.Id == c.ProductId).Name
                 })
                 .ToList();
 
             return comments;
         }
 
-        public List<Comment> GetCommentByName(string name)
+        public List<V_CommentAdminList> GetCommentByName(string name)
         {
             var comments = RepositoryContext.Comments
-                .Where(r => r.Explanation.Contains(name))
+                 .Where(r => r.Explanation.Contains(name))
+                 .Select(c => new V_CommentAdminList
+                 {
+                     Id = c.Id,
+                     UserId = c.UserId,
+                     ProductId = c.ProductId,
+                     Explanation = c.Explanation,
+                     Date = c.Date,
+                     Point = c.Point,
+                     Answer = c.Answer,
+                     Status = c.Status,
+                     StatusDate = c.StatusDate,
+                     ConfirmUserId = c.ConfirmUserId,
+                     UserName = RepositoryContext.Users.FirstOrDefault(u => u.Id == c.UserId).UserName,
+                     ProductName = RepositoryContext.Products.FirstOrDefault(p => p.Id == c.ProductId).Name
+                 })
                 .ToList();
 
             return comments;
         }
+
     }
 }

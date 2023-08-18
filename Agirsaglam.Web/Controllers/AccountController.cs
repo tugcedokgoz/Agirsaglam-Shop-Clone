@@ -28,15 +28,22 @@ namespace Agirsaglam.Web.Controllers
 
             if (success)
             {
-
+            
                 HttpContext.Session.SetString("userName",model.UserName);
                 HttpContext.Session.SetString("token", (string)result.data);
                 HttpContext.Session.SetString("role", (string)result.role);
                 //Repo.Session.UserName = model.UserName;
                 //Repo.Session.Token = (string)result.data;
                 //Repo.Session.Role = (string)result.role;
-
-                return RedirectToAction("Index", "Home");
+                if (result.role == "Admin")
+                {
+                    return RedirectToAction("Home", "Admin");
+                }
+                else
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                  
             }
             else
             {

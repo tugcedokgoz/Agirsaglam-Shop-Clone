@@ -6,9 +6,9 @@ function Get(action, success) {
         type: "GET",
         url: `${BASE_API_URI}/${action}`,
 
-        //beforeSend: function (xhr) {
-        //    xhr.setRequestHeader('Authorization', `Bearer ${TOKEN}`);
-        //},
+        beforeSend: function (xhr) {
+            xhr.setRequestHeader('Authorization', `Bearer ${TOKEN}`);
+        },
 
         success: function (response) {
             if (response.success) {

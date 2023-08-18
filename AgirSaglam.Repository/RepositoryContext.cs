@@ -44,7 +44,7 @@ namespace AgirSaglam.Repository
         public DbSet<V_ProductAdminList> ProductAdminList { get; set; } 
         public DbSet<V_UserAdminList> UserAdminLists { get; set; } 
         public DbSet<V_CommentAdminList> CommentAdminLists { get; set; } 
-        public DbSet<V_OrderAdminList> OrderAdminLists { get; set; } 
+   
 
     }
 }

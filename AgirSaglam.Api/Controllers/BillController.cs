@@ -1,5 +1,6 @@
 ﻿using AgirSaglam.Model.Models;
 using AgirSaglam.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -17,6 +18,7 @@ namespace AgirSaglam.Api.Controllers
         {
             
         }
+      
         [HttpGet("GetBills")]
         public dynamic GetBill()
         {
@@ -24,7 +26,9 @@ namespace AgirSaglam.Api.Controllers
             if (!cache.TryGetValue("GetBills", out items))
             {
                 items = repo.BillRepository.FindAll()
-                    .Include(b => b.Adress) // Adres bilgisini yanında getiriyoruz
+                    .Include(b => b.Adress) 
+            
+                    
                     .ToList();
 
                 cache.Set("GetBills", items, DateTimeOffset.UtcNow.AddSeconds(20));
@@ -40,8 +44,9 @@ namespace AgirSaglam.Api.Controllers
                     bill.Adress.City, 
                     bill.Adress.District,  
                     bill.Adress.PostCode,   
-
                 },
+    
+
                 bill.Name,
                 bill.Surname,
                 bill.Email,

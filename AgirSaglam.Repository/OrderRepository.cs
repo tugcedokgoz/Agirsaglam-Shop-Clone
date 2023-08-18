@@ -25,9 +25,9 @@ namespace AgirSaglam.Repository
         {
             var comments = await RepositoryContext.Orders
                 .Where(c => c.UserId == userId)
-                .Include(c => c.User)    // User ilişkisel verisini yükleme
-                .Include(c => c.Product) // Product ilişkisel verisini yükleme
-                .Include(c => c.Bill) // Bill ilişkisel verisini yükleme
+                .Include(c => c.User)   
+                .Include(c => c.Product) 
+                .Include(c => c.Bill) 
                 .ToListAsync();
 
             return comments;
@@ -37,9 +37,9 @@ namespace AgirSaglam.Repository
         {
             var comments = await RepositoryContext.Orders
                 .Where(c => c.OrderNo == orderNo)
-                .Include(c => c.User)    // User ilişkisel verisini yükleme
-                .Include(c => c.Product) // Product ilişkisel verisini yükleme
-                .Include(c => c.Bill) // Bill ilişkisel verisini yükleme
+                .Include(c => c.User)    
+                .Include(c => c.Product) 
+                .Include(c => c.Bill) 
                 .ToListAsync();
 
             return comments;

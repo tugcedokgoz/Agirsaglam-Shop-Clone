@@ -48,12 +48,21 @@ namespace AgirSaglam.Api.Controllers
                         {
                             c.Product.Id,
                             c.Product.Name,
+                            c.Product.Price,
                         },
                         Bill = new
                         {
                             c.Bill.Id,
                             c.Bill.Name,
                             c.Bill.Surname,
+                            c.Bill.Adress,
+                            c.Bill.Adress.City,
+                            c.Bill.Adress.District,
+                            c.Bill.Adress.PostCode,
+                            c.Bill.Email,
+                            c.Bill.PhoneNo,
+                            c.Bill.TcNo,
+
                         }
                     })
                     .ToList();
@@ -125,9 +134,9 @@ namespace AgirSaglam.Api.Controllers
             if (!cache.TryGetValue($"GetOrderByOrderNo_{orderNo}", out item))
             {
                 item = repo.OrderRepository.FindByCondition(o => o.OrderNo == orderNo)
-                    .Include(o => o.User)    // User ilişkisel verisini yükleme
-                    .Include(o => o.Product) // Product ilişkisel verisini yükleme
-                    .Include(o => o.Bill)    // Bill ilişkisel verisini yükleme
+                    .Include(o => o.User)   
+                    .Include(o => o.Product) 
+                    .Include(o => o.Bill)   
                     .FirstOrDefault();
 
                 cache.Set($"GetOrderByOrderNo_{orderNo}", item, DateTimeOffset.UtcNow.AddSeconds(20));
@@ -142,32 +151,31 @@ namespace AgirSaglam.Api.Controllers
                     {
                         item.Id,
                         item.OrderNo,
+                        item.OrderDate,
+                        item.OrderAmount,
+                        item.CargoNo,
                         item.UserId,
                         item.ProductId,
                         item.BillId,
-                        // Diğer Order özelliklerini ekleyin
-                        // Örneğin: item.OrderDate, item.Quantity, vs.
+           
                         User = new
                         {
                             item.User.Id,
                             item.User.UserName,
-                            // Diğer User özelliklerini ekleyin
-                            // Örneğin: item.User.FirstName, item.User.LastName, vs.
+                          
                         },
                         Product = new
                         {
                             item.Product.Id,
                             item.Product.Name,
-                            // Diğer Product özelliklerini ekleyin
-                            // Örneğin: item.Product.Description, item.Product.Price, vs.
+                           
                         },
                         Bill = new
                         {
                             item.Bill.Id,
                             item.Bill.Name,
                             item.Bill.Surname,
-                            // Diğer Bill özelliklerini ekleyin
-                            // Örneğin: item.Bill.PaymentDate, item.Bill.IsPaid, vs.
+                         
                         }
                     }
                 };
@@ -191,9 +199,9 @@ namespace AgirSaglam.Api.Controllers
             if (!cache.TryGetValue($"GetOrdersByUserId{userId}", out item))
             {
                 item = repo.OrderRepository.FindByCondition(o => o.UserId == userId)
-                    .Include(o => o.User)    // User ilişkisel verisini yükleme
-                    .Include(o => o.Product) // Product ilişkisel verisini yükleme
-                    .Include(o => o.Bill)    // Bill ilişkisel verisini yükleme
+                    .Include(o => o.User)   
+                    .Include(o => o.Product) 
+                    .Include(o => o.Bill)   
                     .FirstOrDefault();
 
                 cache.Set($"GetOrdersByUserId{userId}", item, DateTimeOffset.UtcNow.AddSeconds(20));
@@ -211,29 +219,25 @@ namespace AgirSaglam.Api.Controllers
                         item.UserId,
                         item.ProductId,
                         item.BillId,
-                        // Diğer Order özelliklerini ekleyin
-                        // Örneğin: item.OrderDate, item.Quantity, vs.
+                   
                         User = new
                         {
                             item.User.Id,
                             item.User.UserName,
-                            // Diğer User özelliklerini ekleyin
-                            // Örneğin: item.User.FirstName, item.User.LastName, vs.
+                     
                         },
                         Product = new
                         {
                             item.Product.Id,
                             item.Product.Name,
-                            // Diğer Product özelliklerini ekleyin
-                            // Örneğin: item.Product.Description, item.Product.Price, vs.
+                     
                         },
                         Bill = new
                         {
                             item.Bill.Id,
                             item.Bill.Name,
                             item.Bill.Surname,
-                            // Diğer Bill özelliklerini ekleyin
-                            // Örneğin: item.Bill.PaymentDate, item.Bill.IsPaid, vs.
+                        
                         }
                     }
                 };

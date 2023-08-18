@@ -6,7 +6,7 @@ using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-
+using AgirSaglam.Model.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -103,6 +103,11 @@ builder.Services.AddCors(options =>
     });
 });
 
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AdminPolicy", policy =>
+        policy.RequireRole(Enums.Roles.Admin.ToString()));
+});
 
 var app = builder.Build();
 

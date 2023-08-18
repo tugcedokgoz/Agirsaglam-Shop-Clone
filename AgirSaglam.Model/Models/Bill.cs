@@ -20,5 +20,6 @@ namespace AgirSaglam.Model.Models
         public string TcNo { get; set; }
         public int UserId { get; set; }
 
+
     }
 }

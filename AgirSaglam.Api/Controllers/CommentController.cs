@@ -1,5 +1,7 @@
 ﻿using AgirSaglam.Model.Models;
+using AgirSaglam.Model.View;
 using AgirSaglam.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -143,15 +145,11 @@ namespace AgirSaglam.Api.Controllers
                 {
                     c.User.Id,
                     c.User.UserName,
-                    // Diğer User özelliklerini ekleyin
-                    // Örneğin: c.User.FirstName, c.User.LastName, vs.
                 } : null,
                 Product = c.Product != null ? new
                 {
                     c.Product.Id,
                     c.Product.Name,
-                    // Diğer Product özelliklerini ekleyin
-                    // Örneğin: c.Product.Description, c.Product.Price, vs.
                 } : null
             });
 
@@ -190,15 +188,11 @@ namespace AgirSaglam.Api.Controllers
                 {
                     c.User.Id,
                     c.User.UserName,
-                    // Diğer User özelliklerini ekleyin
-                    // Örneğin: c.User.FirstName, c.User.LastName, vs.
                 } : null,
                 Product = c.Product != null ? new
                 {
                     c.Product.Id,
                     c.Product.Name,
-                    // Diğer Product özelliklerini ekleyin
-                    // Örneğin: c.Product.Description, c.Product.Price, vs.
                 } : null
             });
 
@@ -209,8 +203,7 @@ namespace AgirSaglam.Api.Controllers
             });
         }
 
-
-
+        [Authorize]
         [HttpGet("GetAdminComments")]
         public dynamic GetAdminComments()
         {
@@ -223,25 +216,42 @@ namespace AgirSaglam.Api.Controllers
             };
         }
 
-
+     
         [HttpGet("GetCommentByName")]
-        public dynamic GetCommentByName(string name)
+        public IActionResult GetCommentByName(string name)
         {
-            List<Comment> items;
-            if (!cache.TryGetValue("GetCommentByName" + name, out items))
+            var comments = repo.CommentRepository.GetCommentByName(name);
+
+            if (comments == null || comments.Count == 0)
             {
-                items = repo.CommentRepository.FindByCondition(c => c.Explanation.Contains(name)).ToList<Comment>();
-
-
-                cache.Set("GetCommentByName" + name, items, DateTimeOffset.UtcNow.AddSeconds(20));
+                return NotFound();
             }
 
-            return new
+            var commentsWithRelatedProperties = comments.Select(c => new
+            {
+                c.Id,
+                c.UserId,
+                c.ProductId,
+                c.Explanation,
+                c.Date,
+                c.Point,
+                c.Answer,
+                c.Status,
+                c.StatusDate,
+                c.ConfirmUserId,
+                UserName = c.UserName,
+                ProductName = c.ProductName
+            });
+
+            return Ok(new
             {
                 success = true,
-                data = items
-            };
+                data = commentsWithRelatedProperties
+            });
         }
+
+
+
 
 
     }
