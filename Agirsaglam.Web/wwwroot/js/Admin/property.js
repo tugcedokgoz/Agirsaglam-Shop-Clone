@@ -56,6 +56,14 @@ function SaveProperty() {
     });
 }
 
+
+
+function DeleteProperty(id) {
+    Delete(`Property/Delete?id=${id}`, (data) => {
+        console.log(data)
+        GetAllPropertiesForProperty();
+    });
+}
 $(document).ready(function () {
     GetAllPropertiesForProperty();
 
