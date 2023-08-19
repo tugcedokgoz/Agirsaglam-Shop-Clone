@@ -20,6 +20,10 @@ namespace AgirSaglam.Repository
         private CommentRepository commentRepository;
         private OrderRepository orderRepository;
         private ProductCategoryRepository productCategoryRepository;
+        private PropertyGroupRepository propertyGroupRepository;
+        private PropertyRepository propertyRepository;
+        private ProductPropertyRepository productPropertyRepository;
+        private CategoryPropertyRepository categoryPropertyRepository;
 
         public RepositoryWrapper(RepositoryContext context)
         {
@@ -118,7 +122,44 @@ namespace AgirSaglam.Repository
             }
         }
 
+        public PropertyGroupRepository PropertyGroupRepository
+        {
+            get
+            {
+                if (propertyGroupRepository == null)
+                    propertyGroupRepository = new PropertyGroupRepository(context);
+                return propertyGroupRepository;
+            }
+        }
+        public PropertyRepository PropertyRepository
+        {
+            get
+            {
+                if (propertyRepository == null)
+                    propertyRepository = new PropertyRepository(context);
+                return propertyRepository;
+            }
+        }
 
+        public ProductPropertyRepository ProductPropertyRepository
+        {
+            get
+            {
+                if (productPropertyRepository == null)
+                    productPropertyRepository = new ProductPropertyRepository(context);
+                return productPropertyRepository;
+            }
+        }
+
+        public CategoryPropertyRepository CategoryPropertyRepository
+        {
+            get
+            {
+                if (categoryPropertyRepository == null)
+                    categoryPropertyRepository = new CategoryPropertyRepository(context);
+                return categoryPropertyRepository;
+            }
+        }
         public void SaveChanges()
         {
             Console.WriteLine(context);

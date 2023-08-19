@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\Agirsaglam.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/tugcedokgoz/Desktop/AgirsaglamShopClone/AgirsaglamShopClone/Agirsaglam.Web/Areas/Admin/Views/Home/Adress.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxBZHJlc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/tugcedokgoz/Desktop/AgirsaglamShopClone/AgirsaglamShopClone/Agirsaglam.Web/Areas/Admin/Views/Home/Bill.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxCaWxsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

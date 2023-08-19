@@ -1,6 +1,7 @@
 ﻿using AgirSaglam.Model.Models;
 using AgirSaglam.Model.View;
 using AgirSaglam.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -88,6 +89,15 @@ namespace AgirSaglam.Api.Controllers
             if (item.Id > 0)
                 repo.ProductRepository.Update(item);
             else
+            {
+                foreach(var categoryId in json.Categories)
+                {
+                    item.ProductCategories.Add(new ProductCategory()
+                    {
+                        CategoryId = categoryId
+                    });
+                }
+            }
                 repo.ProductRepository.Create(item);
             repo.SaveChanges();
             cache.Remove("Products");
@@ -147,6 +157,7 @@ namespace AgirSaglam.Api.Controllers
             };
         }
 
+      
         [HttpGet("GetAdminProducts")]
         public dynamic GetAdminProducts()
         {

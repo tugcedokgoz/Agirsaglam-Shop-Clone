@@ -13,5 +13,6 @@ namespace Agirsaglam.Web.Areas.Admin.Controllers
         public IActionResult Comment()=>View();
         public IActionResult Order()=>View();
         public IActionResult Bill()=>View();
+        public IActionResult Adress()=>View();
     }
 }

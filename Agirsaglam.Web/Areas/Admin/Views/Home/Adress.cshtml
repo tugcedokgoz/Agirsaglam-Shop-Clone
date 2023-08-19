@@ -1,0 +1,49 @@
+﻿
+<div class="container" style="padding:10px">
+    <h2>Adresss</h2>
+
+    <div id="divAdress">
+    </div>
+
+
+
+
+
+    <!--Düzenleme-->
+    <div class="modal fade" id="adressEditModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="adressEditForm">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Adress</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="inputEditadressName" class="form-label">Adress Name</label>
+                        <input type="text" id="inputEditadressName" class="form-control" name="productName" />
+                        <input type="hidden" value="" id="EditadressId" />
+
+                        <label for="inputEditParentadressName" class="form-label">Parent adress</label>
+                        <select type="text" id="inputEditParentadressName" class="form-control">
+                            <option value="" disabled selected>Select Parent adress</option>
+                        </select>
+
+                        <div class="form-check">
+                            <input for="inputStatus" class="form-check-input" type="checkbox" id="toggleSwitch">
+                            <label for="inputStatus" class="form-check-label">Status</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/js/admin/adress.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+@*<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>*@

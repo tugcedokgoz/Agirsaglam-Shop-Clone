@@ -1,6 +1,6 @@
 ﻿let products = [];
 function GetProduct() {
-    Get("Product/GetAllProducts", (data) => {
+    Get("Product/GetProducts", (data) => {
         var arr = data
         $('#inputCategoryName').empty();
 
@@ -10,8 +10,9 @@ function GetProduct() {
                 text: item.name
             }));
         });
+
         $.each(arr, function (i, item) {
-            $('#inputEditProductName').append($('<option>', {
+            $('#inputCategoryNameEdit').append($('<option>', {
                 value: item.id,
                 text: item.name
             }));
@@ -50,7 +51,8 @@ function GetAdminProduct() {
             //html += `<td><i class="fa fa-trash text-danger" onclick='DeleteRole(${arr[i].id})'></i><i class="fa-pencil-square" onclick='EditRole(${arr[i]})'></i></td>`;
             html += `<td class="d-flex flex-row ">
                     
-                                     <button type="button" class="btn btn-danger btn-sm m-2"  onclick='DeleteProduct(${arr[i].id})'>Delete</button>
+                                    <button type="button" class="btn btn-danger btn-sm m-2" onclick='DeleteProduct(${arr[i].id})'>Delete</button>
+
                                     
                                      <button type="button" class="btn btn-warning btn-sm m-2" data-bs-toggle="modal" data-bs-target="#productEditModal" onclick='SetProductIdforEditModal(${arr[i].id})'>Edit</button>
                                     
@@ -67,11 +69,10 @@ function GetAdminProduct() {
 
 
 function SaveProduct() {
-
     var product = {
         Id: 0,
         Name: $("#inputProductName").val(),
-        CategoryId: $("#inputCategoryName").val(),
+        Categories: [$("#inputCategoryName").val()], // Kategoriyi dizi olarak ekleyin
         Price: $("#inputPrice").val(),
         DiscountPrice: $("#inputDiscountPrice").val(),
         Amount: $("#inputAmount").val(),
@@ -80,7 +81,6 @@ function SaveProduct() {
     };
 
     Post("Product/Save", product, (data) => {
-
         GetAdminProduct();
         $("#productModal").modal("hide");
     });
@@ -90,6 +90,7 @@ function SaveProduct() {
 
 function DeleteProduct(id) {
     Delete(`Product/Delete?id=${id}`, (data) => {
+        console.log(data)
         GetAdminProduct();
     });
 }
@@ -104,19 +105,18 @@ function SetProductIdforEditModal(id) {
 }
 function UpdateProduct() {
 
-    var category = {
+    var product = {
         Id: $("#EditProductId").val(),
-        ProductName: $("#inputEditProductName").val(),
-        CategoryName: $("#inputEditParentCategoryName").val(),
+        Name: $("#inputEditProductName").val(),
+        Categories: [$("#inputEditCategoryName").val()], // Kategoriyi dizi olarak ekleyin
         Price: $("#inputEditPrice").val(),
         DiscountPrice: $("#inputEditDiscountPrice").val(),
         Amount: $("#inputEditAmount").val(),
         Description: $("#inputEditDescription").val(),
         Image: $("#inputEditImage").val(),
- 
     };
 
-    Post("Product/Save", category, (data) => {
+    Post("Product/Save", product, (data) => {
         GetAdminProduct();
         $("#productEditModal").modal("hide");
     });
@@ -178,9 +178,8 @@ $(document).ready(function () {
     GetAdminProduct();
     GetProduct();
     $("#productForm").submit(function (event) {
-        event.preventDefault(); // Form gönderimini engelle
-
-        SaveProduct(); // SaveCategory fonksiyonunu burada çağırın
+        event.preventDefault(); 
+        SaveProduct();
     });
     $("#productEditForm").submit(function (event) {
         event.preventDefault();

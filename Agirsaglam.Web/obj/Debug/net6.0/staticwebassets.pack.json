@@ -4609,6 +4609,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\Admin\\adress.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\adress.js"
+    },
+    {
       "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\Admin\\bill.js",
       "PackagePath": "staticwebassets\\js\\Admin\\bill.js"
     },
