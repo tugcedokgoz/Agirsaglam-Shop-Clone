@@ -23,5 +23,7 @@ namespace AgirSaglam.Repository
         {
             return FindByCondition(property => property.Name == propertyName).FirstOrDefault();
         }
+
+
     }
 }

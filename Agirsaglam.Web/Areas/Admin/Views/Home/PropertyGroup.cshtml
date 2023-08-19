@@ -1,0 +1,68 @@
+﻿
+<div class="container" style="padding:10px">
+    <h2>Property Group</h2>
+    <div class="d-flex flex-row my-4">
+        <input class="mr-3" placeholder="Search by Property Group Name" id="propertyGroupIdInput" value="" />
+        <button type="button" class="btn btn-outline-primary" id="searchButton">Search</button>
+    </div>
+    <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#propertyGroupModal">
+        Add New Property Group
+    </button>
+
+    <div id="divPropertyGroup">
+    </div>
+
+
+
+    <!--kaydetme-->
+    <div class="modal fade" id="propertyGroupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="propertyGroupForm">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Property Group</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="inputpropertyGroupName" class="form-label">Property Group Name</label>
+                        <input type="text" id="inputpropertyGroupName" class="form-control" name="propertyGroupName" />
+                        <input type="hidden" value="" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--düzenleme-->
+    <div class="modal fade" id="propertyGroupEditModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="propertyGroupEditForm">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Property Group</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="inputEditpropertyGroupName" class="form-label">Property Group Name</label>
+                        <input type="text" id="inputEditpropertyGroupName" class="form-control" name="propertyGroupName" />
+                        <input type="hidden" value="" id="EditpropertyGroupId" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="~/js/admin/propertyGroup.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+@*<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>*@

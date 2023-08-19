@@ -67,7 +67,7 @@ namespace AgirSaglam.Api.Controllers
             }
         }
 
-        [HttpPost("SaveProperty")]
+        [HttpPost("Save")]
         public dynamic SaveProperty([FromBody] Property property)
         {
             if (property == null)

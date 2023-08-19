@@ -22,9 +22,13 @@ namespace AgirSaglam.Repository
         }
 
         // Name'e göre arama
-        public PropertyGroup GetPropertyGroupByName(string groupName)
+        public List<PropertyGroup> GetPropertyGroupByName(string name)
         {
-            return RepositoryContext.PropertyGroups.FirstOrDefault(p => p.Name == groupName);
+            var group = RepositoryContext.PropertyGroups
+                .Where(r => r.Name.Contains(name))
+                .ToList();
+
+            return group;
         }
     }
 }

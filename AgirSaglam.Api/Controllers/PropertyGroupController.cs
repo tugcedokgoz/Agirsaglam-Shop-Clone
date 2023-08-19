@@ -24,28 +24,22 @@ namespace AgirSaglam.Api.Controllers
                 data = propertyGroups
             };
         }
-
         [HttpGet("GetByName")]
-        public dynamic GetPropertyGroupByName(string groupName)
+        public dynamic GetByName(string name)
         {
-            var propertyGroup = repo.PropertyGroupRepository.GetPropertyGroupByName(groupName);
+            List<PropertyGroup> items;
+            if (!cache.TryGetValue("GetByName_" + name, out items))
+            {
+                items = repo.PropertyGroupRepository.FindByCondition(r => r.Name.Contains(name)).ToList<PropertyGroup>();
 
-            if (propertyGroup != null)
-            {
-                return new
-                {
-                    success = true,
-                    data = propertyGroup
-                };
+                cache.Set("GetByName_" + name, items, DateTimeOffset.UtcNow.AddSeconds(20));
             }
-            else
+
+            return new
             {
-                return new
-                {
-                    success = false,
-                    message = "Property grubu bulunamadı"
-                };
-            }
+                success = true,
+                data = items
+            };
         }
 
         [HttpPost("Save")]

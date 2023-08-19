@@ -2296,3 +2296,17 @@ WHERE [t].[CategoryId] = @__categoryId_0
 2023-08-19 21:51:37.1037||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryPropertyController.GetByCategoryId (AgirSaglam.Api) in 308.4335ms 
 2023-08-19 21:51:37.1037||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryPropertyController.GetByCategoryId (AgirSaglam.Api)' 
 2023-08-19 21:51:37.1037||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/CategoryProperty/GetByCategoryId/1 - - - 200 - application/json;+charset=utf-8 335.0186ms 
+2023-08-19 23:53:28.8748||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-19 23:53:29.6750||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-19 23:53:29.6841||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-19 23:53:29.6841||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-19 23:53:29.6841||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-19 23:53:29.6841||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-19 23:53:34.7849||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-19 23:53:40.2940||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 5514.2607ms 
+2023-08-19 23:53:40.9931||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-19 23:53:41.9953||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-19 23:53:42.6677||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 1674.5852ms 
+2023-08-19 23:53:43.1672||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1171.9110ms 
+2023-08-19 23:53:51.6267||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-19 23:53:51.8743||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 247.6541ms 
