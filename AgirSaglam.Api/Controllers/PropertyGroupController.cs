@@ -3,6 +3,7 @@ using AgirSaglam.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
+using Newtonsoft.Json.Linq;
 
 namespace AgirSaglam.Api.Controllers
 {
@@ -41,52 +42,32 @@ namespace AgirSaglam.Api.Controllers
                 data = items
             };
         }
-
         [HttpPost("Save")]
-        public dynamic SavePropertyGroup([FromBody] PropertyGroup propertyGroup)
+        public dynamic Save([FromBody] dynamic model)
         {
-            try
-            {
-                if (propertyGroup == null)
-                {
-                    return new
-                    {
-                        success = false,
-                        message = "Invalid data"
-                    };
-                }
+            dynamic json = JObject.Parse(model.GetRawText());
 
-                if (ModelState.IsValid)
-                {
-                    repo.PropertyGroupRepository.Create(propertyGroup);
-                    repo.SaveChanges();
-
-                    return new
-                    {
-                        success = true,
-                        message = "Property grubu başarıyla kaydedildi"
-                    };
-                }
-                else
-                {
-                    return new
-                    {
-                        success = false,
-                        message = "Validation error",
-                        errors = ModelState.Values.SelectMany(v => v.Errors.Select(e => e.ErrorMessage))
-                    };
-                }
-            }
-            catch (Exception ex)
+            PropertyGroup item = new PropertyGroup()
             {
-                return new
-                {
-                    success = false,
-                    message = "Property grubu kaydedilirken bir hata oluştu",
-                    error = ex.Message
-                };
-            }
+                Id = /*Int32.Parse*/(json.Id),
+                Name = json.Name,
+
+            };
+            if (item.Id > 0)
+                repo.PropertyGroupRepository.Update(item);
+            else
+                repo.PropertyGroupRepository.Create(item);
+            repo.SaveChanges();
+            cache.Remove("PropertyGroups");
+            return new
+            {
+                success = true
+            };
         }
+
+
+
+
 
         //silme
 

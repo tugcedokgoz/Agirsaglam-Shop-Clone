@@ -1,4 +1,5 @@
 ﻿using AgirSaglam.Model.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,14 +16,11 @@ namespace AgirSaglam.Repository
         }
 
         //silme
-        public void RemoveProperty(int propertyId)
+        public void RemoveProperty(int ProductPropertyId)
         {
-            var propertyToRemove = RepositoryContext.Properties.Find(propertyId);
-            if (propertyToRemove != null)
-            {
-                RepositoryContext.Properties.Remove(propertyToRemove);
-            }
+            RepositoryContext.ProductProperties.Where(r => r.Id == ProductPropertyId).ExecuteDelete();
         }
+
         public IQueryable<ProductProperty> GetByProductId(int productId)
         {
             return FindByCondition(pp => pp.ProductId == productId);

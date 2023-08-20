@@ -36,7 +36,7 @@
             html += `<td>${arr[i].product.name}</td>`;
             //html += `<td><i class="fa fa-trash text-danger" onclick='DeleteRole(${arr[i].id})'></i><i class="fa-pencil-square" onclick='EditRole(${arr[i]})'></i></td>`;
             html += `<td>
-                                     <button type="button" class="btn btn-danger"  onclick='DeleteOrder(${arr[i].id})'>Delete</button>
+                                     <button type="button" class="btn btn-danger"  onclick='DeleteBill(${arr[i].id})'>Delete</button>
                                      &nbsp;
 
                              </td>`;
@@ -49,7 +49,7 @@
 
 
 function DeleteBill(id) {
-    Delete(`Bill/Delete?id=${id}`, (data) => {
+    Delete(`Order/Delete?id=${id}`, (data) => {
         GetBills();
     });
 };

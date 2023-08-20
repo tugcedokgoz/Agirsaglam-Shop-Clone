@@ -4633,6 +4633,10 @@
       "PackagePath": "staticwebassets\\js\\Admin\\product.js"
     },
     {
+      "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\Admin\\productProperty.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\productProperty.js"
+    },
+    {
       "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\Admin\\property.js",
       "PackagePath": "staticwebassets\\js\\Admin\\property.js"
     },

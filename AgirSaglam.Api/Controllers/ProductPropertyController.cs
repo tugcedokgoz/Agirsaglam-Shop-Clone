@@ -3,6 +3,7 @@ using AgirSaglam.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
+using Newtonsoft.Json.Linq;
 
 namespace AgirSaglam.Api.Controllers
 {
@@ -15,17 +16,27 @@ namespace AgirSaglam.Api.Controllers
             
         }
 
-
         [HttpGet("GetAll")]
         public dynamic GetAll()
         {
             var productProperties = repo.ProductPropertyRepository.FindAll();
+
+            var result = productProperties.Select(pp => new
+            {
+                Id = pp.Id,
+                ProductId = pp.ProductId,
+                PropertyId = pp.PropertyId,
+                ProductName = pp.Product.Name, 
+                PropertyName = pp.Property.Name, 
+            });
+
             return new
             {
                 success = true,
-                data = productProperties
+                data = result
             };
         }
+
 
         [HttpGet("GetByProductId/{productId}")]
         public dynamic GetByProductId(int productId)
@@ -50,19 +61,28 @@ namespace AgirSaglam.Api.Controllers
         }
 
         [HttpPost("Save")]
-        public dynamic SaveProperty([FromBody] ProductProperty productProperty)
+        public dynamic Save([FromBody] dynamic model)
         {
-            if (productProperty == null)
+            dynamic json = JObject.Parse(model.GetRawText());
+
+            ProductProperty productProperty = new ProductProperty()
             {
-                return new
-                {
-                    success = false,
-                    message = "Invalid property data"
-                };
+                Id = json.Id,
+                ProductId = json.ProductId,
+                PropertyId = json.PropertyId,
+            };
+
+            if (productProperty.Id > 0)
+            {
+                repo.ProductPropertyRepository.Update(productProperty);
+            }
+            else
+            {
+                repo.ProductPropertyRepository.Create(productProperty);
             }
 
-            repo.ProductPropertyRepository.Create(productProperty);
             repo.SaveChanges();
+            cache.Remove("ProductProperties");
 
             return new
             {
@@ -70,6 +90,7 @@ namespace AgirSaglam.Api.Controllers
                 message = "Property saved successfully"
             };
         }
+
         //silme
 
         [HttpPost("Delete")]

@@ -19,5 +19,6 @@ namespace AgirSaglam.Model.Models
 
         [ForeignKey("ProductId")]
         public Product Product { get; set; }
+        public Property Property { get; set; }
     }
 }

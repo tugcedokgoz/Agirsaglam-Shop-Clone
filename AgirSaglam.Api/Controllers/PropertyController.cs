@@ -3,6 +3,8 @@ using AgirSaglam.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
+using Newtonsoft.Json.Linq;
+using System.Text.RegularExpressions;
 
 namespace AgirSaglam.Api.Controllers
 {
@@ -12,7 +14,7 @@ namespace AgirSaglam.Api.Controllers
     {
         public PropertyController(RepositoryWrapper repo, IMemoryCache cache) : base(repo, cache)
         {
-            
+
         }
 
         // Tüm özellikleri getiren 
@@ -37,57 +39,81 @@ namespace AgirSaglam.Api.Controllers
         }
         // İsme göre 
         [HttpGet("GetPropertyByName/{name}")]
-        public dynamic GetPropertyByName(string name)
+        public ActionResult GetPropertyByName(string name)
         {
-            var property = repo.PropertyRepository.FindByCondition(p => p.Name == name)
-                .Select(p => new
-                {
-                    p.Id,
-                    p.Name,
-                    p.GroupId,
-                    GroupName = p.Group.Name
-                })
-                .FirstOrDefault();
+            try
+            {
+                var property = repo.PropertyRepository.FindByCondition(p => p.Name == name)
+                    .Select(p => new
+                    {
+                        p.Id,
+                        p.Name,
+                        p.GroupId,
+                        GroupName = p.Group.Name
+                    })
+                    .FirstOrDefault();
 
-            if (property != null)
-            {
-                return new
+                if (property != null)
                 {
-                    success = true,
-                    data = property
-                };
+                    return Ok(new
+                    {
+                        success = true,
+                        data = property
+                    });
+                }
+                else
+                {
+                    return NotFound(new
+                    {
+                        success = false,
+                        message = "Özellik bulunamadı"
+                    });
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return new
+                return StatusCode(500, new
                 {
                     success = false,
-                    message = "Özellik bulunamadı"
-                };
+                    message = "Sunucu hatası: " + ex.Message
+                });
             }
         }
 
+
+
+
+
         [HttpPost("Save")]
-        public dynamic SaveProperty([FromBody] Property property)
+        public dynamic Save([FromBody] dynamic model)
         {
-            if (property == null)
+            dynamic json = JObject.Parse(model.GetRawText());
+
+
+            Property item = new Property()
             {
-                return new
-                {
-                    success = false,
-                    message = "Invalid property data"
-                };
-            }
+                Id = json.Id,
+                Name = json.Name,
+                GroupId = json.GroupId,
 
-            repo.PropertyRepository.Create(property);
+
+            };
+            if (item.Id > 0)
+                repo.PropertyRepository.Update(item);
+            else
+                repo.PropertyRepository.Create(item);
+            Console.WriteLine(item);
+            Console.WriteLine(repo);
             repo.SaveChanges();
-
+            cache.Remove("Properties");
             return new
             {
                 success = true,
-                message = "Property saved successfully"
+                message="doğru"
             };
         }
+
+
 
 
         //silme
