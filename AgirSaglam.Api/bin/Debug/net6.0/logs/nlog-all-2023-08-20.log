@@ -9150,3 +9150,26 @@ WHERE [t].[Name] = @__name_0
 2023-08-20 23:50:41.7562||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Property/GetPropertyByName/xxlarge - - - 200 - application/json;+charset=utf-8 11.2058ms 
 2023-08-20 23:50:51.8126||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/CategoryAdminLists - - 
 2023-08-20 23:50:51.8126||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/GetAllCategory - - 
+2023-08-20 23:50:51.8280||INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-08-20 23:50:51.8280||INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-08-20 23:50:51.8280||INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-08-20 23:50:51.8280||INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-08-20 23:50:51.8280||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.CategoryAdminLists (AgirSaglam.Api)' 
+2023-08-20 23:50:51.8280||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.GetAllCategory (AgirSaglam.Api)' 
+2023-08-20 23:50:51.8280||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CategoryAdminLists", controller = "Category"}. Executing controller action with signature System.Object CategoryAdminLists() on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-08-20 23:50:51.8280||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Object GetAllCategory() on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-08-20 23:50:51.8547||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[ProductId], [t].[Status]
+FROM [tblCategory] AS [t] 
+2023-08-20 23:50:51.8547||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Models.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-20 23:50:51.8547||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [v].[Id], [v].[CategoryName], [v].[ParentCategoryName], [v].[Status]
+FROM [V_CategoryAdminList] AS [v]
+ORDER BY [v].[Id] 
+2023-08-20 23:50:51.8547||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.GetAllCategory (AgirSaglam.Api) in 19.0596ms 
+2023-08-20 23:50:51.8547||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.View.V_CategoryAdminList, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-20 23:50:51.8547||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.GetAllCategory (AgirSaglam.Api)' 
+2023-08-20 23:50:51.8547||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.CategoryAdminLists (AgirSaglam.Api) in 25.7392ms 
+2023-08-20 23:50:51.8547||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/GetAllCategory - - - 200 - application/json;+charset=utf-8 44.5947ms 
+2023-08-20 23:50:51.8547||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.CategoryAdminLists (AgirSaglam.Api)' 
+2023-08-20 23:50:51.8547||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/CategoryAdminLists - - - 200 - application/json;+charset=utf-8 47.1721ms 

@@ -1,4 +1,5 @@
 ﻿using AgirSaglam.Model.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,17 +14,10 @@ namespace AgirSaglam.Repository
         {
             
         }
-        public void RemoveCategoryPropertyGroup(int categoryId, int groupId)
+        public void RemoveProperty(int CategoryPropertyId)
         {
-            var itemToRemove = RepositoryContext.Set<CategoryPropertyGroup>()
-                .FirstOrDefault(cpg => cpg.CategoryId == categoryId && cpg.GroupId == groupId);
-
-            if (itemToRemove != null)
-            {
-                RepositoryContext.Set<CategoryPropertyGroup>().Remove(itemToRemove);
-            }
+            RepositoryContext.CategoryPropertyGroups.Where(r => r.Id == CategoryPropertyId).ExecuteDelete();
         }
-
         public IQueryable<CategoryPropertyGroup> GetGroupsByCategoryId(int categoryId)
         {
             return RepositoryContext.Set<CategoryPropertyGroup>()

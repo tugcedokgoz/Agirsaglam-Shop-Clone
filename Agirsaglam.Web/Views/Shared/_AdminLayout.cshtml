@@ -30,7 +30,6 @@
                 const response = await fetch('/Account/GetToken');
                 const data = await response.json();
                 const TOKEN = data.Token;
-                // Kullan TOKEN değişkenini burada istediğiniz gibi kullanabilirsiniz
             } catch (error) {
                 console.error('Hata:', error);
             }
@@ -80,6 +79,7 @@
                             <a class="nav-link" href="https://localhost:7203/Admin/Home/propertygroup">Property Group</a>
                             <a class="nav-link" href="https://localhost:7203/Admin/Home/property">Property</a>
                             <a class="nav-link" href="https://localhost:7203/Admin/Home/productproperty">Product Property</a>
+                            <a class="nav-link" href="https://localhost:7203/Admin/Home/Categoryproperty">Product Property</a>
                         </nav>
 
                   

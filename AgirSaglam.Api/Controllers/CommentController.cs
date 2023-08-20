@@ -203,7 +203,7 @@ namespace AgirSaglam.Api.Controllers
             });
         }
 
-        [Authorize]
+     
         [HttpGet("GetAdminComments")]
         public dynamic GetAdminComments()
         {

@@ -13,5 +13,8 @@ namespace AgirSaglam.Model.Models
         public int Id { get; set; }
         public int CategoryId { get; set; }
         public int GroupId { get; set; }
+        public Category Category { get; set; }
+        public PropertyGroup Group { get; set; }
+
     }
 }

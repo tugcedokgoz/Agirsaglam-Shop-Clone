@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Agirsaglam.Web.Code.Filters;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Agirsaglam.Web.Areas.Admin.Controllers
 {
+    [AuthActionFilter(Role = "Admin")]
     [Area("Admin")]
     public class HomeController : Controller
     {
@@ -17,5 +19,6 @@ namespace Agirsaglam.Web.Areas.Admin.Controllers
         public IActionResult PropertyGroup()=>View();
         public IActionResult Property()=>View();
         public IActionResult ProductProperty()=>View();
+        public IActionResult CategoryProperty()=>View();
     }
 }

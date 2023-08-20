@@ -3,6 +3,7 @@ using AgirSaglam.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
+using Newtonsoft.Json.Linq;
 
 namespace AgirSaglam.Api.Controllers
 {
@@ -17,11 +18,21 @@ namespace AgirSaglam.Api.Controllers
         [HttpGet("GetAll")]
         public dynamic GetAll()
         {
-            var categoryPropertyGroups = repo.CategoryPropertyRepository.FindAll();
+            var categoryProperties = repo.CategoryPropertyRepository.FindAll();
+
+            var result = categoryProperties.Select(cp => new
+            {
+                Id = cp.Id,
+                GroupId = cp.GroupId,
+                CategoryId = cp.CategoryId,
+                GroupName = cp.Group.Name, 
+                CategoryName = cp.Category.Name, 
+            });
+
             return new
             {
                 success = true,
-                data = categoryPropertyGroups
+                data = result
             };
         }
 
@@ -48,42 +59,46 @@ namespace AgirSaglam.Api.Controllers
         }
 
         [HttpPost("Save")]
-        public dynamic SaveProperty([FromBody] CategoryPropertyGroup categoryPropertyGroup)
+        public dynamic Save([FromBody] dynamic model)
         {
-            if (categoryPropertyGroup == null)
+            dynamic json = JObject.Parse(model.GetRawText());
+
+            CategoryPropertyGroup categoryProperty = new CategoryPropertyGroup()
             {
-                return new
-                {
-                    success = false,
-                    message = "Invalid property group data"
-                };
+                Id = json.Id,
+                CategoryId = json.CategoryId,
+                GroupId = json.GroupId,
+            };
+
+            if (categoryProperty.Id > 0)
+            {
+                repo.CategoryPropertyRepository.Update(categoryProperty);
+            }
+            else
+            {
+                repo.CategoryPropertyRepository.Create(categoryProperty);
             }
 
-            repo.CategoryPropertyRepository.Create(categoryPropertyGroup);
             repo.SaveChanges();
+            cache.Remove("CategoryPropertyGroups");
 
             return new
             {
                 success = true,
-                message = "Property group saved successfully"
+                message = "Property saved successfully"
             };
         }
 
         [HttpPost("Delete")]
-        public dynamic Delete(int categoryId,int groupId)
+        public dynamic Delete(int id)
         {
-            if (categoryId <= 0 || groupId <= 0)
-            {
+            if (id < 0)
                 return new
                 {
                     success = false,
-                    message = "Invalid categoryId or groupId"
+                    message = "Invalid Id"
                 };
-            }
-
-            repo.CategoryPropertyRepository.RemoveCategoryPropertyGroup(categoryId, groupId);
-            repo.SaveChanges();
-
+            repo.CategoryPropertyRepository.RemoveProperty(id);
             return new
             {
                 success = true,

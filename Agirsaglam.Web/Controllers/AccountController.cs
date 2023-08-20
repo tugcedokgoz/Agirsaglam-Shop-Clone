@@ -1,6 +1,8 @@
 ﻿using Agirsaglam.Web.Code;
 using Agirsaglam.Web.Code.Rest;
 using Agirsaglam.Web.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Agirsaglam.Web.Controllers
@@ -32,6 +34,7 @@ namespace Agirsaglam.Web.Controllers
                 HttpContext.Session.SetString("userName",model.UserName);
                 HttpContext.Session.SetString("token", (string)result.data);
                 HttpContext.Session.SetString("role", (string)result.role);
+
                 //Repo.Session.UserName = model.UserName;
                 //Repo.Session.Token = (string)result.data;
                 //Repo.Session.Role = (string)result.role;
@@ -52,5 +55,13 @@ namespace Agirsaglam.Web.Controllers
                 return View("Login");
             }
         }
+
+        //public IActionResult Logout()
+        //{
+        //    HttpContext.Session.Clear();
+        //    HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+        //    return RedirectToAction("Login", "Account");
+        //}
     }
 }
