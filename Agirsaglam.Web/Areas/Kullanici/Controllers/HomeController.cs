@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Agirsaglam.Web.Code.Rest;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Agirsaglam.Web.Areas.Kullanici.Controllers
 {
@@ -6,5 +7,47 @@ namespace Agirsaglam.Web.Areas.Kullanici.Controllers
     public class HomeController : Controller
     {
         public IActionResult Index() => View();
+        public IActionResult Clothes(int id)
+        {
+
+            ProductRestClient client = new ProductRestClient();
+            dynamic result = client.GetClothes(id);
+
+            bool success = result.success;
+            if (success)
+                ViewBag.Clothes = result.data;
+            return View();
+        
+        }
+        public IActionResult AboutUs() => View();
+        public IActionResult Accessory() => View();
+        public IActionResult Coffee() => View();
+        public IActionResult PrivacyPolicy() => View();
+        public IActionResult ReturnPolicy() => View();
+        public IActionResult Terms() => View();
+        public IActionResult UserGuide() => View();
+        public IActionResult Blog() => View();
+        public IActionResult ProductDetails()
+        {
+           
+            ProductRestClient client = new ProductRestClient();
+            dynamic result = client.GetProduct();
+
+            bool success = result.success;
+            if (success)
+                ViewBag.Product = result.data;
+            return View();
+        }
+        public IActionResult GetProductDetails(int id)
+        {
+
+            ProductRestClient client = new ProductRestClient();
+            dynamic result = client.GetProductDetails(id);
+
+            bool success = result.success;
+            if (success)
+                ViewBag.ProductDetails = result.data;
+            return View();
+        }
     }
 }

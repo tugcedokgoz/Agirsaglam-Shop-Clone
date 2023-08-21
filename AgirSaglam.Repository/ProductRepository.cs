@@ -101,6 +101,13 @@ namespace AgirSaglam.Repository
 
             return products;
         }
+        public Product GetProductById(int productId)
+        {
+            return RepositoryContext.Products
+                .Include(p => p.Categories)
+                .Include(p => p.ProductCategories)
+                .FirstOrDefault(p => p.Id == productId);
+        }
 
     }
 }

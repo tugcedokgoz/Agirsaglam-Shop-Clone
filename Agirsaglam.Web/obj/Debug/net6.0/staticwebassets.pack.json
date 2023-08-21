@@ -4657,6 +4657,10 @@
       "PackagePath": "staticwebassets\\js\\Admin\\user.js"
     },
     {
+      "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\Kullanici\\index.js",
+      "PackagePath": "staticwebassets\\js\\Kullanici\\index.js"
+    },
+    {
       "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

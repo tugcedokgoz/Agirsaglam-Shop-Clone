@@ -169,7 +169,23 @@ namespace AgirSaglam.Api.Controllers
                 data = products
             };
         }
+        [HttpGet("ProductId/{productId}")]
+        public ActionResult<dynamic> GetProductById(int productId)
+        {
+            var product = repo.ProductRepository.FindByCondition(p => p.Id == productId)
+                            .SingleOrDefault();
 
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            return new
+            {
+                success = true,
+                data = product
+            };
+        }
 
 
     }
