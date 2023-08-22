@@ -108,201 +108,55 @@
                     <div class="tab_container">
                         <div id="tab1" class="tab_content grid-products">
                             <div class="d-flex flex-wrap">
-                                <div class="col-4 item">
-                                    <!-- start product image -->
-                                    <div class="product-image">
-                                        <!-- start product image -->
-                                        <a href="short-description.html">
-                                            <!-- image -->
-                                            <img class="primary blur-up lazyload" src="~/agirsaglamui/assets/images/product-images/product-img-1.PNG" alt="image" title="product">
-                                            <img class="hover blur-up lazyload" src="~/agirsaglamui/assets/images/product-images/product-img-2.PNG" alt="image" title="product">
-                                            <div class="product-labels rectangular"><span class="lbl on-sale">İNDİRİM</span> <span class="lbl pr-label1">new</span></div>
-                                        </a>
-                                        <div class="saleTime desktop" data-countdown="2022/03/01"></div>
-                                    </div>
-                                    <div class="product-details text-center">
-                                        <!-- product name -->
-                                        <div class="product-name">
-                                            <a href="short-description.html">Ağırsağlam Siyah Tişört</a>
-                                        </div>
-                                        <!-- End product name -->
-                                        <!-- product price -->
-                                        <div class="product-price">
-                                            <span class="old-price">389.90TL</span>
-                                            <span class="price">319.90TL</span>
-                                        </div>
-                                        <!-- End product price -->
 
-                                        <div class="product-review">
-                                            <i class="font-13 fa fa-star"></i>
-                                            <i class="font-13 fa fa-star"></i>
-                                            <i class="font-13 fa fa-star"></i>
-                                            <i class="font-13 fa fa-star-o"></i>
-                                            <i class="font-13 fa fa-star-o"></i>
-                                        </div>
-                                        <!-- Variant -->
-                                        <!-- End Variant -->
-                                    </div>
-                                    <!-- End product details -->
-                                </div>
-                                <div class="col-4 item">
-                                    <!-- start product image -->
-                                    <div class="product-image">
-                                        <!-- start product image -->
-                                        <a href="short-description.html">
-                                            <!-- image -->
-                                            <img class="primary blur-up lazyload" src="~/agirsaglamui/assets/images/product-images/product-img-1.PNG" alt="image" title="product">
-                                            <img class="hover blur-up lazyload" src="~/agirsaglamui/assets/images/product-images/product-img-2.PNG" alt="image" title="product">
-                                            <div class="product-labels rectangular"><span class="lbl on-sale">İNDİRİM</span> <span class="lbl pr-label1">new</span></div>
-                                        </a>
-                                        <div class="saleTime desktop" data-countdown="2022/03/01"></div>
-                                    </div>
-                                    <div class="product-details text-center">
-                                        <!-- product name -->
-                                        <div class="product-name">
-                                            <a href="short-description.html">Ağırsağlam Siyah Tişört</a>
-                                        </div>
-                                        <!-- End product name -->
-                                        <!-- product price -->
-                                        <div class="product-price">
-                                            <span class="old-price">389.90TL</span>
-                                            <span class="price">319.90TL</span>
-                                        </div>
-                                        <!-- End product price -->
 
-                                        <div class="product-review">
-                                            <i class="font-13 fa fa-star"></i>
-                                            <i class="font-13 fa fa-star"></i>
-                                            <i class="font-13 fa fa-star"></i>
-                                            <i class="font-13 fa fa-star-o"></i>
-                                            <i class="font-13 fa fa-star-o"></i>
-                                        </div>
-                                        <!-- Variant -->
-                                        <!-- End Variant -->
-                                    </div>
-                                    <!-- End product details -->
-                                </div>
-                                <div class="col-4 item">
-                                    <!-- start product image -->
-                                    <div class="product-image">
-                                        <!-- start product image -->
-                                        <a href="short-description.html">
-                                            <!-- image -->
-                                            <img class="primary blur-up lazyload" src="~/agirsaglamui/assets/images/product-images/product-img-1.PNG" alt="image" title="product">
-                                            <img class="hover blur-up lazyload" src="~/agirsaglamui/assets/images/product-images/product-img-2.PNG" alt="image" title="product">
-                                            <div class="product-labels rectangular"><span class="lbl on-sale">İNDİRİM</span> <span class="lbl pr-label1">new</span></div>
-                                        </a>
-                                        <div class="saleTime desktop" data-countdown="2022/03/01"></div>
-                                    </div>
-                                    <div class="product-details text-center">
-                                        <!-- product name -->
-                                        <div class="product-name">
-                                            <a href="short-description.html">Ağırsağlam Siyah Tişört</a>
-                                        </div>
-                                        <!-- End product name -->
-                                        <!-- product price -->
-                                        <div class="product-price">
-                                            <span class="old-price">389.90TL</span>
-                                            <span class="price">319.90TL</span>
-                                        </div>
-                                        <!-- End product price -->
+                                @{
+                                    for (int i = 0; i < ViewBag.Coffee.Count; i++)
+                                    {
+                                        <div class="col-4 item my-4">
+                                            <!-- start product image -->
+                                            <div class="product-image">
+                                                <!-- start product image -->
+                                                <a href="short-description.html">
+                                                    <!-- image -->
+                                                    <img class="primary blur-up lazyload" src="@ViewBag.Coffee[i].image" alt="image" title="product">
+                                                    <div class="product-labels rectangular"><span class="lbl on-sale">İNDİRİM</span> <span class="lbl pr-label1">new</span></div>
+                                                </a>
+                                                <div class="saleTime desktop" data-countdown="2022/03/01"></div>
+                                            </div>
+                                            <div class="product-details text-center">
+                                                <!-- product name -->
+                                                <div class="product-name">
+                                                    <a href="short-description.html">@ViewBag.Coffee[i].name</a>
+                                                </div>
+                                                <!-- End product name -->
+                                                <!-- product price -->
+                                                <div class="product-price">
+                                                    <span class="old-price">@ViewBag.Coffee[i].price</span>
+                                                    <span class="price">@ViewBag.Coffee[i].discountPrice</span>
+                                                </div>
+                                                <!-- End product price -->
 
-                                        <div class="product-review">
-                                            <i class="font-13 fa fa-star"></i>
-                                            <i class="font-13 fa fa-star"></i>
-                                            <i class="font-13 fa fa-star"></i>
-                                            <i class="font-13 fa fa-star-o"></i>
-                                            <i class="font-13 fa fa-star-o"></i>
+                                                <div class="product-review">
+                                                    <i class="font-13 fa fa-star"></i>
+                                                    <i class="font-13 fa fa-star"></i>
+                                                    <i class="font-13 fa fa-star"></i>
+                                                    <i class="font-13 fa fa-star-o"></i>
+                                                    <i class="font-13 fa fa-star-o"></i>
+                                                </div>
+                                                <!-- Variant -->
+                                                <!-- End Variant -->
+                                            </div>
+                                            <!-- End product details -->
                                         </div>
-                                        <!-- Variant -->
-                                        <!-- End Variant -->
-                                    </div>
-                                    <!-- End product details -->
-                                </div>
-                                <div class="col-4 item">
-                                    <!-- start product image -->
-                                    <div class="product-image">
-                                        <!-- start product image -->
-                                        <a href="short-description.html">
-                                            <!-- image -->
-                                            <img class="primary blur-up lazyload" src="~/agirsaglamui/assets/images/product-images/product2-img-1.PNG" alt="image" title="product">
-                                            <!-- End image -->
-                                            <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" src="~/agirsaglamui/assets/images/product-images/product2-img-2.PNG" alt="image" title="product">
-                                            <!-- End hover image -->
-                                        </a>
-                                    </div>
-                                    <!-- end product image -->
-                                    <!--start product details -->
-                                    <div class="product-details text-center">
-                                        <!-- product name -->
-                                        <div class="product-name">
-                                            <a href="short-description.html">[stronger] Yeşil Uzun Kollu Tişört</a>
-                                        </div>
-                                        <!-- End product name -->
-                                        <!-- product price -->
-                                        <div class="product-price">
-                                            <span class="old-price">389.90TL</span>
-                                            <span class="price">299.90TL</span>
-                                        </div>
-                                        <!-- End product price -->
-                                        <div class="product-review">
-                                            <i class="font-13 fa fa-star"></i>
-                                            <i class="font-13 fa fa-star"></i>
-                                            <i class="font-13 fa fa-star"></i>
-                                            <i class="font-13 fa fa-star"></i>
-                                            <i class="font-13 fa fa-star"></i>
-                                        </div>
-                                        <!-- Variant -->
-                                        <!-- End Variant -->
-                                    </div>
-                                    <!-- End product details -->
-                                </div>
-                                <div class="col-4 item">
-                                    <!-- start product image -->
-                                    <div class="product-image">
-                                        <!-- start product image -->
-                                        <a href="short-description.html">
-                                            <!-- image -->
-                                            <img class="primary blur-up lazyload" src="~/agirsaglamui/assets/images/product-images/product3-img-1.PNG" alt="image" title="product">
-                                            <!-- End image -->
-                                            <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" src="~/agirsaglamui/assets/images/product-images/product3-img-2.PNG" alt="image" title="product">
-                                            <!-- End hover image -->
-                                            <!-- product label -->
-                                            <div class="product-labels rectangular"><span class="lbl pr-label2">Hot</span></div>
-                                            <!-- End product label -->
-                                        </a>
-                                        <!-- end product image -->
+                                    }
+                                }
 
 
 
-                                    </div>
-                                    <!-- end product image -->
-                                    <!--start product details -->
-                                    <div class="product-details text-center">
-                                        <!-- product name -->
-                                        <div class="product-name">
-                                            <a href="short-description.html">Intermediate Development Programı</a>
-                                        </div>
-                                        <!-- End product name -->
-                                        <!-- product price -->
-                                        <div class="product-price">
-                                            <span class="old-price">299.90TL</span>
-                                            <span class="price">249.90TL</span>
-                                        </div>
-                                        <!-- End product price -->
 
-                                        <div class="product-review">
-                                            <i class="font-13 fa fa-star"></i>
-                                            <i class="font-13 fa fa-star"></i>
-                                            <i class="font-13 fa fa-star"></i>
-                                            <i class="font-13 fa fa-star"></i>
-                                            <i class="font-13 fa fa-star-o"></i>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
+                        </div>
                         </div>
                     </div>
                 </div>

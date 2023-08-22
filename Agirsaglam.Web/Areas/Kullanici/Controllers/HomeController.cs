@@ -11,7 +11,7 @@ namespace Agirsaglam.Web.Areas.Kullanici.Controllers
         {
 
             ProductRestClient client = new ProductRestClient();
-            dynamic result = client.GetClothes(id);
+            dynamic result = client.GetProduct(1);
 
             bool success = result.success;
             if (success)
@@ -21,23 +21,33 @@ namespace Agirsaglam.Web.Areas.Kullanici.Controllers
         }
         public IActionResult AboutUs() => View();
         public IActionResult Accessory() => View();
-        public IActionResult Coffee() => View();
+        public IActionResult Coffee(int id) 
+        {
+            ProductRestClient client = new ProductRestClient();
+            dynamic result = client.GetProduct(3);
+
+            bool success = result.success;
+            if (success)
+                ViewBag.Coffee = result.data;
+            return View();
+        }
         public IActionResult PrivacyPolicy() => View();
         public IActionResult ReturnPolicy() => View();
         public IActionResult Terms() => View();
         public IActionResult UserGuide() => View();
         public IActionResult Blog() => View();
-        public IActionResult ProductDetails()
-        {
-           
-            ProductRestClient client = new ProductRestClient();
-            dynamic result = client.GetProduct();
 
-            bool success = result.success;
-            if (success)
-                ViewBag.Product = result.data;
-            return View();
-        }
+        //public IActionResult ProductDetails()
+        //{
+           
+        //    ProductRestClient client = new ProductRestClient();
+        //    dynamic result = client.GetProduct();
+
+        //    bool success = result.success;
+        //    if (success)
+        //        ViewBag.Product = result.data;
+        //    return View();
+        //}
         public IActionResult GetProductDetails(int id)
         {
 

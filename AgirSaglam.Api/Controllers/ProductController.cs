@@ -187,6 +187,20 @@ namespace AgirSaglam.Api.Controllers
             };
         }
 
+        //parentcategory id ye göre childlardaki tüm productları getirme
+        [HttpGet("GetProductsByParentCategoryId/{parentCategoryId}")]
+        public dynamic GetProductsByParentCategoryId(int parentCategoryId)
+        {
+            var products = repo.ProductRepository.GetProductsByParentCategoryId(parentCategoryId);
+            return new
+            {
+                success = true,
+                data = products
+            };
+        }
+
+
+
 
     }
 }

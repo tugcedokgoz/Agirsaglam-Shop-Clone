@@ -804,3 +804,809 @@ WHERE [t].[Id] = @__productId_0
 2023-08-22 02:22:52.6857||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductById (AgirSaglam.Api) in 4.1203ms 
 2023-08-22 02:22:52.6857||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductById (AgirSaglam.Api)' 
 2023-08-22 02:22:52.6857||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/ProductId/12 - - - 200 - application/json;+charset=utf-8 11.4105ms 
+2023-08-22 15:43:16.3854||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-22 15:43:16.9191||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-22 15:43:16.9191||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-22 15:43:16.9191||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-22 15:43:16.9388||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-22 15:43:16.9388||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-22 15:43:21.7176||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-22 15:43:23.3455||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1633.6192ms 
+2023-08-22 15:43:23.3788||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-22 15:43:23.3949||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 16.0659ms 
+2023-08-22 15:43:23.7178||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-22 15:43:23.9607||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 242.8590ms 
+2023-08-22 15:43:24.7027||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-22 15:43:25.0804||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 377.6458ms 
+2023-08-22 15:47:45.3699||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-22 15:47:45.4091||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 31.4404ms 
+2023-08-22 15:47:45.4247||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-22 15:47:45.4355||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 10.7938ms 
+2023-08-22 15:47:45.8185||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-22 15:47:46.1380||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 319.4266ms 
+2023-08-22 15:47:46.9610||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-22 15:47:47.0139||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 52.8804ms 
+2023-08-22 15:48:39.4816||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByCategoryId/0 - - 
+2023-08-22 15:48:39.5792||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api)' 
+2023-08-22 15:48:39.6242||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 15:48:40.9494||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 15:48:40.9494||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 15:48:40.9494||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 15:48:40.9494||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'V_CommentAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 15:48:40.9494||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 15:48:40.9494||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 15:48:42.5734||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (85ms) [Parameters=[@__categoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t1].[Name] AS [CategoryName]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t].[CategoryId] = [t1].[Id]
+WHERE [t].[CategoryId] = @__categoryId_0 
+2023-08-22 15:48:42.6198||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 15:48:42.6198||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api) in 3002.2623ms 
+2023-08-22 15:48:42.6198||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api)' 
+2023-08-22 15:48:42.6560||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByCategoryId/0 - - - 200 - application/json;+charset=utf-8 3174.4124ms 
+2023-08-22 15:49:51.7499||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByCategoryId/0 - - 
+2023-08-22 15:49:51.7499||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api)' 
+2023-08-22 15:49:51.7499||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 15:49:51.7743||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__categoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t1].[Name] AS [CategoryName]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t].[CategoryId] = [t1].[Id]
+WHERE [t].[CategoryId] = @__categoryId_0 
+2023-08-22 15:49:51.7743||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 15:49:51.7766||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api) in 15.5217ms 
+2023-08-22 15:49:51.7766||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api)' 
+2023-08-22 15:49:51.7766||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByCategoryId/0 - - - 200 - application/json;+charset=utf-8 27.3069ms 
+2023-08-22 15:52:05.4593||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByCategoryId/0 - - 
+2023-08-22 15:52:05.4593||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api)' 
+2023-08-22 15:52:05.4593||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 15:52:05.5187||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__categoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t1].[Name] AS [CategoryName]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t].[CategoryId] = [t1].[Id]
+WHERE [t].[CategoryId] = @__categoryId_0 
+2023-08-22 15:52:05.5187||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 15:52:05.5187||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api) in 57.2637ms 
+2023-08-22 15:52:05.5187||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api)' 
+2023-08-22 15:52:05.5187||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByCategoryId/0 - - - 200 - application/json;+charset=utf-8 61.6097ms 
+2023-08-22 15:53:46.7839||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProducts - - 
+2023-08-22 15:53:46.7839||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProduct (AgirSaglam.Api)' 
+2023-08-22 15:53:46.7839||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature System.Object GetProduct() on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 15:53:46.8371||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Amount], [t].[Description], [t].[DiscountPrice], [t].[Image], [t].[Name], [t].[Price]
+FROM [tblProduct] AS [t] 
+2023-08-22 15:53:46.8547||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Models.Product, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 15:53:46.8677||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProduct (AgirSaglam.Api) in 80.9049ms 
+2023-08-22 15:53:46.8677||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProduct (AgirSaglam.Api)' 
+2023-08-22 15:53:46.8677||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProducts - - - 200 - application/json;+charset=utf-8 84.4163ms 
+2023-08-22 16:01:14.3819||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByCategoryId/0 - - 
+2023-08-22 16:01:14.3884||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:01:14.3884||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:01:14.4030||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__categoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t1].[Name] AS [CategoryName]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t].[CategoryId] = [t1].[Id]
+WHERE [t].[CategoryId] = @__categoryId_0 
+2023-08-22 16:01:14.4030||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:01:14.4030||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api) in 13.2939ms 
+2023-08-22 16:01:14.4030||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:01:14.4030||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByCategoryId/0 - - - 200 - application/json;+charset=utf-8 23.1709ms 
+2023-08-22 16:04:31.0485||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByCategoryId/0 - - 
+2023-08-22 16:04:31.0485||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:04:31.0485||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:04:31.0485||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__categoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t1].[Name] AS [CategoryName]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t].[CategoryId] = [t1].[Id]
+WHERE [t].[CategoryId] = @__categoryId_0 
+2023-08-22 16:04:31.0485||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:04:31.0485||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api) in 5.5658ms 
+2023-08-22 16:04:31.0485||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:04:31.0485||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByCategoryId/0 - - - 200 - application/json;+charset=utf-8 8.8675ms 
+2023-08-22 16:10:54.2720||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByCategoryId/12 - - 
+2023-08-22 16:10:54.2720||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:10:54.2720||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:10:54.2825||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__categoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t1].[Name] AS [CategoryName]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t].[CategoryId] = [t1].[Id]
+WHERE [t].[CategoryId] = @__categoryId_0 
+2023-08-22 16:10:54.2825||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:10:54.2825||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api) in 12.8004ms 
+2023-08-22 16:10:54.2825||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:10:54.2825||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByCategoryId/12 - - - 200 - application/json;+charset=utf-8 15.6430ms 
+2023-08-22 16:13:40.4427||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByCategoryId/1 - - 
+2023-08-22 16:13:40.4427||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:13:40.4427||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:13:40.4427||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__categoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t1].[Name] AS [CategoryName]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t].[CategoryId] = [t1].[Id]
+WHERE [t].[CategoryId] = @__categoryId_0 
+2023-08-22 16:13:40.4427||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:13:40.4497||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api) in 5.1055ms 
+2023-08-22 16:13:40.4497||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:13:40.4497||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByCategoryId/1 - - - 200 - application/json;+charset=utf-8 7.6819ms 
+2023-08-22 16:14:33.8555||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByCategoryId/0 - - 
+2023-08-22 16:14:33.8555||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:14:33.8555||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:14:33.8555||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__categoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t1].[Name] AS [CategoryName]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t].[CategoryId] = [t1].[Id]
+WHERE [t].[CategoryId] = @__categoryId_0 
+2023-08-22 16:14:33.8555||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:14:33.8555||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api) in 7.7874ms 
+2023-08-22 16:14:33.8555||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:14:33.8555||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByCategoryId/0 - - - 200 - application/json;+charset=utf-8 14.4722ms 
+2023-08-22 16:25:05.3150||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-22 16:25:05.6629||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-22 16:25:05.6629||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-22 16:25:05.6629||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-22 16:25:05.6694||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-22 16:25:05.6694||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-22 16:25:06.5093||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-22 16:25:07.0262||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-22 16:25:07.0337||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 6.7267ms 
+2023-08-22 16:25:07.0337||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 532.5668ms 
+2023-08-22 16:25:07.2956||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-22 16:25:07.3496||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.0682ms 
+2023-08-22 16:25:07.8104||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-22 16:25:08.0618||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 251.4111ms 
+2023-08-22 16:25:16.5415||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:25:16.6356||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:25:16.6724||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:25:17.8749||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:25:17.8749||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:25:17.8749||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:25:17.8749||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'V_CommentAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:25:17.8749||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:25:17.8749||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:25:19.3304||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (81ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t1].[Id], [t1].[Name], [t1].[Price], [t1].[DiscountPrice], [t1].[Amount], [t1].[Description], [t1].[Image], [t].[Id], [t0].[Id], [t2].[Name], [t2].[Id]
+FROM [tblProductCategory] AS [t]
+LEFT JOIN [tblCategory] AS [t0] ON [t].[CategoryId] = [t0].[Id]
+INNER JOIN [tblProduct] AS [t1] ON [t].[ProductId] = [t1].[Id]
+LEFT JOIN [tblCategory] AS [t2] ON [t1].[Id] = [t2].[ProductId]
+WHERE [t0].[ParentCategoryId] = @__parentCategoryId_0
+ORDER BY [t].[Id], [t0].[Id], [t1].[Id] 
+2023-08-22 16:25:19.3872||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:25:19.4079||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 2729.1655ms 
+2023-08-22 16:25:19.4079||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:25:19.4408||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 2899.2946ms 
+2023-08-22 16:29:18.4679||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-22 16:29:18.7486||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-22 16:29:18.7486||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-22 16:29:18.7486||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-22 16:29:18.7486||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-22 16:29:18.7486||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-22 16:29:19.3800||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-22 16:29:19.8375||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-22 16:29:19.8464||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 8.0551ms 
+2023-08-22 16:29:19.8464||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 473.8915ms 
+2023-08-22 16:29:20.0514||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-22 16:29:20.1163||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.8359ms 
+2023-08-22 16:29:20.5373||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-22 16:29:20.8312||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 293.8753ms 
+2023-08-22 16:29:27.5961||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:29:27.6867||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:29:27.7196||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:29:28.9324||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:29:28.9340||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:29:28.9340||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:29:28.9340||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'V_CommentAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:29:28.9340||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:29:28.9340||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:29:30.4280||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (82ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t1].[Id], [t1].[Name], [t1].[Price], [t1].[DiscountPrice], [t1].[Amount], [t1].[Description], [t1].[Image], [t].[Id], [t0].[Id], [t2].[Name], [t2].[Id]
+FROM [tblProductCategory] AS [t]
+LEFT JOIN [tblCategory] AS [t0] ON [t].[CategoryId] = [t0].[Id]
+INNER JOIN [tblProduct] AS [t1] ON [t].[ProductId] = [t1].[Id]
+LEFT JOIN [tblCategory] AS [t2] ON [t1].[Id] = [t2].[ProductId]
+WHERE [t0].[ParentCategoryId] = @__parentCategoryId_0
+ORDER BY [t].[Id], [t0].[Id], [t1].[Id] 
+2023-08-22 16:29:30.4952||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:29:30.5153||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 2790.0529ms 
+2023-08-22 16:29:30.5153||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:29:30.5380||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 2941.8729ms 
+2023-08-22 16:32:20.5856||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-22 16:32:20.8615||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-22 16:32:20.8615||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-22 16:32:20.8615||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-22 16:32:20.8741||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-22 16:32:20.8741||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-22 16:32:21.5788||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-22 16:32:22.0889||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-22 16:32:22.1000||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 10.9621ms 
+2023-08-22 16:32:22.1000||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 526.7102ms 
+2023-08-22 16:32:22.3790||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-22 16:32:22.4521||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 73.0668ms 
+2023-08-22 16:32:22.9042||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-22 16:32:23.2064||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 302.1235ms 
+2023-08-22 16:32:29.8113||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:32:29.8968||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:32:29.9304||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:32:31.1720||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:32:31.1720||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:32:31.1720||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:32:31.1720||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'V_CommentAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:32:31.1720||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:32:31.1720||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:32:32.5321||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (76ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:32:32.7634||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:32:32.7795||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:32:32.7995||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 2863.4998ms 
+2023-08-22 16:32:32.7995||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:32:32.8263||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 3014.9154ms 
+2023-08-22 16:35:09.9829||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-22 16:35:10.2768||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-22 16:35:10.2784||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-22 16:35:10.2784||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-22 16:35:10.2784||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-22 16:35:10.2784||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-22 16:35:11.1717||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-22 16:35:11.5463||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-22 16:35:11.5662||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 19.1744ms 
+2023-08-22 16:35:11.5662||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 400.0389ms 
+2023-08-22 16:35:11.7676||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-22 16:35:11.8445||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 76.8726ms 
+2023-08-22 16:35:12.2535||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-22 16:35:12.5469||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 293.4023ms 
+2023-08-22 16:35:38.1051||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:35:38.2371||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:35:38.2708||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:35:39.5459||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:35:39.5459||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:35:39.5459||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:35:39.5459||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'V_CommentAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:35:39.5459||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:35:39.5459||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:35:40.8814||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (76ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:35:41.1105||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:35:41.1261||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:35:41.1533||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 2873.2124ms 
+2023-08-22 16:35:41.1533||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:35:41.1848||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 3079.7292ms 
+2023-08-22 16:35:56.9172||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/4 - - 
+2023-08-22 16:35:56.9531||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:35:56.9531||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:35:56.9673||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:35:56.9673||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] = 1032
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:35:56.9673||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:35:56.9673||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 17.8316ms 
+2023-08-22 16:35:56.9673||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:35:56.9673||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/4 - - - 200 - application/json;+charset=utf-8 57.1368ms 
+2023-08-22 16:36:00.6377||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:36:00.6377||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:36:00.6377||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:36:00.7486||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:36:00.7486||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:36:00.7486||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:36:00.7486||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 112.7564ms 
+2023-08-22 16:36:00.7486||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:36:00.7486||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 117.2938ms 
+2023-08-22 16:38:18.7937||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-22 16:38:19.2135||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-22 16:38:19.2175||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-22 16:38:19.2175||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-22 16:38:19.2175||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-22 16:38:19.2175||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-22 16:38:20.1068||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-22 16:38:20.5891||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-22 16:38:20.5978||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 7.8305ms 
+2023-08-22 16:38:20.5978||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 497.2206ms 
+2023-08-22 16:38:20.9031||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-22 16:38:20.9484||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.3311ms 
+2023-08-22 16:38:21.6073||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-22 16:38:21.8828||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 274.6250ms 
+2023-08-22 16:38:28.8653||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:38:28.9573||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:38:29.0078||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:38:30.3577||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:38:30.3577||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:38:30.3577||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:38:30.3577||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'V_CommentAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:38:30.3577||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:38:30.3577||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:38:31.8047||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (75ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:38:32.0416||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:38:32.0580||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:38:32.0781||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 3064.5303ms 
+2023-08-22 16:38:32.0781||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:38:32.1036||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 3238.2788ms 
+2023-08-22 16:39:32.3882||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-22 16:39:32.4069||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 18.8296ms 
+2023-08-22 16:39:32.4364||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-22 16:39:32.4364||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 0.9380ms 
+2023-08-22 16:39:32.5332||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-22 16:39:32.6387||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 105.5227ms 
+2023-08-22 16:39:32.9225||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-22 16:39:32.9511||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 28.5991ms 
+2023-08-22 16:39:39.5946||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:39:39.5946||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:39:39.6065||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:39:39.6252||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:39:39.6252||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:39:39.6252||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:39:39.6252||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 27.3342ms 
+2023-08-22 16:39:39.6252||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:39:39.6252||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 40.5751ms 
+2023-08-22 16:39:49.9610||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-22 16:39:50.3607||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-22 16:39:50.3607||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-22 16:39:50.4029||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-22 16:39:50.4029||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-22 16:39:50.4571||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-22 16:39:51.4160||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-22 16:39:52.3022||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-22 16:39:52.3153||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 12.3938ms 
+2023-08-22 16:39:52.3308||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 922.5884ms 
+2023-08-22 16:39:52.6503||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-22 16:39:52.7039||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 53.5740ms 
+2023-08-22 16:39:53.2159||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-22 16:39:53.4193||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 203.4015ms 
+2023-08-22 16:41:34.8521||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:41:34.9406||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:41:34.9776||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:41:36.2055||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:41:36.2055||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:41:36.2055||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:41:36.2055||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'V_CommentAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:41:36.2055||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:41:36.2055||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 16:41:37.5642||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (103ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:41:37.8158||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:41:37.8357||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:41:37.8560||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 2872.9355ms 
+2023-08-22 16:41:37.8560||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:41:37.8725||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 3020.4526ms 
+2023-08-22 16:42:02.5022||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:42:02.5124||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:42:02.5124||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:42:02.5124||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:42:02.5345||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:42:02.5345||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:42:02.5345||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 23.8215ms 
+2023-08-22 16:42:02.5345||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:42:02.5345||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 36.3311ms 
+2023-08-22 16:45:28.5156||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:45:28.5156||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:45:28.5156||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:45:28.5753||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:45:28.5753||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:45:28.5753||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:45:28.5753||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 60.3277ms 
+2023-08-22 16:45:28.5753||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:45:28.5753||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 65.4426ms 
+2023-08-22 16:45:29.0896||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:45:29.0954||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:45:29.0954||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:45:29.1119||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:45:29.1119||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:45:29.1254||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:45:29.1254||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 30.1872ms 
+2023-08-22 16:45:29.1254||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:45:29.1254||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 37.4955ms 
+2023-08-22 16:46:31.2659||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:46:31.2659||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:46:31.2659||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:46:31.2659||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:46:31.2777||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:46:31.2777||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:46:31.2777||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 8.2676ms 
+2023-08-22 16:46:31.2777||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:46:31.2777||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 13.8688ms 
+2023-08-22 16:46:31.8420||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:46:31.8420||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:46:31.8420||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:46:31.8420||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:46:31.8420||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:46:31.8420||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:46:31.8563||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 6.6743ms 
+2023-08-22 16:46:31.8563||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:46:31.8563||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 15.1086ms 
+2023-08-22 16:46:34.4574||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:46:34.4574||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:46:34.4574||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:46:34.4574||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:46:34.4574||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:46:34.4574||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:46:34.4574||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 3.9431ms 
+2023-08-22 16:46:34.4574||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:46:34.4574||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 6.1482ms 
+2023-08-22 16:46:45.2943||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:46:45.2943||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:46:45.2943||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:46:45.2943||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:46:45.2943||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:46:45.2943||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:46:45.2943||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 9.0233ms 
+2023-08-22 16:46:45.2943||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:46:45.2943||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 11.4522ms 
+2023-08-22 16:48:49.3277||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:48:49.3277||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:48:49.3277||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:48:49.3277||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:48:49.3277||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:48:49.3277||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:48:49.3277||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 8.1116ms 
+2023-08-22 16:48:49.3277||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:48:49.3277||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 10.8744ms 
+2023-08-22 16:49:38.3371||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:49:38.3371||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:49:38.3371||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:49:38.3439||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:49:38.3439||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:49:38.3439||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:49:38.3439||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 10.2203ms 
+2023-08-22 16:49:38.3439||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:49:38.3439||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 13.0708ms 
+2023-08-22 16:57:04.7614||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:57:04.7663||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:57:04.7663||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:57:04.7663||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:57:04.7789||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:57:04.7789||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:57:04.7789||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 10.6797ms 
+2023-08-22 16:57:04.7789||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:57:04.7789||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 19.7960ms 
+2023-08-22 16:58:08.6597||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:58:08.6597||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:58:08.6597||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:58:08.6708||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:58:08.6708||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:58:08.6708||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:58:08.6708||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 7.9734ms 
+2023-08-22 16:58:08.6708||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:58:08.6708||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 17.9960ms 
+2023-08-22 16:58:50.7071||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:58:50.7071||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:58:50.7071||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:58:50.7071||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:58:50.7181||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:58:50.7181||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:58:50.7181||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 10.8251ms 
+2023-08-22 16:58:50.7181||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:58:50.7181||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 13.0822ms 
+2023-08-22 16:59:59.5518||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 16:59:59.5518||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:59:59.5518||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 16:59:59.5518||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 16:59:59.5639||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 16:59:59.5639||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 16:59:59.5639||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 10.3207ms 
+2023-08-22 16:59:59.5639||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 16:59:59.5639||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 14.1393ms 
+2023-08-22 17:30:15.6786||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-22 17:30:16.4614||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-22 17:30:16.4668||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-22 17:30:16.4668||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-22 17:30:16.4668||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-22 17:30:16.4810||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-22 17:30:17.5686||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-22 17:30:18.2570||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-22 17:30:18.2796||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 19.8080ms 
+2023-08-22 17:30:18.2998||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 736.7986ms 
+2023-08-22 17:30:18.6326||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-22 17:30:18.7696||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 136.9371ms 
+2023-08-22 17:30:19.4100||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-22 17:30:19.7255||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 315.5562ms 
+2023-08-22 17:30:27.9123||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/3 - - 
+2023-08-22 17:30:28.0027||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 17:30:28.0486||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 17:30:29.7542||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 17:30:29.7542||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 17:30:29.7542||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 17:30:29.7542||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'V_CommentAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 17:30:29.7542||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 17:30:29.7542||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-22 17:30:31.4870||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (98ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 17:30:31.7628||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (10, 11, 12)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 17:30:31.7903||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 17:30:31.8127||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 3758.1439ms 
+2023-08-22 17:30:31.8127||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 17:30:31.8409||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/3 - - - 200 - application/json;+charset=utf-8 3928.6243ms 
+2023-08-22 17:34:08.7196||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/3 - - 
+2023-08-22 17:34:08.7538||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 17:34:08.7538||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 17:34:08.8267||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 17:34:08.8267||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (10, 11, 12)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 17:34:08.8413||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 17:34:08.8413||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 80.3819ms 
+2023-08-22 17:34:08.8413||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 17:34:08.8413||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/3 - - - 200 - application/json;+charset=utf-8 125.2115ms 
+2023-08-22 17:35:17.3935||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/3 - - 
+2023-08-22 17:35:17.3935||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 17:35:17.3935||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 17:35:17.4897||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 17:35:17.4897||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (10, 11, 12)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 17:35:17.4968||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 17:35:17.4968||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 95.2259ms 
+2023-08-22 17:35:17.4968||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 17:35:17.4968||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/3 - - - 200 - application/json;+charset=utf-8 105.1557ms 
+2023-08-22 17:36:22.7916||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 17:36:22.8017||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 17:36:22.8017||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 17:36:22.8017||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 17:36:22.8180||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 17:36:22.8180||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 17:36:22.8180||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 15.5678ms 
+2023-08-22 17:36:22.8180||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 17:36:22.8180||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 28.9245ms 
+2023-08-22 17:36:35.1595||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/3 - - 
+2023-08-22 17:36:35.1595||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 17:36:35.1595||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 17:36:35.1595||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 17:36:35.1694||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (10, 11, 12)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 17:36:35.1694||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 17:36:35.1694||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 8.2023ms 
+2023-08-22 17:36:35.1694||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 17:36:35.1694||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/3 - - - 200 - application/json;+charset=utf-8 12.3140ms 
+2023-08-22 17:36:48.8478||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 17:36:48.8478||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 17:36:48.8478||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 17:36:48.8563||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 17:36:48.8563||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 17:36:48.8563||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 17:36:48.8563||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 6.597ms 
+2023-08-22 17:36:48.8563||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 17:36:48.8563||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 12.8752ms 
+2023-08-22 17:37:17.9847||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-22 17:37:17.9847||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 17:37:17.9847||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-22 17:37:17.9847||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-22 17:37:17.9971||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-22 17:37:17.9971||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-22 17:37:17.9971||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 12.1263ms 
+2023-08-22 17:37:17.9971||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-22 17:37:17.9971||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 14.8586ms 

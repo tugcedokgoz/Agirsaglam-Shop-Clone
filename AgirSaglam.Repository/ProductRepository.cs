@@ -109,5 +109,34 @@ namespace AgirSaglam.Repository
                 .FirstOrDefault(p => p.Id == productId);
         }
 
+        //parentcategory id ye göre childlardaki tüm productları getirme
+        public List<object> GetProductsByParentCategoryId(int parentCategoryId)
+        {
+            var categoriesUnderParent = RepositoryContext.Categories
+                .Where(c => c.ParentCategoryId == parentCategoryId)
+                .Select(c => c.Id)
+                .ToList();
+
+            var products = RepositoryContext.ProductCategories
+                .Where(pc => categoriesUnderParent.Contains(pc.CategoryId.Value))
+                .Select(pc => new
+                {
+                    Id = pc.Product.Id,
+                    Name = pc.Product.Name,
+                    Price = pc.Product.Price,
+                    DiscountPrice = pc.Product.DiscountPrice,
+                    Amount = pc.Product.Amount,
+                    Description = pc.Product.Description,
+                    Image = pc.Product.Image,
+                    CategoryNames = pc.Product.Categories.Select(c => c.Name).ToList()  // Child category names
+                })
+                .ToList();
+
+            return products.Cast<object>().ToList();
+        }
+
+
+
+
     }
 }
