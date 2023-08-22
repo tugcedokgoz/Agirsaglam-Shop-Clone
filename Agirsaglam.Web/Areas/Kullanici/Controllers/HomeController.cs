@@ -20,7 +20,17 @@ namespace Agirsaglam.Web.Areas.Kullanici.Controllers
         
         }
         public IActionResult AboutUs() => View();
-        public IActionResult Accessory() => View();
+        public IActionResult Accessory()
+        {
+
+            ProductRestClient client = new ProductRestClient();
+            dynamic result = client.GetProduct(2);
+
+            bool success = result.success;
+            if (success)
+                ViewBag.Accessory = result.data;
+            return View();
+        }
         public IActionResult Coffee(int id) 
         {
             ProductRestClient client = new ProductRestClient();
@@ -39,7 +49,7 @@ namespace Agirsaglam.Web.Areas.Kullanici.Controllers
 
         //public IActionResult ProductDetails()
         //{
-           
+
         //    ProductRestClient client = new ProductRestClient();
         //    dynamic result = client.GetProduct();
 
@@ -48,7 +58,10 @@ namespace Agirsaglam.Web.Areas.Kullanici.Controllers
         //        ViewBag.Product = result.data;
         //    return View();
         //}
-        public IActionResult GetProductDetails(int id)
+
+
+
+        public IActionResult ProductDetail(int id)
         {
 
             ProductRestClient client = new ProductRestClient();

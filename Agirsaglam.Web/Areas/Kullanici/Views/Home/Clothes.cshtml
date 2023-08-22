@@ -46,12 +46,12 @@
                                     <a href="#">İNDİRİM <i class="anm anm-angle-down-l"></i></a>
 
                                 </li>
-                                <li class="lvl1 parent megamenu"><a href="clothes.html">GİYİM <i class="anm anm-angle-down-l"></i></a></li>
+                                <li class="lvl1 parent megamenu"><a href="https://localhost:7203/Kullanici/Home/clothes">GİYİM <i class="anm anm-angle-down-l"></i></a></li>
                                 <li class="lvl1 parent megamenu">
-                                    <a href="accessory.html">AKSESUAR <i class="anm anm-angle-down-l"></i></a>
+                                    <a href="https://localhost:7203/Kullanici/Home/accessory">AKSESUAR <i class="anm anm-angle-down-l"></i></a>
                                 </li>
                                 <li class="lvl1 parent dropdown">
-                                    <a href="coffee.html">KAHVE <i class="anm anm-angle-down-l"></i></a>
+                                    <a href="https://localhost:7203/Kullanici/Home/coffee">KAHVE <i class="anm anm-angle-down-l"></i></a>
                                 </li>
                                 <li class="lvl1 parent dropdown">
                                     <a href="#">İLETİŞİM <i class="anm anm-angle-down-l"></i></a>
@@ -121,9 +121,9 @@
                                             <!-- start product image -->
                                             <div class="product-image">
                                                 <!-- start product image -->
-                                                <a href="short-description.html">
+                                                <a href="https://localhost:7203/Kullanici/Home/productdetail">
                                                     <!-- image -->
-                                                    <img class="primary blur-up lazyload" src="@ViewBag.Clothes[i].image" alt="image" title="product">
+                                                    <img class="primary blur-up lazyload w-75" src="@ViewBag.Clothes[i].image" alt="image" title="product">
                                                     <div class="product-labels rectangular"><span class="lbl on-sale">İNDİRİM</span> <span class="lbl pr-label1">new</span></div>
                                                 </a>
                                                 <div class="saleTime desktop" data-countdown="2022/03/01"></div>
@@ -131,13 +131,22 @@
                                             <div class="product-details text-center">
                                                 <!-- product name -->
                                                 <div class="product-name">
-                                                    <a href="short-description.html">@ViewBag.Clothes[i].name</a>
+                                                    <a href="https://localhost:7203/Kullanici/Home/productdetail/">@ViewBag.Clothes[i].name</a>
+                                                    //<a href="@Url.Action("ProductDetail", "Home", new { id = ViewBag.Clothes[i].id })">@ViewBag.Clothes[i].name</a>
                                                 </div>
                                                 <!-- End product name -->
                                                 <!-- product price -->
                                                 <div class="product-price">
-                                                    <span class="old-price">@ViewBag.Clothes[i].price</span>
-                                                    <span class="price">@ViewBag.Clothes[i].discountPrice</span>
+                                                    @if (ViewBag.Clothes[i].discountPrice == null || ViewBag.Clothes[i].discountPrice == 0)
+                                                    {
+                                                        <span class="price">@ViewBag.Clothes[i].price</span>
+                                                      
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="old-price">@ViewBag.Clothes[i].price</span>
+                                                        <span class="price">@ViewBag.Clothes[i].discountPrice</span>
+                                                    }
                                                 </div>
                                                 <!-- End product price -->
 

@@ -1,0 +1,229 @@
+﻿<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Kahve &ndash; AĞIRSAĞLAM</title>
+    <meta name="description" content="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/agirsaglamui/assets/images/favicon.png" />
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="~/agirsaglamui/assets/css/plugins.css">
+    <!-- Bootstap CSS -->
+    <link rel="stylesheet" href="~/agirsaglamui/assets/css/bootstrap.min.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="~/agirsaglamui/assets/css/style.css">
+    <link rel="stylesheet" href="~/agirsaglamui/assets/css/responsive.css">
+</head>
+
+<div>
+    <div class="header-wrap  d-flex">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!--Desktop Logo-->
+                <div class="logo col-md-2 col-lg-2 d-none d-lg-block">
+                    <a href="index.html">
+                        <img src="~/agirsaglamui/assets/images/logo/logo1.1.PNG" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
+                    </a>
+                </div>
+                <!--End Desktop Logo-->
+                <div class="col-2 col-sm-3 col-md-3 col-lg-8">
+                    <div class="d-block d-lg-none">
+                        <button type="button" class="btn--link site-header__menu js-mobile-nav-toggle mobile-nav--open">
+                            <i class="icon anm anm-times-l"></i>
+                            <i class="anm anm-bars-r"></i>
+                        </button>
+                    </div>
+                    <!--Desktop Menu-->
+                    <div>
+                        <nav class="grid__item" id="AccessibleNav">
+                            <!-- for mobile -->
+                            <ul id="siteNav" class="site-nav medium center hidearrow">
+                                <li class="lvl1 parent megamenu">
+                                    <a href="#">İNDİRİM <i class="anm anm-angle-down-l"></i></a>
+
+                                </li>
+                                <li class="lvl1 parent megamenu"><a href="https://localhost:7203/Kullanici/Home/clothes">GİYİM <i class="anm anm-angle-down-l"></i></a></li>
+                                <li class="lvl1 parent megamenu">
+                                    <a href="https://localhost:7203/Kullanici/Home/accessory">AKSESUAR <i class="anm anm-angle-down-l"></i></a>
+                                </li>
+                                <li class="lvl1 parent dropdown">
+                                    <a href="https://localhost:7203/Kullanici/Home/coffee">KAHVE <i class="anm anm-angle-down-l"></i></a>
+                                </li>
+                                <li class="lvl1 parent dropdown">
+                                    <a href="#">İLETİŞİM <i class="anm anm-angle-down-l"></i></a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--End Desktop Menu-->
+                </div>
+                <!--Mobile Logo-->
+                <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-block d-lg-none mobile-logo">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="~/agirsaglamui/assets/images/logo/logo1.1.PNG" alt="agirsaglam" title="AĞIRSAĞLAM" />
+                        </a>
+                    </div>
+                </div>
+                <!--Mobile Logo-->
+                <div class="col-4 col-sm-3 col-md-3 col-lg-2">
+                    <div class="site-cart">
+                        <a href="#;" class="site-header__cart" title="Cart">
+                            <i class="icon anm anm-bag-l"></i>
+                            <span id="CartCount" class="site-header__cart-count" data-cart-render="item_count">2</span>
+                        </a>
+                        <!--Minicart Popup-->
+                        <!--EndMinicart Popup-->
+                    </div>
+                    <div class="site-header__search">
+                        <button type="button" class="search-trigger"><i class="icon anm anm-search-l"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="MainContent" class="main-content" role="main">
+
+    <!--End Breadcrumb-->
+
+    <div id="ProductSection-product-template" class="product-template__container prstyle3 container-fluid">
+        <!--#ProductSection-product-template-->
+        <div class="product-single product-single-1">
+            <div class="left-content-product">
+                <div class="row">
+
+                    @{
+                     
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="product-details-img product-single__photos bottom">
+                                    <div class="zoompro-wrap product-zoom-right pl-20">
+                                        <div class="zoompro-span">
+                                        <img class="blur-up lazyload zoompro" data-zoom-image="@ViewBag.ProductDetails.image" alt="" src="@ViewBag.ProductDetails.image" />
+                                        </div>
+                                        <div class="product-labels"><span class="lbl on-sale">Sale</span><span class="lbl pr-label1">new</span></div>
+
+                                    </div>
+                                    <!--fotoğraf-->
+                                    <div class="product-thumb product-thumb-1">
+                                        <div id="gallery" class="product-dec-slider-1 product-tab-left">
+                                        <a data-image="@ViewBag.ProductDetails.image" data-zoom-image="@ViewBag.ProductDetails.image" class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" tabindex="-1">
+                                            <img class="blur-up lazyload" src="@ViewBag.ProductDetails.image" alt="" />
+                                            </a>
+
+
+
+                                        </div>
+                                    </div>
+                                
+
+                                </div>
+                            </div>
+                        
+                    }
+                    @{
+
+                    
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    
+                        <div class="product-single__meta">
+                                <h1 class="product-single__title">@ViewBag.ProductDetails.name</h1>
+
+                            <div class="prInfoRow">
+                                <div class="product-review"><a class="reviewLink" href="#tab2"><i class="font-13 fa fa-star"></i><i class="font-13 fa fa-star"></i><i class="font-13 fa fa-star"></i><i class="font-13 fa fa-star-o"></i><i class="font-13 fa fa-star-o"></i><span class="spr-badge-caption">6 reviews</span></a></div>
+                            </div>
+                                <div class="product-price text-xl">
+                                    @if (ViewBag.ProductDetails.discountPrice == null || ViewBag.ProductDetails.discountPrice == 0)
+                                    {
+                                        <span class="price text-xl">@ViewBag.ProductDetails.price</span>
+
+                                    }
+                                    else
+                                    {
+                                        <span class="old-price text-xl">@ViewBag.ProductDetails.price</span>
+                                        <span class="price text-xl">@ViewBag.ProductDetails.discountPrice</span>
+                                    }
+                                </div>
+
+
+                            <form method="post" action="http://annimexweb.com/cart/add" id="product_form_10508262282" accept-charset="UTF-8" class="product-form product-form-product-template hidedropdown" enctype="multipart/form-data">
+                                <div class="swatch clearfix swatch-0 option1" data-option-index="0">
+                                    <div class="product-form__item">
+                                        <label class="header">Color: <span class="slVariant">Red</span></label>
+                                        <div data-value="Black" class="swatch-element color black available">
+                                            <input class="swatchInput" id="swatch-0-black" type="radio" name="option-0" value="Black"><label class="swatchLbl color small rounded" for="swatch-0-black" style="background-color:black;" title="Black"></label>
+                                        </div>
+                                        <div data-value="Maroon" class="swatch-element color maroon available">
+                                            <input class="swatchInput" id="swatch-0-maroon" type="radio" name="option-0" value="Maroon"><label class="swatchLbl color small rounded" for="swatch-0-maroon" style="background-color:maroon;" title="Maroon"></label>
+                                        </div>
+                                        <div data-value="Blue" class="swatch-element color blue available">
+                                            <input class="swatchInput" id="swatch-0-blue" type="radio" name="option-0" value="Blue"><label class="swatchLbl color small rounded" for="swatch-0-blue" style="background-color:blue;" title="Blue"></label>
+                                        </div>
+                                        <div data-value="Dark Green" class="swatch-element color dark-green available">
+                                            <input class="swatchInput" id="swatch-0-dark-green" type="radio" name="option-0" value="Dark Green"><label class="swatchLbl color small rounded" for="swatch-0-dark-green" style="background-color:darkgreen;" title="Dark Green"></label>
+                                        </div>
+                                        <div data-value="aqua" class="swatch-element color aqua available">
+                                            <input class="swatchInput" id="swatch-0-aqua" type="radio" name="option-0" value="aqua"><label class="swatchLbl color small flat rounded" for="swatch-0-aqua" style="background-color:aqua;" title="aqua"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swatch clearfix swatch-1 option2" data-option-index="1">
+                                    <div class="product-form__item">
+                                        <label class="header">Size: <span class="slVariant">XS</span></label>
+                                        <div data-value="XS" class="swatch-element xs available">
+                                            <input class="swatchInput" id="swatch-1-xs" type="radio" name="option-1" value="XS"><label class="swatchLbl small flat" for="swatch-1-xs" title="XS">XS</label>
+                                        </div>
+                                        <div data-value="S" class="swatch-element s available">
+                                            <input class="swatchInput" id="swatch-1-s" type="radio" name="option-1" value="S"><label class="swatchLbl small flat" for="swatch-1-s" title="S">S</label>
+                                        </div>
+                                        <div data-value="M" class="swatch-element m available">
+                                            <input class="swatchInput" id="swatch-1-m" type="radio" name="option-1" value="M"><label class="swatchLbl small flat" for="swatch-1-m" title="M">M</label>
+                                        </div>
+                                        <div data-value="L" class="swatch-element l available">
+                                            <input class="swatchInput" id="swatch-1-l" type="radio" name="option-1" value="L"><label class="swatchLbl small flat" for="swatch-1-l" title="L">L</label>
+                                        </div>
+                                        <div data-value="XL" class="swatch-element xl available">
+                                            <input class="swatchInput" id="swatch-1-xl" type="radio" name="option-1" value="XL"><label class="swatchLbl small flat" for="swatch-1-xl" title="XL">XL</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product Action -->
+                                <div class="product-action clearfix">
+                                    <div class="product-form__item--quantity">
+                                        <div class="wrapQtyBtn">
+                                            <div class="qtyField">
+                                                <a class="qtyBtn minus" href="javascript:void(0);"><i class="fa anm anm-minus-r" aria-hidden="true"></i></a>
+                                                <input type="text" id="Quantity" name="quantity" value="1" class="product-form__input qty">
+                                                <a class="qtyBtn plus" href="javascript:void(0);"><i class="fa anm anm-plus-r" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-form__item--submit">
+                                        <button type="button" name="add" class="btn product-form__cart-submit">
+                                            <span>Add to cart</span>
+                                        </button>
+                                    </div>
+                                    <div class="shopify-payment-button" data-shopify="payment-button">
+                                        <button type="button" class="shopify-payment-button__button shopify-payment-button__button--unbranded">Buy it now</button>
+                                    </div>
+                                </div>
+                                <!-- End Product Action -->
+                            </form>
+
+                           
+                        </div>
+                    </div>
+                    }
+
+                    <!--End Product Tabs-->
+                </div>
+            </div>
+            <!--End-product-single-->
+        </div>
+        <!--#ProductSection-product-template-->
+    </div>
+    <!--MainContent-->
+</div>
