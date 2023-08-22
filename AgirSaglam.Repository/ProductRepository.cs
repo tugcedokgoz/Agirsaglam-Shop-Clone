@@ -16,21 +16,6 @@ namespace AgirSaglam.Repository
 
         }
 
-        //kategori id ye göre
-        //public List<Product> GetProductsByCategoryId(int categoryId)
-        //{
-        //    var productIds = RepositoryContext.ProductCategories
-        //        .Where(pc => pc.CategoryId == categoryId)
-        //        .Select(pc => pc.ProductId)
-        //        .ToList();
-
-        //    var products = RepositoryContext.Products
-        //        .Where(p => productIds.Contains(p.Id))
-        //        .ToList();
-
-        //    return products;
-        //}
-
         public List<object> GetProductsByCategoryId(int categoryId)
         {
             var products = RepositoryContext.ProductCategories
@@ -135,7 +120,15 @@ namespace AgirSaglam.Repository
             return products.Cast<object>().ToList();
         }
 
+        // DiscountPrice null veya 0 değilse
+        public List<Product> GetDiscountedProduct()
+        {
+            var products = RepositoryContext.Products
+                .Where(p => p.DiscountPrice != null && p.DiscountPrice > 0) 
+                .ToList();
 
+            return products;
+        }
 
 
     }

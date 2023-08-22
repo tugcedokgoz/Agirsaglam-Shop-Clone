@@ -38,16 +38,37 @@ namespace AgirSaglam.Api.Controllers
         }
 
 
-        [HttpGet("GetByProductId/{productId}")]
-        public dynamic GetByProductId(int productId)
+        [HttpGet("GetProductPropertiesAndGroups/{productId}")]
+        public IActionResult GetProductPropertiesAndGroups(int productId)
         {
-            var productProperties = repo.ProductPropertyRepository.GetByProductId(productId);
-            return new
+            try
             {
-                success = true,
-                data = productProperties
-            };
+                var productProperties = repo.ProductPropertyRepository.GetByProductId(productId)
+                    .Select(pp => new
+                    {
+                        PropertyName = pp.Property.Name, 
+                        GroupName = pp.Property.Group.Name 
+                    })
+                    .ToList();
+
+                return Ok(new
+                {
+                    success = true,
+                    data = productProperties
+                });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    success = false,
+                    message = "An error occurred while fetching product properties.",
+                    error = ex.Message
+                });
+            }
         }
+
+
 
         [HttpGet("GetByPropertyId/{propertyId}")]
         public dynamic GetByPropertyId(int propertyId)

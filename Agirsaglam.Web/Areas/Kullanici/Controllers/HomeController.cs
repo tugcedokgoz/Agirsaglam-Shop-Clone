@@ -69,7 +69,21 @@ namespace Agirsaglam.Web.Areas.Kullanici.Controllers
 
             bool success = result.success;
             if (success)
-                ViewBag.ProductDetails = result.data;
+            {
+                ViewBag.ProductDetails = result.product;
+                ViewBag.ProductProperties = result.properties;
+            }
+            return View();
+        }
+
+        public IActionResult DiscountedProduct()
+        {
+            ProductRestClient client = new ProductRestClient();
+            dynamic result = client.GetDiscountedProduct();
+
+            bool success = result.success;
+            if (success)
+                ViewBag.DiscountedProduct = result.data;
             return View();
         }
     }

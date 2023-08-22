@@ -43,7 +43,7 @@
                             <!-- for mobile -->
                             <ul id="siteNav" class="site-nav medium center hidearrow">
                                 <li class="lvl1 parent megamenu">
-                                    <a href="#">İNDİRİM <i class="anm anm-angle-down-l"></i></a>
+                                    <a href="https://localhost:7203/Kullanici/Home/discountedproduct">İNDİRİM <i class="anm anm-angle-down-l"></i></a>
 
                                 </li>
                                 <li class="lvl1 parent megamenu"><a href="https://localhost:7203/Kullanici/Home/clothes">GİYİM <i class="anm anm-angle-down-l"></i></a></li>
@@ -121,7 +121,7 @@
                                             <!-- start product image -->
                                             <div class="product-image">
                                                 <!-- start product image -->
-                                                <a href="https://localhost:7203/Kullanici/Home/productdetail">
+                                               <a href="@Url.Action("ProductDetail", "Home", new { id = ViewBag.Clothes[i].id })">
                                                     <!-- image -->
                                                     <img class="primary blur-up lazyload w-75" src="@ViewBag.Clothes[i].image" alt="image" title="product">
                                                     <div class="product-labels rectangular"><span class="lbl on-sale">İNDİRİM</span> <span class="lbl pr-label1">new</span></div>
@@ -131,8 +131,8 @@
                                             <div class="product-details text-center">
                                                 <!-- product name -->
                                                 <div class="product-name">
-                                                    <a href="https://localhost:7203/Kullanici/Home/productdetail/">@ViewBag.Clothes[i].name</a>
-                                                    //<a href="@Url.Action("ProductDetail", "Home", new { id = ViewBag.Clothes[i].id })">@ViewBag.Clothes[i].name</a>
+                                                   
+                                                    <p href="@Url.Action("ProductDetail", "Home", new { id = ViewBag.Clothes[i].id })">@ViewBag.Clothes[i].name</p>
                                                 </div>
                                                 <!-- End product name -->
                                                 <!-- product price -->

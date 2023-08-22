@@ -20,18 +20,6 @@ namespace AgirSaglam.Api.Controllers
 
         }
 
-        // categoryId'ye göre ürünleri getirme
-        //[HttpGet("GetProductsByCategoryId/{categoryId}")]
-        //public dynamic GetProductsByCategoryId(int categoryId)
-        //{
-        //    var products = repo.ProductRepository.GetProductsByCategoryId(categoryId);
-        //    return new
-        //    {
-        //        success = true,
-        //        data = products
-        //    };
-        //}
-
         [HttpGet("GetProductsByCategoryId/{categoryId}")]
         public dynamic GetProductsByCategoryId(int categoryId)
         {
@@ -192,6 +180,17 @@ namespace AgirSaglam.Api.Controllers
         public dynamic GetProductsByParentCategoryId(int parentCategoryId)
         {
             var products = repo.ProductRepository.GetProductsByParentCategoryId(parentCategoryId);
+            return new
+            {
+                success = true,
+                data = products
+            };
+        }
+
+        [HttpGet("GetDiscountedProduct")]
+        public dynamic GetProducts()
+        {
+            var products = repo.ProductRepository.GetDiscountedProduct();
             return new
             {
                 success = true,

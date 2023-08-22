@@ -23,7 +23,9 @@ namespace AgirSaglam.Repository
 
         public IQueryable<ProductProperty> GetByProductId(int productId)
         {
-            return FindByCondition(pp => pp.ProductId == productId);
+            return FindByCondition(pp => pp.ProductId == productId)
+                .Include(pp => pp.Property) 
+                .ThenInclude(p => p.Group); 
         }
 
         public IQueryable<ProductProperty> GetByPropertyId(int propertyId)
