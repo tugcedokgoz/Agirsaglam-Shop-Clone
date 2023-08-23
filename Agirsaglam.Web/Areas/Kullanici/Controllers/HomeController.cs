@@ -1,9 +1,15 @@
-﻿using Agirsaglam.Web.Code.Rest;
+﻿
+using Agirsaglam.Web.Code.Filters;
+using Agirsaglam.Web.Code.Rest;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Linq;
+using RestSharp;
+using System.Data;
 
 namespace Agirsaglam.Web.Areas.Kullanici.Controllers
 {
     [Area("Kullanici")]
+    //[AuthActionFilter(Role = "Kullanici")]
     public class HomeController : Controller
     {
         public IActionResult Index() => View();
@@ -17,9 +23,11 @@ namespace Agirsaglam.Web.Areas.Kullanici.Controllers
             if (success)
                 ViewBag.Clothes = result.data;
             return View();
-        
+
         }
         public IActionResult AboutUs() => View();
+
+        //[AuthActionFilter(Role = "Kullanici")]
         public IActionResult Accessory()
         {
 
@@ -31,7 +39,7 @@ namespace Agirsaglam.Web.Areas.Kullanici.Controllers
                 ViewBag.Accessory = result.data;
             return View();
         }
-        public IActionResult Coffee(int id) 
+        public IActionResult Coffee(int id)
         {
             ProductRestClient client = new ProductRestClient();
             dynamic result = client.GetProduct(3);
@@ -46,21 +54,6 @@ namespace Agirsaglam.Web.Areas.Kullanici.Controllers
         public IActionResult Terms() => View();
         public IActionResult UserGuide() => View();
         public IActionResult Blog() => View();
-
-        //public IActionResult ProductDetails()
-        //{
-
-        //    ProductRestClient client = new ProductRestClient();
-        //    dynamic result = client.GetProduct();
-
-        //    bool success = result.success;
-        //    if (success)
-        //        ViewBag.Product = result.data;
-        //    return View();
-        //}
-
-
-
         public IActionResult ProductDetail(int id)
         {
 
@@ -86,5 +79,13 @@ namespace Agirsaglam.Web.Areas.Kullanici.Controllers
                 ViewBag.DiscountedProduct = result.data;
             return View();
         }
+
+
+        public IActionResult Contact()
+        {
+            return View();
+        }
+        public IActionResult Cart() => View();
+        public IActionResult Register() => View();
     }
 }

@@ -20,5 +20,6 @@ namespace Agirsaglam.Web.Areas.Admin.Controllers
         public IActionResult Property()=>View();
         public IActionResult ProductProperty()=>View();
         public IActionResult CategoryProperty()=>View();
+        public IActionResult Contact()=>View();
     }
 }

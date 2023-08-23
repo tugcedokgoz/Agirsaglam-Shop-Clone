@@ -2441,12 +2441,20 @@
       "PackagePath": "staticwebassets\\AgirsaglamUI\\blog.html"
     },
     {
+      "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\AgirsaglamUI\\cart.html",
+      "PackagePath": "staticwebassets\\AgirsaglamUI\\cart.html"
+    },
+    {
       "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\AgirsaglamUI\\clothes.html",
       "PackagePath": "staticwebassets\\AgirsaglamUI\\clothes.html"
     },
     {
       "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\AgirsaglamUI\\coffee.html",
       "PackagePath": "staticwebassets\\AgirsaglamUI\\coffee.html"
+    },
+    {
+      "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\AgirsaglamUI\\contact.html",
+      "PackagePath": "staticwebassets\\AgirsaglamUI\\contact.html"
     },
     {
       "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\AgirsaglamUI\\index.html",
@@ -2459,6 +2467,10 @@
     {
       "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\AgirsaglamUI\\product-layout.html",
       "PackagePath": "staticwebassets\\AgirsaglamUI\\product-layout.html"
+    },
+    {
+      "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\AgirsaglamUI\\register.html",
+      "PackagePath": "staticwebassets\\AgirsaglamUI\\register.html"
     },
     {
       "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\AgirsaglamUI\\returnpolicy.html",
@@ -4631,6 +4643,10 @@
     {
       "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\Admin\\comment.js",
       "PackagePath": "staticwebassets\\js\\Admin\\comment.js"
+    },
+    {
+      "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\Admin\\contact.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\contact.js"
     },
     {
       "Id": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\Admin\\order.js",

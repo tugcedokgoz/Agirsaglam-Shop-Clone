@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxDb21tZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/tugcedokgoz/Desktop/AgirsaglamShopClone/AgirsaglamShopClone/Agirsaglam.Web/Areas/Admin/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/tugcedokgoz/Desktop/AgirsaglamShopClone/AgirsaglamShopClone/Agirsaglam.Web/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -84,12 +88,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcS3VsbGFuaWNpXFZpZXdzXEhvbWVcQmxvZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/tugcedokgoz/Desktop/AgirsaglamShopClone/AgirsaglamShopClone/Agirsaglam.Web/Areas/Kullanici/Views/Home/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcS3VsbGFuaWNpXFZpZXdzXEhvbWVcQ2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/tugcedokgoz/Desktop/AgirsaglamShopClone/AgirsaglamShopClone/Agirsaglam.Web/Areas/Kullanici/Views/Home/Clothes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcS3VsbGFuaWNpXFZpZXdzXEhvbWVcQ2xvdGhlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/tugcedokgoz/Desktop/AgirsaglamShopClone/AgirsaglamShopClone/Agirsaglam.Web/Areas/Kullanici/Views/Home/Coffee.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcS3VsbGFuaWNpXFZpZXdzXEhvbWVcQ29mZmVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/AgirsaglamShopClone/AgirsaglamShopClone/Agirsaglam.Web/Areas/Kullanici/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcS3VsbGFuaWNpXFZpZXdzXEhvbWVcQ29udGFjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/tugcedokgoz/Desktop/AgirsaglamShopClone/AgirsaglamShopClone/Agirsaglam.Web/Areas/Kullanici/Views/Home/DiscountedProduct.cshtml]
@@ -106,6 +118,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/tugcedokgoz/Desktop/AgirsaglamShopClone/AgirsaglamShopClone/Agirsaglam.Web/Areas/Kullanici/Views/Home/ProductDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcS3VsbGFuaWNpXFZpZXdzXEhvbWVcUHJvZHVjdERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/AgirsaglamShopClone/AgirsaglamShopClone/Agirsaglam.Web/Areas/Kullanici/Views/Home/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcS3VsbGFuaWNpXFZpZXdzXEhvbWVcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/tugcedokgoz/Desktop/AgirsaglamShopClone/AgirsaglamShopClone/Agirsaglam.Web/Areas/Kullanici/Views/Home/ReturnPolicy.cshtml]

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xPdv2OQ0hCwIR8Ys9RqNNug+Cp0aoww5Bw6kTKLljpI=",
+  "Hash": "/W9o1KvIOTU9Pvv66p2bzCXRrclZovyz5Piob/Hsqs8=",
   "Source": "Agirsaglam.Web",
   "BasePath": "_content/Agirsaglam.Web",
   "Mode": "Default",
@@ -10404,6 +10404,23 @@
       "OriginalItemSpec": "wwwroot\\AgirsaglamUI\\blog.html"
     },
     {
+      "Identity": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\AgirsaglamUI\\cart.html",
+      "SourceId": "Agirsaglam.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\",
+      "BasePath": "_content/Agirsaglam.Web",
+      "RelativePath": "AgirsaglamUI/cart.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\AgirsaglamUI\\cart.html"
+    },
+    {
       "Identity": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\AgirsaglamUI\\clothes.html",
       "SourceId": "Agirsaglam.Web",
       "SourceType": "Discovered",
@@ -10436,6 +10453,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\AgirsaglamUI\\coffee.html"
+    },
+    {
+      "Identity": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\AgirsaglamUI\\contact.html",
+      "SourceId": "Agirsaglam.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\",
+      "BasePath": "_content/Agirsaglam.Web",
+      "RelativePath": "AgirsaglamUI/contact.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\AgirsaglamUI\\contact.html"
     },
     {
       "Identity": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\AgirsaglamUI\\index.html",
@@ -10487,6 +10521,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\AgirsaglamUI\\product-layout.html"
+    },
+    {
+      "Identity": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\AgirsaglamUI\\register.html",
+      "SourceId": "Agirsaglam.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\",
+      "BasePath": "_content/Agirsaglam.Web",
+      "RelativePath": "AgirsaglamUI/register.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\AgirsaglamUI\\register.html"
     },
     {
       "Identity": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\AgirsaglamUI\\returnpolicy.html",
@@ -10657,6 +10708,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Admin\\comment.js"
+    },
+    {
+      "Identity": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\Admin\\contact.js",
+      "SourceId": "Agirsaglam.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\",
+      "BasePath": "_content/Agirsaglam.Web",
+      "RelativePath": "js/Admin/contact.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Admin\\contact.js"
     },
     {
       "Identity": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\js\\Admin\\order.js",

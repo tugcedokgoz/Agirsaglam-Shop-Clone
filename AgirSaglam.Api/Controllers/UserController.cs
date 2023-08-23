@@ -61,18 +61,16 @@ namespace AgirSaglam.Api.Controllers
                 UserName = json.UserName,
                 Email = json.Email,
                 Password = json.Password,
-                CreateDate = json.CreateDate,
-                UpdateDate = json.UpdateDate,
-                EmailConfirm = json.EmailConfirm,
-                EmailConfirmDate = json.EmailConfirmDate,
-                Status = json.Status,
-                RoleId = json.RoleId,
-                AdressId = json.AdressId,
+
             };
             if (item.Id > 0)
                 repo.UserRepository.Update(item);
             else
+            {
+                int roleId = 3; //kullanici olarak kayıt yapmak için
+                item.RoleId = roleId;
                 repo.UserRepository.Create(item);
+            }
             repo.SaveChanges();
             cache.Remove("Users");
             return new

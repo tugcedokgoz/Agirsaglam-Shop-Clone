@@ -1,19 +1,12 @@
 ﻿using Newtonsoft.Json.Linq;
 using RestSharp;
+using System.Text.Json.Nodes;
 
 namespace Agirsaglam.Web.Code.Rest
 {
     public class ProductRestClient:BaseRestClient
     {
-        //public dynamic GetProduct()
-        //{
-        //    RestRequest req = new RestRequest($"/Product/GetProducts", Method.Get);
-        //    RestResponse res = client.Get(req);
-        //    string msg = res.Content.ToString();
-
-        //    dynamic result = JObject.Parse(msg);
-        //    return result;
-        //}
+    
 
         public dynamic GetProduct(int id)
         {
@@ -53,5 +46,29 @@ namespace Agirsaglam.Web.Code.Rest
             dynamic result = JObject.Parse(msg);
             return result;
         }
+
+        public dynamic SaveContact(dynamic model)
+        {
+            string jsonModel = Newtonsoft.Json.JsonConvert.SerializeObject(model);
+            RestRequest req = new RestRequest("/Contact/Save", Method.Post);
+            req.AddJsonBody(jsonModel);
+            RestResponse res = client.Execute(req);
+
+            string msg = res.Content.ToString();
+            dynamic result = JObject.Parse(msg);
+            return result;
+        }
+        public dynamic SaveUser(dynamic model)
+        {
+            string jsonModel = Newtonsoft.Json.JsonConvert.SerializeObject(model);
+            RestRequest req = new RestRequest("/User/Save", Method.Post); 
+            req.AddJsonBody(jsonModel);
+            RestResponse res = client.Execute(req);
+
+            string msg = res.Content.ToString();
+            dynamic result = JObject.Parse(msg);
+            return result;
+        }
+
     }
 }

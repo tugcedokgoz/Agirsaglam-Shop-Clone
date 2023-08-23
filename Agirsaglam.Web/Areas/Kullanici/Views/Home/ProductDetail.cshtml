@@ -21,7 +21,7 @@
             <div class="row align-items-center">
                 <!--Desktop Logo-->
                 <div class="logo col-md-2 col-lg-2 d-none d-lg-block">
-                    <a href="index.html">
+                    <a href="https://localhost:7203/Kullanici/Home/index">
                         <img src="~/agirsaglamui/assets/images/logo/logo1.1.PNG" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
                     </a>
                 </div>
@@ -39,7 +39,7 @@
                             <!-- for mobile -->
                             <ul id="siteNav" class="site-nav medium center hidearrow">
                                 <li class="lvl1 parent megamenu">
-                                    <a href="#">İNDİRİM <i class="anm anm-angle-down-l"></i></a>
+                                    <a href="https://localhost:7203/Kullanici/Home/discountedproduct">İNDİRİM <i class="anm anm-angle-down-l"></i></a>
 
                                 </li>
                                 <li class="lvl1 parent megamenu"><a href="https://localhost:7203/Kullanici/Home/clothes">GİYİM <i class="anm anm-angle-down-l"></i></a></li>
@@ -50,7 +50,7 @@
                                     <a href="https://localhost:7203/Kullanici/Home/coffee">KAHVE <i class="anm anm-angle-down-l"></i></a>
                                 </li>
                                 <li class="lvl1 parent dropdown">
-                                    <a href="#">İLETİŞİM <i class="anm anm-angle-down-l"></i></a>
+                                    <a href="https://localhost:7203/Kullanici/Home/contact">İLETİŞİM <i class="anm anm-angle-down-l"></i></a>
                                 </li>
 
                             </ul>
@@ -61,7 +61,7 @@
                 <!--Mobile Logo-->
                 <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-block d-lg-none mobile-logo">
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="https://localhost:7203/Kullanici/Home/index">
                             <img src="~/agirsaglamui/assets/images/logo/logo1.1.PNG" alt="agirsaglam" title="AĞIRSAĞLAM" />
                         </a>
                     </div>
@@ -148,7 +148,7 @@
                                 </div>
 
 
-                                <form method="post" action="http://annimexweb.com/cart/add" id="product_form_10508262282" accept-charset="UTF-8" class="product-form product-form-product-template hidedropdown" enctype="multipart/form-data">
+                                <form method="post" action="" id="product_form_10508262282" accept-charset="UTF-8" class="product-form product-form-product-template hidedropdown" enctype="multipart/form-data">
                                     <div class="swatch clearfix swatch-0 option1" data-option-index="0">
                                         <div class="product-form__item">
                                      
@@ -170,7 +170,7 @@
                                                     if (propertyName.Contains("Beyaz", StringComparison.OrdinalIgnoreCase))
                                                     {
                                                         <div data-value="White" class="swatch-element color white available">
-                                                            <input class="swatchInput" id="swatch-0-white" type="radio" name="option-0" value="Black">
+                                                            <input class="swatchInput" id="swatch-0-white" type="radio" name="option-0" value="White">
                                                             <label class="swatchLbl color small rounded" for="swatch-0-white" style="background-color:white;" title="White"></label>
                                                         </div>
 
@@ -257,8 +257,6 @@
                                     <!--Beden -->
                                     <div class="swatch clearfix swatch-1 option2" data-option-index="1">
                                         <div class="product-form__item">
-                           
-                                    
                                             @if (ViewBag.ProductProperties != null)
                                             {
                                                 foreach (var property in ViewBag.ProductProperties)
@@ -305,11 +303,37 @@
                                             }
                                         </div>
                                         </div>
-                                    <!--Kapasite -->
-                                    <div class="swatch clearfix swatch-1 option2" data-option-index="1">
-                                        <div class="product-form__item">
 
-                                     
+                                    <!--Cinsiyet -->
+                                    <div class="swatch clearfix swatch-1 option6" data-option-index="2">
+                                        <div class="product-form__item">
+                                            @if (ViewBag.ProductProperties != null)
+                                            {
+                                                foreach (var property in ViewBag.ProductProperties)
+                                                {
+                                                    var propertyName = property.propertyName.Value.ToString();
+
+                                                    if (propertyName.Contains("Kadın", StringComparison.OrdinalIgnoreCase))
+                                                    {
+                                                        <div data-value="kadin" class="swatch-element kadin available">
+                                                            <input class="swatchInput" id="swatch-1-kadin" type="radio" name="option-2" value="kadin"><label class="swatchLbl small flat" for="swatch-1-kadin" title="Kadın">Kadın</label>
+                                                        </div>
+                                                    }
+                                                    if (propertyName.Contains("Erkek", StringComparison.OrdinalIgnoreCase))
+                                                    {
+                                                        <div data-value="erkek" class="swatch-element erkek available">
+                                                            <input class="swatchInput" id="swatch-1-erkek" type="radio" name="option-2" value="erkek"><label class="swatchLbl small flat" for="swatch-1-erkek" title="Erkek">Erkek</label>
+                                                        </div>
+                                                    }
+
+
+                                                }
+                                            }
+                                        </div>
+                                    </div>
+                                    <!--Kapasite -->
+                                    <div class="swatch clearfix swatch-1 option3" data-option-index="3">
+                                        <div class="product-form__item">
                                             @if (ViewBag.ProductProperties != null)
                                             {
                                                 foreach (var property in ViewBag.ProductProperties)
@@ -319,25 +343,25 @@
                                                     if (propertyName.Contains("1 Litre", StringComparison.OrdinalIgnoreCase))
                                                     {
                                                         <div data-value="litre1" class="swatch-element litre1 available">
-                                                            <input class="swatchInput" id="swatch-1-litre1" type="radio" name="option-1" value="litre1"><label class="swatchLbl small flat" for="swatch-1-litre1" title="1 Litre">1 Litre</label>
+                                                            <input class="swatchInput" id="swatch-1-litre1" type="radio" name="option-3" value="litre1"><label class="swatchLbl small flat" for="swatch-1-litre1" title="1 Litre">1 Litre</label>
                                                         </div>
                                                     }
                                                     if (propertyName.Contains("500 ml", StringComparison.OrdinalIgnoreCase))
                                                     {
                                                         <div data-value="ml500" class="swatch-element 500ml available">
-                                                            <input class="swatchInput" id="swatch-1-500ml" type="radio" name="option-1" value="500ml"><label class="swatchLbl small flat" for="swatch-1-500ml" title="500 ml">500 ml</label>
+                                                            <input class="swatchInput" id="swatch-1-500ml" type="radio" name="option-3" value="500ml"><label class="swatchLbl small flat" for="swatch-1-500ml" title="500 ml">500 ml</label>
                                                         </div>
                                                     }
                                                     if (propertyName.Contains("250 ml", StringComparison.OrdinalIgnoreCase))
                                                     {
                                                         <div data-value="ml250" class="swatch-element m available">
-                                                            <input class="swatchInput" id="swatch-1-250ml" type="radio" name="option-1" value="250ml"><label class="swatchLbl small flat" for="swatch-1-250ml" title="250 ml">250 ml</label>
+                                                            <input class="swatchInput" id="swatch-1-250ml" type="radio" name="option-3" value="250ml"><label class="swatchLbl small flat" for="swatch-1-250ml" title="250 ml">250 ml</label>
                                                         </div>
                                                     }
                                                     if (propertyName.Contains("350 ml", StringComparison.OrdinalIgnoreCase))
                                                     {
                                                         <div data-value="ml350" class="swatch-element l available">
-                                                            <input class="swatchInput" id="swatch-1-350ml" type="radio" name="option-1" value="350ml"><label class="swatchLbl small flat" for="swatch-1-350ml" title="350 ml">350 ml</label>
+                                                            <input class="swatchInput" id="swatch-1-350ml" type="radio" name="option-3" value="350ml"><label class="swatchLbl small flat" for="swatch-1-350ml" title="350 ml">350 ml</label>
                                                         </div>
                                                     }
                                                   
@@ -347,7 +371,7 @@
                                     </div>
 
                                     <!--Materyal -->
-                                    <div class="swatch clearfix swatch-1 option2" data-option-index="1">
+                                    <div class="swatch clearfix swatch-1 option4" data-option-index="4">
                                         <div class="product-form__item">
 
 
@@ -360,19 +384,19 @@
                                                     if (propertyName.Contains("Çelik", StringComparison.OrdinalIgnoreCase))
                                                     {
                                                         <div data-value="celik" class="swatch-element celik available">
-                                                            <input class="swatchInput" id="swatch-1-celik" type="radio" name="option-1" value="celik"><label class="swatchLbl small flat" for="swatch-1-celik" title="Çelik">Çelik</label>
+                                                            <input class="swatchInput" id="swatch-1-celik" type="radio" name="option-4" value="celik"><label class="swatchLbl small flat" for="swatch-1-celik" title="Çelik">Çelik</label>
                                                         </div>
                                                     }
                                                     if (propertyName.Contains("Plastik", StringComparison.OrdinalIgnoreCase))
                                                     {
                                                         <div data-value="plastik" class="swatch-element plastik available">
-                                                            <input class="swatchInput" id="swatch-1-plastik" type="radio" name="option-1" value="plastik"><label class="swatchLbl small flat" for="swatch-1-plastik" title="Plastik">Plastik</label>
+                                                            <input class="swatchInput" id="swatch-1-plastik" type="radio" name="option-4" value="plastik"><label class="swatchLbl small flat" for="swatch-1-plastik" title="Plastik">Plastik</label>
                                                         </div>
                                                     }
                                                     if (propertyName.Contains("Bambu", StringComparison.OrdinalIgnoreCase))
                                                     {
                                                         <div data-value="bambu" class="swatch-element bambu available">
-                                                            <input class="swatchInput" id="swatch-1-bambu" type="radio" name="option-1" value="bambu"><label class="swatchLbl small flat" for="swatch-1-bambu" title="bambu">bambu</label>
+                                                            <input class="swatchInput" id="swatch-1-bambu" type="radio" name="option-4" value="bambu"><label class="swatchLbl small flat" for="swatch-1-bambu" title="bambu">bambu</label>
                                                         </div>
                                                     }
                                                     
@@ -383,7 +407,7 @@
                                     </div>
 
                                     <!--Ağırlık -->
-                                    <div class="swatch clearfix swatch-1 option2" data-option-index="1">
+                                    <div class="swatch clearfix swatch-1 option5" data-option-index="5">
                                         <div class="product-form__item">
 
 
@@ -396,25 +420,25 @@
                                                     if (propertyName.Contains("1000 gr", StringComparison.OrdinalIgnoreCase))
                                                     {
                                                         <div data-value="gram1000" class="swatch-element gram1000 available">
-                                                            <input class="swatchInput" id="swatch-1-gram1000" type="radio" name="option-1" value="gram1000"><label class="swatchLbl small flat" for="swatch-1-gram1000" title="1000 gr">1000 gr</label>
+                                                            <input class="swatchInput" id="swatch-1-gram1000" type="radio" name="option-5" value="gram1000"><label class="swatchLbl small flat" for="swatch-1-gram1000" title="1000 gr">1000 gr</label>
                                                         </div>
                                                     }
                                                     if (propertyName.Contains("500 gr", StringComparison.OrdinalIgnoreCase))
                                                     {
                                                         <div data-value="gr500" class="swatch-element 500gr available">
-                                                            <input class="swatchInput" id="swatch-1-500gr" type="radio" name="option-1" value="500gr"><label class="swatchLbl small flat" for="swatch-1-500gr" title="500 gr">500 gr</label>
+                                                            <input class="swatchInput" id="swatch-1-500gr" type="radio" name="option-5" value="500gr"><label class="swatchLbl small flat" for="swatch-1-500gr" title="500 gr">500 gr</label>
                                                         </div>
                                                     }
                                                     if (propertyName.Contains("250 gr", StringComparison.OrdinalIgnoreCase))
                                                     {
                                                         <div data-value="gr250" class="swatch-element 250gr available">
-                                                            <input class="swatchInput" id="swatch-1-250gr" type="radio" name="option-1" value="250gr"><label class="swatchLbl small flat" for="swatch-1-250gr" title="250 gr">250 gr</label>
+                                                            <input class="swatchInput" id="swatch-1-250gr" type="radio" name="option-5" value="250gr"><label class="swatchLbl small flat" for="swatch-1-250gr" title="250 gr">250 gr</label>
                                                         </div>
                                                     }
                                                     if (propertyName.Contains("125 gr", StringComparison.OrdinalIgnoreCase))
                                                     {
                                                         <div data-value="gr125" class="swatch-element l available">
-                                                            <input class="swatchInput" id="swatch-1-125gr" type="radio" name="option-1" value="125gr"><label class="swatchLbl small flat" for="swatch-1-125gr" title="125 gr">125 gr</label>
+                                                            <input class="swatchInput" id="swatch-1-125gr" type="radio" name="option-5" value="125gr"><label class="swatchLbl small flat" for="swatch-1-125gr" title="125 gr">125 gr</label>
                                                         </div>
                                                     }
 
@@ -423,35 +447,7 @@
                                         </div>
                                     </div>
 
-                                    <!--Cinsiyet -->
-                                    <div class="swatch clearfix swatch-1 option2" data-option-index="1">
-                                        <div class="product-form__item">
-
-
-                                            @if (ViewBag.ProductProperties != null)
-                                            {
-                                                foreach (var property in ViewBag.ProductProperties)
-                                                {
-                                                    var propertyName = property.propertyName.Value.ToString();
-
-                                                    if (propertyName.Contains("Kadın", StringComparison.OrdinalIgnoreCase))
-                                                    {
-                                                        <div data-value="kadin" class="swatch-element kadin available">
-                                                            <input class="swatchInput" id="swatch-1-kadin" type="radio" name="option-1" value="kadin"><label class="swatchLbl small flat" for="swatch-1-kadin" title="Kadın">Kadın</label>
-                                                        </div>
-                                                    }
-                                                    if (propertyName.Contains("Erkek", StringComparison.OrdinalIgnoreCase))
-                                                    {
-                                                        <div data-value="erkek" class="swatch-element erkek available">
-                                                            <input class="swatchInput" id="swatch-1-erkek" type="radio" name="option-1" value="erkek"><label class="swatchLbl small flat" for="swatch-1-erkek" title="Erkek">Erkek</label>
-                                                        </div>
-                                                    }
-                                                 
-
-                                                }
-                                            }
-                                        </div>
-                                    </div>
+                                  
 
                                         <!-- Product Action -->
                                         <div class="product-action clearfix">
@@ -490,3 +486,60 @@
         </div>
         <!--MainContent-->
     </div>
+    <script>
+    $(document).ready(function () {
+        $('#product_form_10508262282').submit(function (event) {
+            event.preventDefault(); 
+            handleFormSubmit();
+        });
+    });
+
+    function handleFormSubmit() {
+       
+        var productPrice = $('.price.text-xl').text().trim();
+        var quantity = $('#Quantity').val();
+
+        var options = {};
+
+ 
+        addOptionIfAvailable(options, 'color', '.swatch-0.option1 .swatchInput:checked');
+        addOptionIfAvailable(options, 'size', '.swatch-1.option2 .swatchInput:checked');
+        addOptionIfAvailable(options, 'gender', '.swatch-1.option6 .swatchInput:checked');
+        addOptionIfAvailable(options, 'capacity', '.swatch-1.option3 .swatchInput:checked');
+        addOptionIfAvailable(options, 'material', '.swatch-1.option4 .swatchInput:checked');
+        addOptionIfAvailable(options, 'weight', '.swatch-1.option5 .swatchInput:checked');
+        var formData = {
+            id:0,
+            price: productPrice,
+            quantity: quantity,
+            options: options
+        };
+        sendAjaxRequest('http://localhost:7119/api/Order/Save', formData);
+    }
+
+    function addOptionIfAvailable(optionsObj, key, selector) {
+        var selectedValue = $(selector).val();
+        if (selectedValue !== undefined && selectedValue !== null) {
+            optionsObj[key] = selectedValue;
+        }
+    }
+
+    function sendAjaxRequest(url, data) {
+        $.ajax({
+            type: 'POST',
+            url: url,
+            data: JSON.stringify(data),
+            contentType: 'application/json;charset=UTF-8',
+            success: function (response) {
+                if (response.success) {
+                    window.location.href = 'http://localhost:7119';
+                } else {
+                    window.location.href = 'http://localhost:7119/error';
+                }
+            },
+            error: function () {
+                window.location.href = 'http://localhost:7119/error';
+            }
+        });
+    }
+</script>

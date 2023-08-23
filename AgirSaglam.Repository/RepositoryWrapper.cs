@@ -24,6 +24,7 @@ namespace AgirSaglam.Repository
         private PropertyRepository propertyRepository;
         private ProductPropertyRepository productPropertyRepository;
         private CategoryPropertyRepository categoryPropertyRepository;
+        private ContactRepository contactRepository;
 
         public RepositoryWrapper(RepositoryContext context)
         {
@@ -112,6 +113,7 @@ namespace AgirSaglam.Repository
                 return orderRepository;
             }
         }
+        //productcategory
         public ProductCategoryRepository ProductCategoryRepository
         {
             get
@@ -121,7 +123,7 @@ namespace AgirSaglam.Repository
                 return productCategoryRepository;
             }
         }
-
+        //propertygroup
         public PropertyGroupRepository PropertyGroupRepository
         {
             get
@@ -131,6 +133,7 @@ namespace AgirSaglam.Repository
                 return propertyGroupRepository;
             }
         }
+        //property
         public PropertyRepository PropertyRepository
         {
             get
@@ -140,7 +143,7 @@ namespace AgirSaglam.Repository
                 return propertyRepository;
             }
         }
-
+        //productproperty
         public ProductPropertyRepository ProductPropertyRepository
         {
             get
@@ -150,7 +153,7 @@ namespace AgirSaglam.Repository
                 return productPropertyRepository;
             }
         }
-
+        //categoryproperty
         public CategoryPropertyRepository CategoryPropertyRepository
         {
             get
@@ -160,11 +163,20 @@ namespace AgirSaglam.Repository
                 return categoryPropertyRepository;
             }
         }
+        //contact
+        public ContactRepository ContactRepository
+        {
+            get
+            {
+                if (contactRepository == null)
+                    contactRepository = new ContactRepository(context);
+                return contactRepository;
+            }
+        }
         public void SaveChanges()
         {
-            Console.WriteLine(context);
             context.SaveChanges();
-            Console.WriteLine(context);
+         
         }
     }
 }
