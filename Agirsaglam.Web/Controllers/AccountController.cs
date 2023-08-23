@@ -44,7 +44,7 @@ namespace Agirsaglam.Web.Controllers
                 }
                 else
                 {
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Home", "Kullanici");
                 }
                   
             }

@@ -69,7 +69,7 @@
                 <!--Mobile Logo-->
                 <div class="col-4 col-sm-3 col-md-3 col-lg-2">
                     <div class="site-cart">
-                        <a href="#;" class="site-header__cart" title="Cart">
+                        <a href="https://localhost:7203/Kullanici/Home/cart" class="site-header__cart" title="Cart">
                             <i class="icon anm anm-bag-l"></i>
                             <span id="CartCount" class="site-header__cart-count" data-cart-render="item_count">2</span>
                         </a>
@@ -110,7 +110,7 @@
                                 <div class="product-thumb product-thumb-1">
                                     <div id="gallery" class="product-dec-slider-1 product-tab-left">
                                         <a data-image="@ViewBag.ProductDetails.image" data-zoom-image="@ViewBag.ProductDetails.image" class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" tabindex="-1">
-                                            <img class="blur-up lazyload" src="@ViewBag.ProductDetails.image" alt="" />
+                                            <img class="blur-up lazyload" src="@ViewBag.ProductDetails.image" alt="" id="product-image" />
                                         </a>
 
 
@@ -129,7 +129,7 @@
                         <div class="col-lg-6 col-md-6 col-sm-12 col-12">
 
                             <div class="product-single__meta">
-                                <h1 class="product-single__title">@ViewBag.ProductDetails.name</h1>
+                                <h1 class="product-single__title" id="product-name">@ViewBag.ProductDetails.name</h1>
 
                                 <div class="prInfoRow">
                                     <div class="product-review"><a class="reviewLink" href="#tab2"><i class="font-13 fa fa-star"></i><i class="font-13 fa fa-star"></i><i class="font-13 fa fa-star"></i><i class="font-13 fa fa-star-o"></i><i class="font-13 fa fa-star-o"></i><span class="spr-badge-caption">6 reviews</span></a></div>
@@ -137,21 +137,22 @@
                                 <div class="product-price">
                                     @if (ViewBag.ProductDetails.discountPrice == null || ViewBag.ProductDetails.discountPrice == 0)
                                     {
-                                        <span class="price text-xl">@ViewBag.ProductDetails.price</span>
+                                        <span class="price text-xl" id="product-price">@ViewBag.ProductDetails.price</span>
 
                                     }
                                     else
                                     {
                                         <span class="old-price" style="font-size:25px">@ViewBag.ProductDetails.price</span>
-                                        <span class="price" style="font-size:25px">@ViewBag.ProductDetails.discountPrice</span>
+                                        <span class="price" style="font-size:25px" id="product-price">@ViewBag.ProductDetails.discountPrice</span>
                                     }
                                 </div>
 
 
                                 <form method="post" action="" id="product_form_10508262282" accept-charset="UTF-8" class="product-form product-form-product-template hidedropdown" enctype="multipart/form-data">
+                                    <input type="hidden" value="@ViewBag.ProductDetails.id" id="product-id">
                                     <div class="swatch clearfix swatch-0 option1" data-option-index="0">
                                         <div class="product-form__item">
-                                     
+                                           
 
                                             @if (ViewBag.ProductProperties != null)
                                             {
@@ -461,13 +462,11 @@
                                                 </div>
                                             </div>
                                             <div class="product-form__item--submit">
-                                                <button type="button" name="add" class="btn product-form__cart-submit">
-                                                    <span>Add to cart</span>
+                                                <button type="submit" name="add" class="btn product-form__cart-submit">
+                                                    <span>Sepete Ekle</span>
                                                 </button>
                                             </div>
-                                            <div class="shopify-payment-button" data-shopify="payment-button">
-                                                <button type="button" class="shopify-payment-button__button shopify-payment-button__button--unbranded">Buy it now</button>
-                                            </div>
+                                           
                                         </div>
                                         <!-- End Product Action -->
                                     </form>
@@ -486,6 +485,7 @@
         </div>
         <!--MainContent-->
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
     $(document).ready(function () {
         $('#product_form_10508262282').submit(function (event) {
@@ -495,9 +495,19 @@
     });
 
     function handleFormSubmit() {
-       
-        var productPrice = $('.price.text-xl').text().trim();
+
+        var idElement = document.getElementById('product-id');
+        var _productName = document.getElementById('product-name');
+        var priceElement = document.getElementById('product-price');
         var quantity = $('#Quantity').val();
+        var priceValue = priceElement.innerHTML;
+        var productName = _productName.innerHTML;
+        // product-image 
+        var imageElement = document.getElementById('product-image');
+        var srcValue = imageElement.getAttribute('src');
+        var idValue = idElement.value;
+ 
+
 
         var options = {};
 
@@ -509,12 +519,23 @@
         addOptionIfAvailable(options, 'material', '.swatch-1.option4 .swatchInput:checked');
         addOptionIfAvailable(options, 'weight', '.swatch-1.option5 .swatchInput:checked');
         var formData = {
-            id:0,
-            price: productPrice,
+            productId: idValue,
+            price: priceValue,
             quantity: quantity,
-            options: options
+            options: options,
+            imgUrl:srcValue,
+            productName: productName
         };
-        sendAjaxRequest('http://localhost:7119/api/Order/Save', formData);
+    
+        var existingData = localStorage.getItem('sepetveri');
+        if (existingData) {
+            existingData = JSON.parse(existingData);
+        } else {
+            existingData = [];
+        }
+        existingData.push(formData);
+        localStorage.setItem('sepetveri', JSON.stringify(existingData));
+        alert("Ürün sepete eklendi.");
     }
 
     function addOptionIfAvailable(optionsObj, key, selector) {
@@ -522,24 +543,5 @@
         if (selectedValue !== undefined && selectedValue !== null) {
             optionsObj[key] = selectedValue;
         }
-    }
-
-    function sendAjaxRequest(url, data) {
-        $.ajax({
-            type: 'POST',
-            url: url,
-            data: JSON.stringify(data),
-            contentType: 'application/json;charset=UTF-8',
-            success: function (response) {
-                if (response.success) {
-                    window.location.href = 'http://localhost:7119';
-                } else {
-                    window.location.href = 'http://localhost:7119/error';
-                }
-            },
-            error: function () {
-                window.location.href = 'http://localhost:7119/error';
-            }
-        });
     }
 </script>

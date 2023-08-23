@@ -69,7 +69,7 @@
                 <!--Mobile Logo-->
                 <div class="col-4 col-sm-3 col-md-3 col-lg-2">
                     <div class="site-cart">
-                        <a href="#;" class="site-header__cart" title="Cart">
+                        <a href="https://localhost:7203/Kullanici/Home/cart" class="site-header__cart" title="Cart">
                             <i class="icon anm anm-bag-l"></i>
                             <span id="CartCount" class="site-header__cart-count" data-cart-render="item_count">2</span>
                         </a>
@@ -105,29 +105,28 @@
 
         </div>
         <div class="container">
-            <div class="row d-flex justify-content-between align-items-center ">
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col">Adet</div>
-                <div class="col">Toplam</div>
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-3">Ürün Görsel</div>
+                <div class="col-3">İsim</div>
+                <div class="col-2">Adet</div>
+                <div class="col-2">Fiyat</div>
+                <div class="col-2">Sepetten Kaldır</div>
             </div>
             <hr style="border-top: 3px solid #000;">
-            <div class="row d-flex justify-content-between align-items-center">
-                <div class="col-6 d-flex align-items-center" style="height: 100px;">Resim</div>
-                <div class="col-3">Ürün Adedi</div>
-                <div class="col-3">
-                    Fiyat/div>
-                </div>
-                <hr style="border-top: 3px solid #000;">
-                <div class="text-center ">
-                    <p style="font-size: 25px;">Toplam:</p>
-                    <button type="button" class="btn btn-secondary  btn-lg btn-block" style="margin-bottom: 30px;">Ödemeye Geç</button>
-                    <div>
-                        <a href="#">Alışverişe Devam Et.</a>
-                    </div>
+
+            <!-- Sepet ürünleri burada listelenecek -->
+            <div id="cart-items" class="row d-flex justify-content-between align-items-center">
+                <!-- Bu bölüm, sepetteki her bir ürün için tekrar edecek -->
+            </div>
+
+            <hr style="border-top: 3px solid #000;">
+            <div class="text-center">
+                <p style="font-size: 25px;">Toplam:</p>
+                <button type="button" class="btn btn-secondary btn-lg btn-block" style="margin-bottom: 30px;">Ödemeye Geç</button>
+                <div>
+                    <a href="#">Alışverişe Devam Et.</a>
                 </div>
             </div>
-            <!--MainContent-->
         </div>
 
         <!--End Body Content-->
@@ -183,6 +182,55 @@
 
     </div>
 </div>
+
+<script>
+    // Sepet verilerini al
+    var cartData = localStorage.getItem('sepetveri');
+    if (cartData) {
+        cartData = JSON.parse(cartData);
+
+        // Sepet verilerini HTML içine göm
+        var cartItemsContainer = document.getElementById('cart-items');
+        cartData.forEach(function (item, index) {
+            var itemDiv = document.createElement('div');
+            itemDiv.className = 'col-12 d-flex justify-content-between align-items-center';
+            itemDiv.innerHTML = `
+                    <div class="col-3 d-flex align-items-center" style="height: 100px;">
+                        <img src="${item.imgUrl}" alt="Product Image" style="max-height: 100px;">
+                    </div>
+                    <div class="col-3">${item.productName}</div>
+                    <div class="col-2">${item.quantity}</div>
+                    <div class="col-2">${item.price}</div>
+                    <div class="col-2">
+                        <button class="btn btn-danger productDeleteFromCart" data-index="${index}">Sil</button>
+                    </div>
+                `;
+            cartItemsContainer.appendChild(itemDiv);
+        });
+
+        // Sil düğmelerine tıklama olayını ekle
+        var deleteButtons = document.querySelectorAll('.productDeleteFromCart');
+        deleteButtons.forEach(function (button) {
+            button.addEventListener('click', function (event) {
+                var index = parseInt(event.target.getAttribute('data-index'));
+
+                // Kullanıcıdan onay al
+                var confirmDelete = confirm('Bu ürünü sepetinizden silmek istediğinizden emin misiniz?');
+                if (confirmDelete) {
+                    // Sepet verisini localStorage'dan ve sayfadan kaldır
+                    cartData.splice(index, 1);
+                    localStorage.setItem('sepetveri', JSON.stringify(cartData));
+
+                    // Sayfadaki ürünü kaldır
+                    var itemDiv = button.closest('.col-12');
+                    itemDiv.remove();
+                }
+            });
+        });
+    }
+</script>
+
+
 
 <!-- Including Jquery -->
 <script src="~/agirsaglamui/assets/js/vendor/jquery-3.3.1.min.js"></script>
