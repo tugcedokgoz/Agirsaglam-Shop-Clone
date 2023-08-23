@@ -25,7 +25,6 @@ namespace Agirsaglam.Web.Code.Filters
                 context.Result = new UnauthorizedResult();
             }
         }
-
-
+   
     }
 }

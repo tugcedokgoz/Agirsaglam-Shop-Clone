@@ -1,0 +1,384 @@
+2023-08-24 00:01:26.3627||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 49 
+2023-08-24 00:01:26.5041||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:01:26.5536||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-24 00:01:28.1350||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:01:28.1350||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:01:28.1350||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:01:28.1350||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'V_CommentAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:01:28.1350||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:01:28.1350||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:01:30.0678||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (106ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-24 00:01:30.1586||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-24 00:01:30.1715||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api) in 3612.4556ms 
+2023-08-24 00:01:30.1715||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:01:30.1985||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 49 - 200 - application/json;+charset=utf-8 3835.8019ms 
+2023-08-24 00:02:25.7678||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 49 
+2023-08-24 00:02:25.7777||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:02:25.7777||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-24 00:02:25.7983||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-24 00:02:25.7983||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-24 00:02:25.7983||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api) in 24.0402ms 
+2023-08-24 00:02:25.7983||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:02:25.7983||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 49 - 200 - application/json;+charset=utf-8 36.8440ms 
+2023-08-24 00:04:14.2416||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 49 
+2023-08-24 00:04:14.2473||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:04:14.2473||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-24 00:04:14.3265||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-24 00:04:14.3265||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-24 00:04:14.3265||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api) in 78.8059ms 
+2023-08-24 00:04:14.3265||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:04:14.3265||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 49 - 200 - application/json;+charset=utf-8 87.2301ms 
+2023-08-24 00:05:56.9276||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 49 
+2023-08-24 00:05:56.9292||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:05:56.9292||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-24 00:05:56.9292||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-24 00:05:56.9292||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-24 00:05:56.9292||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api) in 6.2188ms 
+2023-08-24 00:05:56.9292||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:05:56.9292||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 49 - 200 - application/json;+charset=utf-8 10.3887ms 
+2023-08-24 00:07:10.2399||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 49 
+2023-08-24 00:07:10.2399||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:07:10.2399||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-24 00:07:10.2470||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-24 00:07:49.2432||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-24 00:07:49.6659||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-24 00:07:49.6659||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-24 00:07:49.6659||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-24 00:07:49.6659||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-24 00:07:49.6659||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-24 00:07:53.9702||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-24 00:07:58.1972||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 4232.7131ms 
+2023-08-24 00:08:00.7874||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-24 00:08:00.8160||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 28.5402ms 
+2023-08-24 00:08:02.8990||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-24 00:08:03.1811||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 281.9300ms 
+2023-08-24 00:08:04.1604||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-24 00:08:05.1109||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 950.2134ms 
+2023-08-24 00:08:20.8844||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 54 
+2023-08-24 00:08:20.9873||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:08:21.0449||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-24 00:08:22.6505||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:08:22.6505||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:08:22.6505||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:08:22.6505||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'V_CommentAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:08:22.6505||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:08:22.6560||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:08:25.0014||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (139ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-24 00:08:48.8636||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[@__item_RoleId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[Name]
+FROM [tblRole] AS [t]
+WHERE [t].[Id] = @__item_RoleId_0 
+2023-08-24 00:08:59.1695||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-24 00:08:59.2347||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api) in 38172.758ms 
+2023-08-24 00:08:59.2347||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:08:59.2627||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 54 - 200 - application/json;+charset=utf-8 38367.6710ms 
+2023-08-24 00:09:45.6525||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-24 00:09:46.0267||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-24 00:09:46.0267||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-24 00:09:46.0267||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-24 00:09:46.0267||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-24 00:09:46.0267||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-24 00:09:50.1762||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-24 00:09:54.9551||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 4783.3318ms 
+2023-08-24 00:09:57.2650||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-24 00:09:57.2804||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 15.4416ms 
+2023-08-24 00:09:58.9126||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-24 00:09:58.9820||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 69.2980ms 
+2023-08-24 00:09:59.8166||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-24 00:10:00.1553||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 338.6401ms 
+2023-08-24 00:10:16.4437||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 54 
+2023-08-24 00:10:16.5587||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:10:16.6097||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-24 00:10:18.1956||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:10:18.1956||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:10:18.1956||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:10:18.1956||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'V_CommentAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:10:18.1956||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:10:18.1956||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:10:20.3532||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (145ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-24 00:10:33.1147||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__item_RoleId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[Name]
+FROM [tblRole] AS [t]
+WHERE [t].[Id] = @__item_RoleId_0 
+2023-08-24 00:10:41.6882||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-24 00:10:41.7799||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api) in 25153.0957ms 
+2023-08-24 00:10:41.8023||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:10:41.8528||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 54 - 200 - application/json;+charset=utf-8 25402.1040ms 
+2023-08-24 00:11:29.1635||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 58 
+2023-08-24 00:11:29.1635||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:11:29.1635||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-24 00:11:29.1843||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-24 00:12:54.6893||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-24 00:12:55.2191||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-24 00:12:55.2191||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-24 00:12:55.2191||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-24 00:12:55.2191||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-24 00:12:55.2309||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-24 00:12:56.0997||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-24 00:12:57.5404||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1453.7446ms 
+2023-08-24 00:12:57.8474||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-24 00:12:57.9855||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 138.0893ms 
+2023-08-24 00:12:58.3814||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-24 00:12:58.6683||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 286.8786ms 
+2023-08-24 00:13:10.7265||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-24 00:13:11.0055||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 278.9039ms 
+2023-08-24 00:13:18.5244||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 58 
+2023-08-24 00:13:18.6208||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:13:18.6950||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-24 00:13:20.4905||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:13:20.4905||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:13:20.4905||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:13:20.4905||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'V_CommentAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:13:20.4905||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:13:20.4905||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:13:22.7842||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (175ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-24 00:16:11.7730||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-24 00:16:12.3436||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-24 00:16:12.3501||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-24 00:16:12.3501||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-24 00:16:12.3655||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-24 00:16:12.3655||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-24 00:16:13.5735||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-24 00:16:14.2551||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-24 00:16:14.2551||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 12.6789ms 
+2023-08-24 00:16:14.3294||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 768.1847ms 
+2023-08-24 00:16:14.9723||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-24 00:16:15.0324||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.1242ms 
+2023-08-24 00:16:17.1881||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-24 00:16:17.5940||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 405.7986ms 
+2023-08-24 00:16:39.1712||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 58 
+2023-08-24 00:16:39.2743||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:16:39.3150||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-24 00:16:41.0274||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:16:41.0274||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:16:41.0274||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:16:41.0274||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'V_CommentAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:16:41.0274||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:16:41.0274||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:16:43.3343||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (104ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-24 00:17:09.0400||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-24 00:17:09.4923||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-24 00:17:09.4923||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-24 00:17:09.4923||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-24 00:17:09.4923||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-24 00:17:09.4923||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-24 00:17:14.5350||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-24 00:17:15.9694||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1441.7808ms 
+2023-08-24 00:17:16.3361||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-24 00:17:16.3729||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 36.8045ms 
+2023-08-24 00:17:17.6745||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-24 00:17:18.0048||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 330.2429ms 
+2023-08-24 00:17:19.2431||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-24 00:17:19.5100||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 266.7945ms 
+2023-08-24 00:19:16.7987||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 43 
+2023-08-24 00:19:16.8929||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:19:16.9344||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-24 00:19:18.5776||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:19:18.5776||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:19:18.5776||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:19:18.5776||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'V_CommentAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:19:18.5776||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:19:18.5776||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-24 00:19:20.6297||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (131ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-24 00:19:20.7399||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__item_RoleId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[Name]
+FROM [tblRole] AS [t]
+WHERE [t].[Id] = @__item_RoleId_0 
+2023-08-24 00:19:20.9733||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-24 00:19:20.9871||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api) in 4046.3444ms 
+2023-08-24 00:19:20.9871||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:19:21.0273||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 43 - 200 - application/json;+charset=utf-8 4227.5717ms 
+2023-08-24 00:21:22.4808||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 45 
+2023-08-24 00:21:22.4937||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:21:22.4937||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-24 00:21:22.5291||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-24 00:21:22.5722||ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'AgirSaglam.Repository.RepositoryContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method30(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method30(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-08-24 00:21:36.6933||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api) in 14193.7169ms 
+2023-08-24 00:21:36.7282||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:21:36.7282||ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request. System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method30(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method31(Closure , QueryContext )
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source)
+   at AgirSaglam.Api.Controllers.AuthController.Login(Object model) in C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\Controllers\AuthController.cs:line 31
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-08-24 00:21:37.0075||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ErrorController.HandleErrorDevelopment (AgirSaglam.Api)' 
+2023-08-24 00:21:37.0075||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "HandleErrorDevelopment", controller = "Error"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult HandleErrorDevelopment(Microsoft.Extensions.Hosting.IHostEnvironment) on controller AgirSaglam.Api.Controllers.ErrorController (AgirSaglam.Api). 
+2023-08-24 00:21:37.0075||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'. 
+2023-08-24 00:21:37.0273||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ErrorController.HandleErrorDevelopment (AgirSaglam.Api) in 14.6582ms 
+2023-08-24 00:21:37.0412||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ErrorController.HandleErrorDevelopment (AgirSaglam.Api)' 
+2023-08-24 00:21:37.0588||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 45 - 500 - application/problem+json;+charset=utf-8 14575.1337ms 
+2023-08-24 00:21:38.5762||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-24 00:21:39.2141||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 637.8007ms 
+2023-08-24 00:21:40.1024||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-24 00:21:40.1024||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 1.8968ms 
+2023-08-24 00:21:41.4962||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-24 00:21:41.5272||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.0134ms 
+2023-08-24 00:21:42.6553||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-24 00:21:42.6814||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 26.1939ms 
+2023-08-24 00:26:34.3634||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 OPTIONS https://localhost:7119/api/User/Save - - 
+2023-08-24 00:26:34.3769||INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-08-24 00:26:34.3769||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 OPTIONS https://localhost:7119/api/User/Save - - - 204 - - 15.6577ms 
+2023-08-24 00:26:34.3769||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7119/api/User/Save application/json;charset=UTF-8 82 
+2023-08-24 00:26:34.3769||INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-08-24 00:26:34.3769||INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-08-24 00:26:34.3769||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.UserController.Save (AgirSaglam.Api)' 
+2023-08-24 00:26:34.3912||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Save", controller = "User"}. Executing controller action with signature System.Object Save(System.Object) on controller AgirSaglam.Api.Controllers.UserController (AgirSaglam.Api). 
+2023-08-24 00:26:34.9877||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tblUser] ([AdressId], [Email], [EmailConfirm], [EmailConfirmDate], [Password], [RoleId], [Status], [UpdateDate], [UserName])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8); 
+2023-08-24 00:26:35.0492||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-24 00:26:35.0492||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.UserController.Save (AgirSaglam.Api) in 658.762ms 
+2023-08-24 00:26:35.0492||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.UserController.Save (AgirSaglam.Api)' 
+2023-08-24 00:26:35.0492||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7119/api/User/Save application/json;charset=UTF-8 82 - 200 - application/json;+charset=utf-8 670.5121ms 
+2023-08-24 00:26:52.4169||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 47 
+2023-08-24 00:26:52.4169||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:26:52.4169||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-24 00:26:52.4278||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-24 00:26:52.4278||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__item_RoleId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[Name]
+FROM [tblRole] AS [t]
+WHERE [t].[Id] = @__item_RoleId_0 
+2023-08-24 00:26:52.4278||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-24 00:26:52.4278||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api) in 8.8479ms 
+2023-08-24 00:26:52.4278||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:26:52.4278||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 47 - 200 - application/json;+charset=utf-8 17.2616ms 
+2023-08-24 00:33:20.2483||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetDiscountedProduct - - 
+2023-08-24 00:33:20.2511||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProducts (AgirSaglam.Api)' 
+2023-08-24 00:33:20.2511||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Object GetProducts() on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-24 00:33:20.2874||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Amount], [t].[Description], [t].[DiscountPrice], [t].[Image], [t].[Name], [t].[Price]
+FROM [tblProduct] AS [t]
+WHERE ([t].[DiscountPrice] IS NOT NULL) AND [t].[DiscountPrice] > 0.0 
+2023-08-24 00:33:20.2874||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Models.Product, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-24 00:33:20.3214||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProducts (AgirSaglam.Api) in 67.2303ms 
+2023-08-24 00:33:20.3363||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProducts (AgirSaglam.Api)' 
+2023-08-24 00:33:20.3363||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetDiscountedProduct - - - 200 - application/json;+charset=utf-8 88.7224ms 
+2023-08-24 00:33:22.9255||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-24 00:33:22.9255||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-24 00:33:22.9255||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-24 00:33:22.9815||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-24 00:33:23.3160||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-24 00:33:23.3160||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-24 00:33:23.3323||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 394.1239ms 
+2023-08-24 00:33:23.3323||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-24 00:33:23.3323||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 409.0377ms 
+2023-08-24 00:33:24.9175||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/2 - - 
+2023-08-24 00:33:24.9175||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-24 00:33:24.9175||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-24 00:33:24.9175||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-24 00:33:24.9339||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (7, 8, 9)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-24 00:33:24.9339||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-24 00:33:24.9339||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 15.8834ms 
+2023-08-24 00:33:24.9339||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-24 00:33:24.9339||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/2 - - - 200 - application/json;+charset=utf-8 20.0275ms 
+2023-08-24 00:36:47.2260||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 39 
+2023-08-24 00:36:47.2260||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:36:47.2280||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-24 00:36:47.2280||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-24 00:36:47.2280||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__item_RoleId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[Name]
+FROM [tblRole] AS [t]
+WHERE [t].[Id] = @__item_RoleId_0 
+2023-08-24 00:36:47.2280||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-24 00:36:47.2280||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api) in 11.2957ms 
+2023-08-24 00:36:47.2280||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:36:47.2280||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 39 - 200 - application/json;+charset=utf-8 17.0479ms 
+2023-08-24 00:37:00.4400||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 53 
+2023-08-24 00:37:00.4400||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:37:00.4400||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-24 00:37:00.4400||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-24 00:37:00.4501||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-24 00:37:00.4501||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api) in 9.5165ms 
+2023-08-24 00:37:00.4501||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-24 00:37:00.4501||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 53 - 200 - application/json;+charset=utf-8 12.3294ms 

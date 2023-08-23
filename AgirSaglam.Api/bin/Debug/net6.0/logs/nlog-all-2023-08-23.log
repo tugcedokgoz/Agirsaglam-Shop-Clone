@@ -4561,3 +4561,150 @@ ORDER BY [t].[Id], [t0].[Id]
 2023-08-23 22:19:37.3063||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 9.5024ms 
 2023-08-23 22:19:37.3063||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
 2023-08-23 22:19:37.3063||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/2 - - - 200 - application/json;+charset=utf-8 11.9120ms 
+2023-08-23 23:51:02.6225||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-23 23:51:04.5327||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-23 23:51:04.5327||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-23 23:51:04.5483||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-23 23:51:04.5985||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-23 23:51:04.6151||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-23 23:51:11.6109||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-23 23:51:14.5333||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 2929.0440ms 
+2023-08-23 23:51:16.6299||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-23 23:51:16.6406||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 10.6593ms 
+2023-08-23 23:51:19.9462||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-23 23:51:20.2137||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 267.5839ms 
+2023-08-23 23:51:23.2544||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-23 23:51:23.5071||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 254.1507ms 
+2023-08-23 23:52:55.5595||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 OPTIONS https://localhost:7119/api/User/Save - - 
+2023-08-23 23:52:55.5744||INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-08-23 23:52:55.5744||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 OPTIONS https://localhost:7119/api/User/Save - - - 204 - - 17.1959ms 
+2023-08-23 23:52:55.5744||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7119/api/User/Save application/json;charset=UTF-8 84 
+2023-08-23 23:52:55.5876||INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-08-23 23:52:55.7351||INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-08-23 23:52:55.7351||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.UserController.Save (AgirSaglam.Api)' 
+2023-08-23 23:52:55.7768||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Save", controller = "User"}. Executing controller action with signature System.Object Save(System.Object) on controller AgirSaglam.Api.Controllers.UserController (AgirSaglam.Api). 
+2023-08-23 23:52:57.3549||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'Comment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-23 23:52:57.3549||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-23 23:52:57.3549||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-23 23:52:57.3549||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Point' on entity type 'V_CommentAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-23 23:52:57.3549||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'DiscountPrice' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-23 23:52:57.3549||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'V_ProductAdminList'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-08-23 23:52:59.0743||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (104ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime2), @p8='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tblUser] ([AdressId], [Email], [EmailConfirm], [EmailConfirmDate], [Password], [RoleId], [Status], [UpdateDate], [UserName])
+OUTPUT INSERTED.[Id], INSERTED.[CreateDate]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8); 
+2023-08-23 23:52:59.2075||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-23 23:52:59.2218||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.UserController.Save (AgirSaglam.Api) in 3436.6403ms 
+2023-08-23 23:52:59.2218||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.UserController.Save (AgirSaglam.Api)' 
+2023-08-23 23:52:59.2494||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7119/api/User/Save application/json;charset=UTF-8 84 - 200 - application/json;+charset=utf-8 3671.1097ms 
+2023-08-23 23:53:34.5905||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 58 
+2023-08-23 23:53:34.5905||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-23 23:53:34.5905||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-23 23:53:35.3579||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-23 23:53:35.3681||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-23 23:53:35.3681||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api) in 778.4706ms 
+2023-08-23 23:53:35.3681||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-23 23:53:35.3681||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 58 - 200 - application/json;+charset=utf-8 783.9099ms 
+2023-08-23 23:54:30.0511||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 53 
+2023-08-23 23:54:30.0511||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-23 23:54:30.0553||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-23 23:54:30.1357||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-23 23:54:30.1357||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__item_RoleId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[Name]
+FROM [tblRole] AS [t]
+WHERE [t].[Id] = @__item_RoleId_0 
+2023-08-23 23:54:30.3701||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType3`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-23 23:54:30.3701||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api) in 316.9852ms 
+2023-08-23 23:54:30.3701||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-23 23:54:30.3701||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 53 - 200 - application/json;+charset=utf-8 322.3996ms 
+2023-08-23 23:54:31.1737||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/CategoryAdminLists - - 
+2023-08-23 23:54:31.1737||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/api/Category/GetAllCategory - - 
+2023-08-23 23:54:31.1737||INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-08-23 23:54:31.1737||INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-08-23 23:54:31.1737||INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-08-23 23:54:31.1737||INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2023-08-23 23:54:31.1737||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.GetAllCategory (AgirSaglam.Api)' 
+2023-08-23 23:54:31.1737||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.CategoryController.CategoryAdminLists (AgirSaglam.Api)' 
+2023-08-23 23:54:31.1737||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Object GetAllCategory() on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-08-23 23:54:31.1737||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CategoryAdminLists", controller = "Category"}. Executing controller action with signature System.Object CategoryAdminLists() on controller AgirSaglam.Api.Controllers.CategoryController (AgirSaglam.Api). 
+2023-08-23 23:54:31.1961||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[Name], [t].[ParentCategoryId], [t].[ProductId], [t].[Status]
+FROM [tblCategory] AS [t] 
+2023-08-23 23:54:31.2020||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.Models.Category, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-23 23:54:31.2020||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [v].[Id], [v].[CategoryName], [v].[ParentCategoryName], [v].[Status]
+FROM [V_CategoryAdminList] AS [v]
+ORDER BY [v].[Id] 
+2023-08-23 23:54:31.2131||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[AgirSaglam.Model.View.V_CategoryAdminList, AgirSaglam.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-23 23:54:31.2131||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.CategoryAdminLists (AgirSaglam.Api) in 38.9384ms 
+2023-08-23 23:54:31.2131||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.CategoryAdminLists (AgirSaglam.Api)' 
+2023-08-23 23:54:31.2131||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/CategoryAdminLists - - - 200 - application/json;+charset=utf-8 46.4150ms 
+2023-08-23 23:54:31.2131||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.CategoryController.GetAllCategory (AgirSaglam.Api) in 43.881ms 
+2023-08-23 23:54:31.2131||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.CategoryController.GetAllCategory (AgirSaglam.Api)' 
+2023-08-23 23:54:31.2131||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/api/Category/GetAllCategory - - - 200 - application/json;+charset=utf-8 49.1675ms 
+2023-08-23 23:55:29.7888||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - 
+2023-08-23 23:55:29.7947||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-23 23:55:29.7947||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetProductsByParentCategoryId", controller = "Product"}. Executing controller action with signature System.Object GetProductsByParentCategoryId(Int32) on controller AgirSaglam.Api.Controllers.ProductController (AgirSaglam.Api). 
+2023-08-23 23:55:29.8533||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__parentCategoryId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id]
+FROM [tblCategory] AS [t]
+WHERE [t].[ParentCategoryId] = @__parentCategoryId_0 
+2023-08-23 23:55:30.1678||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[Name], [t0].[Price], [t0].[DiscountPrice], [t0].[Amount], [t0].[Description], [t0].[Image], [t].[Id], [t1].[Name], [t1].[Id]
+FROM [tblProductCategory] AS [t]
+INNER JOIN [tblProduct] AS [t0] ON [t].[ProductId] = [t0].[Id]
+LEFT JOIN [tblCategory] AS [t1] ON [t0].[Id] = [t1].[ProductId]
+WHERE [t].[CategoryId] IN (4, 5, 6)
+ORDER BY [t].[Id], [t0].[Id] 
+2023-08-23 23:55:30.1678||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-23 23:55:30.1941||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api) in 395.3498ms 
+2023-08-23 23:55:30.1941||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.ProductController.GetProductsByParentCategoryId (AgirSaglam.Api)' 
+2023-08-23 23:55:30.1941||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7119/api/Product/GetProductsByParentCategoryId/1 - - - 200 - application/json;+charset=utf-8 406.0063ms 
+2023-08-23 23:55:45.4546||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 58 
+2023-08-23 23:55:45.4546||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-23 23:55:45.4546||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-23 23:55:45.4546||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-23 23:55:45.4619||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType2`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-08-23 23:55:45.4619||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api) in 4.0076ms 
+2023-08-23 23:55:45.4619||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-23 23:55:45.4619||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 58 - 200 - application/json;+charset=utf-8 8.3497ms 
+2023-08-23 23:57:03.6446||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST https://localhost:7119/api/Auth/Login application/json;+charset=utf-8 49 
+2023-08-23 23:57:03.6446||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'AgirSaglam.Api.Controllers.AuthController.Login (AgirSaglam.Api)' 
+2023-08-23 23:57:03.6446||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller AgirSaglam.Api.Controllers.AuthController (AgirSaglam.Api). 
+2023-08-23 23:57:03.6536||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[AdressId], [t].[CreateDate], [t].[Email], [t].[EmailConfirm], [t].[EmailConfirmDate], [t].[Password], [t].[RoleId], [t].[Status], [t].[UpdateDate], [t].[UserName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserName] = @__userName_0 AND [t].[Password] = @__password_1 
+2023-08-23 23:57:03.7336||ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'AgirSaglam.Repository.RepositoryContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method165(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at lambda_method165(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2023-08-23 23:58:04.7759||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-08-23 23:58:05.5517||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7119 
+2023-08-23 23:58:05.5847||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5229 
+2023-08-23 23:58:05.6046||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-08-23 23:58:05.6046||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-08-23 23:58:05.6046||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\AgirSaglam.Api\ 
+2023-08-23 23:58:11.9691||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - - 
+2023-08-23 23:58:13.6956||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - - - 200 - text/html;charset=utf-8 1732.4352ms 
+2023-08-23 23:58:13.7569||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - 
+2023-08-23 23:58:13.9128||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 12360 application/javascript;+charset=utf-8 155.9152ms 
+2023-08-23 23:58:14.3077||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - - 
+2023-08-23 23:58:14.7932||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 485.4708ms 
+2023-08-23 23:58:15.5023||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - 
+2023-08-23 23:58:16.0249||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 522.5907ms 
