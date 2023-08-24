@@ -6,6 +6,8 @@ C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\Agirsaglam.
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\Agirsaglam.Web\bin\Debug\net6.0\Agirsaglam.Web.runtimeconfig.json
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\Agirsaglam.Web\bin\Debug\net6.0\Agirsaglam.Web.dll
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\Agirsaglam.Web\bin\Debug\net6.0\Agirsaglam.Web.pdb
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\Agirsaglam.Web\bin\Debug\net6.0\AWSSDK.Core.dll
+C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\Agirsaglam.Web\bin\Debug\net6.0\AWSSDK.SimpleEmail.dll
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\Agirsaglam.Web\bin\Debug\net6.0\Humanizer.dll
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\Agirsaglam.Web\bin\Debug\net6.0\MessagePack.dll
 C:\Users\tugcedokgoz\Desktop\AgirsaglamShopClone\AgirsaglamShopClone\Agirsaglam.Web\bin\Debug\net6.0\MessagePack.Annotations.dll

@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var UserName = ViewContext.HttpContext.Session.GetString("UserName");
+}
+
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -42,6 +48,7 @@
                     <input class="search__input" type="search" name="q" value="" placeholder="Search entire store..." aria-label="Search" autocomplete="off">
                 </form>
                 <button type="button" class="search-trigger close-btn"><i class="anm anm-times-l"></i></button>
+               
             </div>
         </div>
         <!--End Search Form Drawer-->
@@ -50,19 +57,30 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-10 col-sm-8 col-md-5 col-lg-4">
+                      
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-4 d-none d-lg-none d-md-block d-lg-block">
                         <div class="text-center"><p class="top-header_middle-text">AĞIRSAĞLAM GÜVENLİ, KALİTELİ VE HIZLIDIR</p></div>
+
                     </div>
                     <div class="col-2 col-sm-4 col-md-3 col-lg-4 text-right">
                         <span class="user-menu d-block d-lg-none"><i class="anm anm-user-al" aria-hidden="true"></i></span>
                         <ul class="customer-links list-inline">
-                           
-                            <li><a href="https://localhost:7203/Account/Login">Giriş Yap</a></li>
-                          
-                            <li><a href="https://localhost:7203/Kullanici/Home/register">Kayıt Ol</a></li>
+                            @if (!string.IsNullOrEmpty(UserName))
+                            {
+                                <li><a href="@Url.Action("UserInformation", "Home")">@UserName</a></li>
+
+                                <li> <a class="dropdown-item" id="logoutLink" href="#">Logout</a></li>
+                            }
+                            else
+                            {
+                                <li><a href="https://localhost:7203/Account/Login">Giriş Yap</a></li>
+                                <li><a href="https://localhost:7203/Kullanici/Home/register">Kayıt Ol</a></li>
+                            }
                         </ul>
                     </div>
+
+
                 </div>
             </div>
         </div>
@@ -121,6 +139,20 @@
 
             </footer>
         </div>
+        <!--Çıkışyap-->
+        <script>
+            document.getElementById("logoutLink").addEventListener("click", function (event) {
+                event.preventDefault(); // Bağlantının varsayılan davranışını engelle
+                // Oturumu temizle
+                fetch('/Account/Logout', { method: 'POST' }) // Çıkış işlemi için gerekli URL'yi buraya eklemelisiniz
+                    .then(response => {
+                        if (response.ok) {
+                            // Başarılı çıkış durumunda yapılacak işlemler
+                            window.location.href = 'https://localhost:7203/Account/Login'; // Giriş sayfasına yönlendir
+                        }
+                    });
+            });
+        </script>
 
         <!--End Footer-->
         <!--Scoll Top-->

@@ -25,6 +25,7 @@ namespace AgirSaglam.Api.Controllers
         {
             dynamic json = JObject.Parse(model.GetRawText());
 
+        
             string userName = json.UserName;
             string password = json.Password;
 

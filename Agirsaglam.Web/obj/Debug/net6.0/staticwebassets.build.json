@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/W9o1KvIOTU9Pvv66p2bzCXRrclZovyz5Piob/Hsqs8=",
+  "Hash": "4Fd114j6FYUFmOxpoHr2X1dFTNFJdWare7H2NmuUSdc=",
   "Source": "Agirsaglam.Web",
   "BasePath": "_content/Agirsaglam.Web",
   "Mode": "Default",
@@ -10589,6 +10589,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\AgirsaglamUI\\userguide.html"
+    },
+    {
+      "Identity": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\AgirsaglamUI\\userinformation.html",
+      "SourceId": "Agirsaglam.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\",
+      "BasePath": "_content/Agirsaglam.Web",
+      "RelativePath": "AgirsaglamUI/userinformation.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\AgirsaglamUI\\userinformation.html"
     },
     {
       "Identity": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\wwwroot\\css\\site.css",

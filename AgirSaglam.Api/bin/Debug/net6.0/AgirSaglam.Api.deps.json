@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "AgirSaglam.Api/1.0.0": {
         "dependencies": {
+          "AWSSDK.SimpleEmail": "3.7.200.24",
           "AgirSaglam.Repository": "1.0.0",
           "FluentValidation.AspNetCore": "11.3.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.0",
@@ -20,6 +21,25 @@
         },
         "runtime": {
           "AgirSaglam.Api.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.7.201.4": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.201.4"
+          }
+        }
+      },
+      "AWSSDK.SimpleEmail/3.7.200.24": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.201.4"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.SimpleEmail.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.200.24"
+          }
         }
       },
       "Azure.Core/1.24.0": {
@@ -774,6 +794,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AWSSDK.Core/3.7.201.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IE31e8e22Rz+odUqEFv6c2cYgvWKOHY9S9zMpg2L9UhPV/O+5qRKWakUjQgplU5cgpaHzc/q59dwINlQvVIlnQ==",
+      "path": "awssdk.core/3.7.201.4",
+      "hashPath": "awssdk.core.3.7.201.4.nupkg.sha512"
+    },
+    "AWSSDK.SimpleEmail/3.7.200.24": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0U8donLxDeRGbATfirnisL83gkt4bvRUMrj50TpMyX/HXLaieNIp0CUBzP2afEIbLelRYSgfM60V6mtaqRWpjg==",
+      "path": "awssdk.simpleemail/3.7.200.24",
+      "hashPath": "awssdk.simpleemail.3.7.200.24.nupkg.sha512"
     },
     "Azure.Core/1.24.0": {
       "type": "package",

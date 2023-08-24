@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "g/isLhmL6uN8BfmHhBtZiNlSkBPpiuebc1NbQgcFa54pgurB+lKnn/oRqBkoHzUFnBtZylyKNqW27UdkNBJ+Kw==",
+  "dgSpecHash": "DskH43TAYn4K7pT6cpXWjHvAS4LHdFXcTyu/fWpFWzG1RaSSPIITmayd5ORuOGmrcKxX+1oogyp5a0rAq7zVyA==",
   "success": true,
   "projectFilePath": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\Agirsaglam.Web\\Agirsaglam.Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\tugcedokgoz\\.nuget\\packages\\awssdk.core\\3.7.201.4\\awssdk.core.3.7.201.4.nupkg.sha512",
+    "C:\\Users\\tugcedokgoz\\.nuget\\packages\\awssdk.simpleemail\\3.7.200.24\\awssdk.simpleemail.3.7.200.24.nupkg.sha512",
     "C:\\Users\\tugcedokgoz\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\tugcedokgoz\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\tugcedokgoz\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

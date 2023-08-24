@@ -5,7 +5,7 @@ using System.Text.Json;
 
 namespace Agirsaglam.Web.Code.Rest
 {
-    public class CategoryRestClient
+    public class UserRestClient
     {
 
         private string BASE_API_URI = "https://localhost:7119/api";

@@ -1,7 +1,9 @@
 ﻿using AgirSaglam.Api.Code.Validations;
 using AgirSaglam.Model.Models;
+using AgirSaglam.Model.Models.Entity;
 using AgirSaglam.Model.View;
 using AgirSaglam.Repository;
+using Azure;
 using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -9,6 +11,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 using Newtonsoft.Json.Linq;
+using System.Net;
 
 namespace AgirSaglam.Api.Controllers
 {
@@ -211,8 +214,8 @@ namespace AgirSaglam.Api.Controllers
                 Password = password,
                 RoleId = Enums.Roles.Kullanici
             };
-            User user=repo.UserRepository.FindByCondition(u=>u.UserName==item.UserName).SingleOrDefault<User>();
-            if (user !=null)
+            User user = repo.UserRepository.FindByCondition(u => u.UserName == item.UserName).SingleOrDefault<User>();
+            if (user != null)
             {
                 return new
                 {
@@ -287,6 +290,42 @@ namespace AgirSaglam.Api.Controllers
                     }
                 }
             });
+        }
+
+        [HttpPost("UpdatePassword/{userName}")]
+        public IActionResult UpdatePassword(string userName, [FromBody] string newPassword)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(newPassword))
+                {
+                    return BadRequest("Yeni şifre boş olamaz.");
+                }
+
+                var user = repo.UserRepository.GetById(userName);
+                if (user == null)
+                {
+                    return NotFound("Kullanıcı bulunamadı.");
+                }
+
+                user.Password = newPassword;
+                repo.UserRepository.Update(user);
+                repo.SaveChanges();
+
+                return Ok("Şifre başarıyla güncellendi.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Bir hata oluştu: {ex.Message}");
+            }
+        }
+        [HttpPost("Email")]
+        public async Task<IActionResult> Email([FromBody] EmailRequest emailRequest)
+        {
+
+            var emailResponse = await repo.UserRepository.UpdatePasswordByEmail(emailRequest);
+            return Ok(emailResponse);
+
         }
     }
 }

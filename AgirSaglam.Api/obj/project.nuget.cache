@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Xo/qhvdjq8VWIujf5lwZn0t/ZBgY0hn1s/diYKOi2+IgmmAMCofrknIegxe8/N+MpwyXYXY+DL6hs48WpqrbAg==",
+  "dgSpecHash": "+80/mOkalEa+Zd6XZe/jzmbRunpA0+T1r58D8BuDPOHUI4iqM8URbQ6kz5exgtOWV96qasAHMmiOx37wbbKD6Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\tugcedokgoz\\Desktop\\AgirsaglamShopClone\\AgirsaglamShopClone\\AgirSaglam.Api\\AgirSaglam.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\tugcedokgoz\\.nuget\\packages\\awssdk.core\\3.7.201.4\\awssdk.core.3.7.201.4.nupkg.sha512",
+    "C:\\Users\\tugcedokgoz\\.nuget\\packages\\awssdk.simpleemail\\3.7.200.24\\awssdk.simpleemail.3.7.200.24.nupkg.sha512",
     "C:\\Users\\tugcedokgoz\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\tugcedokgoz\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\tugcedokgoz\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",

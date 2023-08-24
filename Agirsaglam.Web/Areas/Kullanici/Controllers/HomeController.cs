@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
 using RestSharp;
 using System.Data;
+using System.Reflection;
 
 namespace Agirsaglam.Web.Areas.Kullanici.Controllers
 {
@@ -12,10 +13,13 @@ namespace Agirsaglam.Web.Areas.Kullanici.Controllers
     //[AuthActionFilter(Role = "Kullanici")]
     public class HomeController : Controller
     {
-        public IActionResult Index() => View();
+        public IActionResult Index() 
+        {
+            return View();
+        }
         public IActionResult Clothes(int id)
         {
-
+          
             ProductRestClient client = new ProductRestClient();
             dynamic result = client.GetProduct(1);
 
@@ -59,7 +63,6 @@ namespace Agirsaglam.Web.Areas.Kullanici.Controllers
 
             ProductRestClient client = new ProductRestClient();
             dynamic result = client.GetProductDetails(id);
-
             bool success = result.success;
             if (success)
             {
@@ -87,5 +90,7 @@ namespace Agirsaglam.Web.Areas.Kullanici.Controllers
         }
         public IActionResult Cart() => View();
         public IActionResult Register() => View();
+        public IActionResult PasswordReset() => View();
+        public IActionResult UserInformation() => View();
     }
 }

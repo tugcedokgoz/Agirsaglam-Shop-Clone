@@ -4,6 +4,8 @@ using Agirsaglam.Web.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
+
 
 namespace Agirsaglam.Web.Controllers
 {
@@ -22,7 +24,7 @@ namespace Agirsaglam.Web.Controllers
         public IActionResult GirisYap(LoginModel model)
         {
 
-            CategoryRestClient client = new CategoryRestClient();
+            UserRestClient client = new UserRestClient();
             dynamic result = client.Login(model.UserName, model.Password);
 
             bool success = result.success;
@@ -30,8 +32,9 @@ namespace Agirsaglam.Web.Controllers
 
             if (success)
             {
-            
-                HttpContext.Session.SetString("userName",model.UserName);
+                ViewBag.kullaniciAdi = model.UserName;// Kullanıcı adını ViewBag'e eklendi
+              
+                HttpContext.Session.SetString("UserName", model.UserName);
                 HttpContext.Session.SetString("token", (string)result.data);
                 HttpContext.Session.SetString("role", (string)result.role);
 
@@ -55,7 +58,11 @@ namespace Agirsaglam.Web.Controllers
                 return View("Login");
             }
         }
-
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear(); 
+            return RedirectToAction("Login", "Account"); 
+        }
         //public IActionResult Logout()
         //{
         //    HttpContext.Session.Clear();
