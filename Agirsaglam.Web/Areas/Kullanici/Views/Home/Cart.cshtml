@@ -123,7 +123,7 @@
 
             <hr style="border-top: 3px solid #000;">
             <div class="text-center">
-                <p style="font-size: 25px;">Toplam:</p>
+                <p style="font-size: 25px;">Toplam: <span id="total-price"></span></p>
                 <button type="button" class="btn btn-secondary btn-lg btn-block" style="margin-bottom: 30px;">Ödemeye Geç</button>
                 <div>
                     <a href="#">Alışverişe Devam Et.</a>
@@ -209,6 +209,16 @@
                 `;
             cartItemsContainer.appendChild(itemDiv);
         });
+        //toplam yazdırma
+        function updateTotalPrice() {
+            var totalPrice = 0;
+            cartData.forEach(function (item) {
+                totalPrice += item.price * item.quantity;
+            });
+
+            var totalPriceElement = document.getElementById('total-price');
+            totalPriceElement.textContent = totalPrice.toFixed(2); 
+        }
 
         // Sil düğmelerine tıklama olayını ekle
         var deleteButtons = document.querySelectorAll('.productDeleteFromCart');
@@ -216,9 +226,19 @@
             button.addEventListener('click', function (event) {
                 var index = parseInt(event.target.getAttribute('data-index'));
 
-                // Kullanıcıdan onay al
                 var confirmDelete = confirm('Bu ürünü sepetinizden silmek istediğinizden emin misiniz?');
                 if (confirmDelete) {
+                    // Silinecek ürünün fiyatını toplam fiyattan çıkar
+                    var deletedItemPrice = cartData[index].price * cartData[index].quantity;
+                    var totalPriceElement = document.getElementById('total-price');
+
+                    var currentTotalText = totalPriceElement.textContent;
+                    var currentTotalPrice = parseFloat(currentTotalText.replace('Toplam:', '').trim());
+
+                    // Yeni toplam fiyatı hesapla ve güncelle
+                    var newTotalPrice = currentTotalPrice - deletedItemPrice;
+                    totalPriceElement.textContent = 'Toplam: ' + newTotalPrice.toFixed(2);
+
                     // Sepet verisini localStorage'dan ve sayfadan kaldır
                     cartData.splice(index, 1);
                     localStorage.setItem('sepetveri', JSON.stringify(cartData));
@@ -230,6 +250,7 @@
             });
         });
     }
+    updateTotalPrice();
 </script>
 
 

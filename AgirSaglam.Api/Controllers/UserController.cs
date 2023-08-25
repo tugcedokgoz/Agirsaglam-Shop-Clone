@@ -292,33 +292,36 @@ namespace AgirSaglam.Api.Controllers
             });
         }
 
-        [HttpPost("UpdatePassword/{userName}")]
-        public IActionResult UpdatePassword(string userName, [FromBody] string newPassword)
-        {
-            try
-            {
-                if (string.IsNullOrEmpty(newPassword))
-                {
-                    return BadRequest("Yeni şifre boş olamaz.");
-                }
 
-                var user = repo.UserRepository.GetById(userName);
-                if (user == null)
-                {
-                    return NotFound("Kullanıcı bulunamadı.");
-                }
+        //[HttpPost("UpdatePassword/{userName}")]
+        //public IActionResult UpdatePassword(string userName, [FromBody] string newPassword)
+        //{
+        //    try
+        //    {
+        //        if (string.IsNullOrEmpty(newPassword))
+        //        {
+        //            return BadRequest("Yeni şifre boş olamaz.");
+        //        }
 
-                user.Password = newPassword;
-                repo.UserRepository.Update(user);
-                repo.SaveChanges();
+        //        var user = repo.UserRepository.GetById(userName);
+        //        if (user == null)
+        //        {
+        //            return NotFound("Kullanıcı bulunamadı.");
+        //        }
 
-                return Ok("Şifre başarıyla güncellendi.");
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Bir hata oluştu: {ex.Message}");
-            }
-        }
+        //        user.Password = newPassword;
+        //        repo.UserRepository.Update(user);
+        //        repo.SaveChanges();
+
+        //        return Ok("Şifre başarıyla güncellendi.");
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return StatusCode(500, $"Bir hata oluştu: {ex.Message}");
+        //    }
+        //}
+
+
         [HttpPost("Email")]
         public async Task<IActionResult> Email([FromBody] EmailRequest emailRequest)
         {

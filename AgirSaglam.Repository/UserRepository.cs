@@ -117,13 +117,14 @@ namespace AgirSaglam.Repository
             return user?.Id; 
         }
 
-        public User GetById(string userName)
-        {
-            return RepositoryContext.Users
-                .Include(u => u.Role)
-                .Include(u => u.Adress)
-                .FirstOrDefault(u => u.UserName == userName);
-        }
+        //şifreyenileme
+        //public User GetById(string userName)
+        //{
+        //    return RepositoryContext.Users
+        //        .Include(u => u.Role)
+        //        .Include(u => u.Adress)
+        //        .FirstOrDefault(u => u.UserName == userName);
+        //}
         public async Task<EmailResponse> UpdatePasswordByEmail(EmailRequest emailRequest)
         {
 
@@ -141,19 +142,18 @@ namespace AgirSaglam.Repository
             {
                 string newPassword = CreatingPassword(9);
                 user.Password = newPassword;
+                RepositoryContext.Update(user);
+                await RepositoryContext.SaveChangesAsync(); 
 
-                RepositoryContext.Update(user); // Kullanıcı bilgisini güncelle
-                await RepositoryContext.SaveChangesAsync(); // Değişiklikleri kaydet
-
+                //mailgönderen
                 MailSender("ahlproje@outlook.com", "Td_goz854", emailRequest.Email, newPassword);
-
                 return new EmailResponse();
             }
 
 
 
         }
-
+        //mail mesajı
         public void MailSender(string senderMail, string senderPassword, string email, string newPassword)
         {
             string subject = "Important Information";
