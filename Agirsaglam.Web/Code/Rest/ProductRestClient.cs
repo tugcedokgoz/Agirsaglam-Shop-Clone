@@ -13,7 +13,6 @@ namespace Agirsaglam.Web.Code.Rest
             RestRequest req = new RestRequest($"/Product/GetProductsByParentCategoryId/{id}", Method.Get);
             RestResponse res = client.Get(req);
             string msg = res.Content.ToString();
-
             dynamic result = JObject.Parse(msg);
             return result;
         }

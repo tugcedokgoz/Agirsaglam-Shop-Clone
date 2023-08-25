@@ -37,10 +37,6 @@ namespace Agirsaglam.Web.Controllers
                 HttpContext.Session.SetString("UserName", model.UserName);
                 HttpContext.Session.SetString("token", (string)result.data);
                 HttpContext.Session.SetString("role", (string)result.role);
-
-                //Repo.Session.UserName = model.UserName;
-                //Repo.Session.Token = (string)result.data;
-                //Repo.Session.Role = (string)result.role;
                 if (result.role == "Admin")
                 {
                     return RedirectToAction("Home", "Admin");
@@ -63,12 +59,6 @@ namespace Agirsaglam.Web.Controllers
             HttpContext.Session.Clear(); 
             return RedirectToAction("Login", "Account"); 
         }
-        //public IActionResult Logout()
-        //{
-        //    HttpContext.Session.Clear();
-        //    HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 
-        //    return RedirectToAction("Login", "Account");
-        //}
     }
 }

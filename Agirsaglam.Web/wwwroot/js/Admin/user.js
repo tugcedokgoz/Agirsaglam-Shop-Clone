@@ -94,7 +94,6 @@ function GetUsersByName(userName) {
 
 $(document).ready(function () {
     GetUsers();
-/*    GetAdminUser();*/
     $("#searchButton").click(function () {
         var userName = $("#userIdInput").val();
         if (userName !== "") {

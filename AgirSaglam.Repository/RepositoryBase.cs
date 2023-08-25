@@ -10,6 +10,7 @@ namespace AgirSaglam.Repository
 {
     public abstract class RepositoryBase<T> where T : class
     {
+        //veritabanı işlemleri için
         protected RepositoryContext RepositoryContext { get; set; }
         public RepositoryBase(RepositoryContext repositoryContext)
         {

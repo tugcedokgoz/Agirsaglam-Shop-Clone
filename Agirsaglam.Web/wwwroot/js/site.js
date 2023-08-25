@@ -102,4 +102,3 @@ function Delete(action, success, ask = true) {
     }
 }
 
-

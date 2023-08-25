@@ -31,7 +31,6 @@ namespace Agirsaglam.Web.Areas.Kullanici.Controllers
         }
         public IActionResult AboutUs() => View();
 
-        //[AuthActionFilter(Role = "Kullanici")]
         public IActionResult Accessory()
         {
 
